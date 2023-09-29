@@ -3,8 +3,6 @@ it is my all notes about almost every hacking topics I've been learned in 3 year
 
 
 # Podstawy
-# General Hacking
-
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Twój laptop zawiera kartę sieciową (NIC) , która umożliwia mu łączenie 
