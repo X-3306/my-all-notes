@@ -279,9 +279,6 @@ Działa przy użyciu biletów do uwierzytelniania autoryzowanych klientów na au
 Webmin, internetowe narzędzie do konfiguracji systemu
 
 https://www.onlineocr.net/pl/
-https://b24-3h758z.bitrix24.pl/
-nmap -sn 192.168.68.0/24 -oG nmap_output
-
 
 HTTP: https://www.tutorialspoint.com/http/http_requests.htm
 
