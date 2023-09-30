@@ -1,9 +1,13 @@
 # my-all-notes
 it is my all notes about almost every hacking topics I've been learned in 3 years
 
+### Czym jest to respozytorium? 
+Są to prawie wszystkie moje notatki które zapisywałem sobie podczas mojej nauki przez ok. 3lata. Jest tutaj prawie każda dziedzina tej specyfikacji gdyż jak nudził mi się 1 temat, zaczynałem się uczyć 2 i tak dalej. Są tu napisane informację które w danym czasie zapisywania, uważałem za przydatne/użyteczne. Pokazują one moją całą drogę uczenia się,  (nie uwzględniając filmów i książek, aczkolwiek może z czasem dodam listę wraz z rzeczami którym się z nich nauczyłem, a nie ma ich w obecnym "zbiorze" notatek). Z czasem będę aktualizował ten projekt, dodając kolejne rzeczy które się nauczę w przyszłości. 
+
+### Jaki jest Cel tego?
+Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez ten ogrom dostępnych informacji, dlatego udostępniam moje notatki gdzie są zgromadzone różne urywki bądź całe artykuły które dają wiedzę teoretyczną jak i praktyczną bez opowiadania całej historii nie związane z tematyką i ściśle odpowiadają na często zadawane pytania. Osobiście uważam że te notatki są przydatne dla każdego typu poziomu, od początkującego po odświeżenie wiedzy dla zawansowanych (i nauczenie sie nowych tematów).
 
 # Podstawy
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Twój laptop zawiera kartę sieciową (NIC) , która umożliwia mu łączenie 
 się z routerami Wi-Fi. Ta karta ma unikalny adres, zwany adresem MAC, 
