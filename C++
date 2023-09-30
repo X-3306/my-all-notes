@@ -1,0 +1,49 @@
+https://learn.microsoft.com/pl-pl/cpp/cpp/welcome-back-to-cpp-modern-cpp?view=msvc-170
+
+https://github.com/changkun/modern-cpp-tutorial
+
+Preprocesory to programy przetwarzające kod źródłowy przed kompilacją.
+![0997390684a722d1a6dff04ee323a226.png](:/4276da7ebddf46afb34d6655442a48b3)
+Etapy pośrednie można zobaczyć na powyższym schemacie. Kod źródłowy napisany przez programistów jest najpierw przechowywany w pliku, niech nazwa będzie „ program.c ”. Plik ten jest następnie przetwarzany przez preprocesory i generowany jest rozszerzony plik kodu źródłowego o nazwie „program.i”. Ten rozwinięty plik jest kompilowany przez kompilator i generowany jest plik kodu wynikowego o nazwie „program.obj”. Na koniec linker łączy ten plik kodu obiektowego z kodem obiektowym funkcji bibliotecznych w celu wygenerowania pliku wykonywalnego „program.exe”. 
+
+![853184c749646d161b1c1cce59feedc2.png](:/a18db5386e144ef0a0199d62a13ba4d7)
+więcej informacji - https://www.geeksforgeeks.org/cc-preprocessors/
+
+**Ważne punkty**
+Zawsze dołączaj niezbędne pliki nagłówkowe, aby zapewnić płynne wykonanie funkcji. Na przykład należy uwzględnić <iostream> , aby użyć std::cin i std::cout .
+Wykonywanie kodu rozpoczyna się od funkcji main() .
+Dobrą praktyką jest używanie w programach wcięć i komentarzy w celu ułatwienia zrozumienia.
+cout służy do drukowania instrukcji, a cin służy do pobierania danych wejściowych.
+
+![3f344f6b0ba495c4a851f12f1854f459.png](:/80e9f20c821e496d8fac9b1003a990ef)
+
+**Optymalizacja wydajności**:
+
+Optymalizacja wydajności to proces poprawiający wydajność programów C++.
+Istnieje wiele technik, które można zastosować do optymalizacji kodu C++, takich jak:
+Stosowanie wydajnych algorytmów
+Unikanie niepotrzebnej alokacji pamięci
+Korzystanie z optymalizacji kompilatora
+
+C++ ma dwa sposoby zarządzania pamięcią: ręczny i automatyczny.
+
+W przypadku ręcznego zarządzania pamięcią programista jest odpowiedzialny za jawne przydzielanie i zwalnianie pamięci. Można to zrobić za pomocą funkcji malloc()i free().
+W przypadku automatycznego zarządzania pamięcią kompilator jest odpowiedzialny za automatyczne przydzielanie i zwalnianie pamięci. Odbywa się to za pomocą operatorów newi delete.
+Automatyczne zarządzanie pamięcią jest preferowanym sposobem obsługi pamięci w C++. Jest bardziej wydajny i zapobiega wyciekom pamięci. Jednak debugowanie może być trudniejsze.
+
+zawansowany C++ - https://www.incredibuild.com/blog/cpp-advanced-topics-for-experienced-cpp-devs
+
+nauka {      
+           https://cplusplus.com/doc/tutorial/exceptions/
+           https://google.github.io/styleguide/cppguide.html
+           https://ieeexplore.ieee.org/abstract/document/9576064
+           https://www.geeksforgeeks.org/learning-art-competitive-programming/
+           https://www.geeksforgeeks.org/introduction-to-c-programming-language/?ref=lbp
+      
+          https://isocpp.org/std/status
+          https://en.wikipedia.org/wiki/C++
+          https://www.codecademy.com/learn/learn-c-plus-plus
+          https://academichelp.net/blog/coding-tips/c-for-beginners-best-learning-resources.html
+          
+          
+           }
