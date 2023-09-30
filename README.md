@@ -2015,4 +2015,1399 @@ https://github.com/0xZ0F/Z0FCourse_ReverseEngineering/blob/master/Chapter%206%20
 
 rozpakowanie pliku .7z komenda: `7z x myarchive.7z`
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# C
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+kompilacja programu na kali linxie --> gcc -m64 hello.c -o hello
+(hello.c to nazwa programu)
+
+------------------------------------------------------------------------
+|_|_|_|_|w3schools.com|_|_|_|_|
+------------------------------------------------------
+#include <stdio.h> to biblioteka plików nagłówkowych , która pozwala nam pracować z funkcjami wejścia i wyjścia, takimi jak printf(). Pliki nagłówkowe dodają funkcjonalność do programów C. (Czyli coś jak import w pythonie)
+
+main(). Nazywa się to funkcją . Każdy kod w nawiasach klamrowych {}zostanie wykonany.
+
+printf działą tak samo jak print w pythonie czyli 'drukuje' wynik np. printf("Witaj!");
+
+Każda instrukcja C kończy się średnikiem ;
+
+Linia 5: return 0 kończy main()funkcję.
+
+A to wszystko dotyczy kodu "Hello World" czyli:
+
+```
+#include <stdio.h>
+
+int main() {
+printf("Hello World");
+return 0;
+}
+```
+
+Można użyć printf wielokronie np: 
+                printf("hello world");
+				printf("Test nastepny");				
+Ale wtedy wydrukuje sięwszystko w jednej lini więc na końcu trzeba dodać \n np:
+               
+```
+printf("hello world\n");
+			   printf("Test Nastepny\n");
+```
+
+
+Wtedy kazdy komunikat pojawi się w nowej lini.
+
+a \n\n zrobi jedną pustą linie  np. 
+
+`printf("hello world\n\n");`
+
+Znak nowej linii ( \n) nazywany jest sekwencją wyjściową i zmusza kursor do zmiany pozycji na początek następnej linii na ekranie. W rezultacie powstaje nowa linia.
+
+Przykłady innych prawidłowych sekwencji specjalnych to: 
+\t <-- to po prostu spacja w jedenj lini
+\\ <-- to dodaje znak \ do słowa
+\" to dodaje znak " między dwoma słowami np.
+tak wygląda wynik: hello"other
+
+komentarze:
+w jednym wierszy --> //
+w wielu wierszach początek /*  koniec */
+
+
+**W C istnieją różne typy zmiennych (definiowane za pomocą różnych słów kluczowych), na przykład:**
+
+int -  przechowuje liczby całkowite (liczby całkowite), bez miejsc po przecinku, takie jak 123lub-123
+
+float -  przechowuje liczby zmiennoprzecinkowe, z miejscami dziesiętnymi, takimi jak 19.99lub-19.99
+
+char -  przechowuje pojedyncze znaki, takie jak 'a'lub 'B'. Wartości char są ujęte w pojedyncze cudzysłowy
+
+Deklarowanie (tworzenie zmienny):
+trzeba określić typ i wartość np.
+
+float myNum = 20.99;
+wytłumaczenie: float to typ zmiennej, myNum to nazwa wartości (jak x lub myname) znak równości przypisuje wartość w tym przypadku to 20.99
+
+Możesz także zadeklarować zmienną bez przypisywania wartości i przypisać wartość później:
+
+```
+// deklaracja zmiennej
+int = myNum;
+
+// przypisanie wartości do zmiennej
+myNum = 15;
+```
+
+Normalnie w takim języku jak python wystareczyło by użycie print aby wudrukować wynik w zmiennej czyli: 
+int myNum = 15;
+print(myNum)
+
+Ale nie w C, tutaj jest coś takiego jak  **specyfikator formatu**
+
+Specyfikatory formatu są używane razem z printf() funkcją, aby powiedzieć kompilatorowi, jaki typ danych przechowuje zmienna. Zasadniczo jest to symbol zastępczy dla wartości zmiennej.
+
+Specyfikator formatu zaczyna się od znaku procentu %, po którym następuje znak.
+
+Na przykład, aby wypisać wartość zmiennej int, musisz użyć specyfikatora formatu %dlub %i otoczonego podwójnymi cudzysłowami wewnątrz printf()funkcji:
+
+int main(){
+int myNum = 15;
+printf("%d", myNum); //Wynik będzie 15
+return 0;
+}
+z czego %c jest do char a %f do float, %lf do double, %s do strings 
+
+
+Aby wydrukować inne typy, użyj %cdla chari %fdla float:
+```
+#include <stdio.h>
+
+int main(){
+int myNum = 20;
+float myFloatNum = 15.66;
+char myLatter = 'B';
+
+printf("%i\n", myNum);
+printf("%f\n", myFloatNum);
+printf("%c\n", myLatter);
+return 0;
+}
+```
+
+Aby połączyć zarówno tekst, jak i zmienną, oddziel je przecinkiem wewnątrz printf()funkcji:
+
+```
+#include <stdio.h>
+
+int main(){
+int myNum = 15;
+printf("Pokaż liczbe: %d", myNum);
+return 0;
+}
+```
+
+
+Aby drukować różne typy w jednej printf()funkcji, możesz użyć następujących opcji:
+
+```
+#include <stdio.h>
+
+int main(){
+  int myNum = 20;
+  char myLatter = 'A';
+  printf("Moja ulubiona liczba to %i a Litera to %c", myNum, myLatter);
+  return 0;
+}
+```
+
+Możesz także przypisać wartość jednej zmiennej do drugiej:
+
+```
+#include <stdio.h>
+
+int main(){
+int myNum = 15;
+int myOtherNum = 30;
+
+myNum = myOtherNum;
+
+printf("%i", myNum);
+return 0;
+}
+```
+
+Aby dodać zmienną do innej zmiennej, możesz użyć + operatora:
+
+#include <stdio.h>
+
+```
+int main(){
+int x = 50;
+int y = 21;
+
+int sum = x + y;
+printf("%i", sum);
+return 0;
+}
+```
+
+
+
+dodawanie kilku  do hedenj wartości
+#include <stdio.h>
+
+```
+int main(){
+int x = 50, y = 20, z = 34;
+
+printf("%i", x + y + z);
+return 0;
+}
+```
+
+lub:
+```
+#include <stdio.h>
+
+int main(){
+int x = 50, y = 20, z = 34;
+int sum = x + y + z;
+
+printf("%i", sum);
+return 0;
+}
+```
+(to to samo ale zapisane w inny sposób)
+
+C Nazwy zmiennych
+Wszystkie zmienne C muszą być identyfikowane za pomocą unikalnych nazw
+Te unikalne nazwy są nazywane identyfikatorami .
+
+Identyfikatorami mogą być nazwy krótkie (takie jak x i y) lub bardziej opisowe (wiek, suma, totalVolume).
+
+czyli np.
+
+int age = 22;
+jest bardziej zrozumiałe niż
+int a = 22;
+
+Ogólne zasady nazewnictwa zmiennych to:
+
+1. Nazwy mogą zawierać litery, cyfry i podkreślenia
+2. Nazwy muszą zaczynać się od litery lub znaku podkreślenia (_)
+3. W nazwach rozróżniana jest wielkość liter ( myVari myvarsą to różne zmienne)
+4. Nazwy nie mogą zawierać spacji ani znaków specjalnych, takich jak !, #, % itp.
+5. Zarezerwowane słowa (takie jak int) nie mogą być używane jako nazwy.
+
+## Przykład z życia wzięty
+Często w naszych przykładach upraszczamy nazwy zmiennych, aby pasowały do ich typu danych (myInt lub myNum dla inttypów, myChar dla chartypów itp.). Odbywa się to w celu uniknięcia zamieszania.
+
+Jeśli jednak szukasz przykładu z życia wziętego, jak można wykorzystać zmienne, spójrz na poniższy program, w którym stworzyliśmy program przechowujący różne dane studenta:
+
+#include <stdio.h>
+
+```
+int main() {
+
+   int studentID = 77;
+   int studentAGE = 19;
+   int studentCLASS = 3;
+   char studentSUM = 'A';
+   
+   printf(" Student ID %i\n\n", studentID);
+   printf(" Student Age %i\n\n", studentAGE);
+   printf(" Student Class %i\n\n", studentCLASS);
+   printf(" Student general rating is %c\n\n", studentSUM);
+   return 0;
+}
+```
+
+**int** |2 lub 4 bajty| Przechowuje liczby całkowite, bez części dziesiętnych
+
+**float** |4 bajty| Przechowuje liczby ułamkowe zawierające jedną lub więcej cyfr dziesiętnych. Wystarczający do przechowywania 6-7 cyfr dziesiętnych
+
+**double** |8 bajtów| Przechowuje liczby ułamkowe zawierające jedną lub więcej cyfr dziesiętnych. Wystarczający do przechowywania 15 cyfr dziesiętnych
+
+**char** |1 bajt| Przechowuje pojedynczy znak/literę/cyfrę lub wartości ASCII
+
+**strings**(%s) to pewnie do całych słów typu 'car'
+
+przykład z double; 
+
+```
+#include <stdio.h>
+
+int main() {
+float myFloatNum = 1.99;
+double mydoubleNum = 39.55;
+
+printf("%f\n", myFloatNum);
+printf("%lf", mydoubleNum);
+   return 0;
+}
+```
+
+Jeśli chcesz usunąć dodatkowe zera (ustawić dokładność dziesiętną), możesz użyć kropki ( .), po której następuje liczba określająca, ile cyfr ma być wyświetlanych po przecinku:
+
+```
+#include <stdio.h>
+
+int main(){
+   float myfloatNum = 9.5;
+   
+   printf("%f\n", myfloatNum); // Pokaże normalny wynik (czyli 9.500000)
+   printf("%.1f\n", myfloatNum); // pokaze 1 liczbe po przecinku (czyli 9.5)
+   printf("%.2f\n", myfloatNum); // to samo co powyzej tylko 2 (czyli 9.50)
+   printf("%.4f\n", myfloatNum); // to samo
+   return 0;
+}
+```
+
+## Konwersja typów
+Czasami trzeba przekonwertować wartość jednego typu danych na inny typ. Jest to znane jako konwersja typu .
+
+Na przykład, jeśli spróbujesz podzielić dwie liczby całkowite 5przez 2, spodziewasz się, że wynikiem będzie 2.5. Ale ponieważ pracujemy z liczbami całkowitymi (a nie zmiennoprzecinkowymi), poniższy przykład po prostu wyświetli 2:
+
+```
+#include <stdio.h>
+
+int main(){
+  int x = 5;
+  int y = 2;
+   int sum = 5 / 2;
+ printf("%i", sum);
+ return 0;
+}
+```
+
+
+Istnieją dwa rodzaje konwersji w C:
+
+**Niejawna konwersja** (automatycznie)
+**Jawna konwersja** (ręcznie)
+
+przykładowy kod:
+
+```
+int myint = 9.99;
+printf("%d", myint); // Wynik będzie 9
+```
+
+co się stało .99? Możemy chcieć tych danych w naszym programie! Więc uważaj. Ważne jest, aby wiedzieć, jak kompilator działa w takich sytuacjach, aby uniknąć nieoczekiwanych wyników.
+
+Jako inny przykład, jeśli podzielisz dwie liczby całkowite: 5przez 2, wiesz, że suma wynosi 2.5. A jak wiesz z początku tej strony, jeśli zapiszesz sumę jako liczbę całkowitą, wynik wyświetli tylko liczbę 2. Dlatego lepiej byłoby zapisać sumę jako a floatlub a double, prawda?
+
+```
+float sum = 5 / 2;
+printf("%f", sum); // wynik to 2.00000
+```
+
+Dlaczego jest wynik, 2.00000a nie 2.5? Cóż, to dlatego, że 5 i 2 są nadal liczbami całkowitymi w dzieleniu. W takim przypadku należy ręcznie przekonwertować wartości całkowite na wartości zmiennoprzecinkowe. (patrz poniżej).
+
+**Jawna Konwersja:**
+
+```
+#include <stdio.h>
+
+int main(){
+float sum = (float) 5 / 2;
+printf("%.1f", sum); // Wynik to 2.5
+return 0;
+}
+```
+
+## Stałe
+Jeśli nie chcesz, aby inni (lub ty) zmieniali istniejące wartości zmiennych, możesz użyć słowa constkluczowego.
+
+Spowoduje to zadeklarowanie zmiennej jako „stałej”, co oznacza niezmienną i tylko do odczytu :
+
+const int myNum = 15;  // Teraz cały czas będzie liczba 15
+myNum = 10; // To bedzie error bo stała liczba to 15
+
+Powinieneś zawsze deklarować zmienną jako stałą, gdy masz wartości, które prawdopodobnie się nie zmienią czyli np 1 minuta ma 60 sekund, a PI to 3.14 np:
+
+```
+#include <stdio.h>
+
+int main(){
+const int secoundsinminute = 60;
+const float PI = 3.14;
+
+printf("%i\n", secoundsinminute);
+printf("%f", PI);
+return 0;
+}
+```
+
+Uwagi dotyczące stałych
+Kiedy deklarujesz stałą zmienną, musisz jej przypisać wartość:
+
+Przykład
+Lubię to:
+
+```
+const int minutesPerHour = 60;
+```
+To jednak nie zadziała :
+
+```
+const int minutesPerHour;
+minutesPerHour = 60; // error
+```
+
+Dobra praktyka
+Inną rzeczą związaną ze stałymi zmiennymi jest to, że dobrą praktyką jest deklarowanie ich wielkimi literami. Nie jest to wymagane, ale przydatne dla czytelności kodu i wspólne dla programistów C:
+
+const int GOOD = 10;
+
+## Operators
+Operatory służą do wykonywania operacji na zmiennych i wartościach.
+
+W poniższym przykładzie używamy + operatora , aby dodać dwie wartości:
+
+int myNum = 100 + 50;
+
+Chociaż +operator jest często używany do dodawania dwóch wartości, jak w powyższym przykładzie, może być również używany do dodawania zmiennej i wartości lub zmiennej i innej zmiennej:
+
+int sum1 = 100 + 50;
+int sum2 = sum1 + 250; // 150 + 250 = 400
+int sum3 = sum2 + sum2; // = 400 + 400 = 800
+
+C dzieli operatorów na następujące grupy:
+
+Operatory arytmetyczne
+Operatory przypisania
+Operatory porównania
+Operatory logiczne
+Operatory bitowe
+
+Operatory arytmetyczne
+Operatory arytmetyczne służą do wykonywania typowych operacji matematycznych.
+
+czyli: +, -, /, *, ++, --, %
+
+% Moduł Zwraca resztę z dzielenia x % y
+++ Increment Zwiększa wartość zmiennej o 1 ++x
+-- Decrement Zmniejsza wartość zmiennej o 1 --x
+
+Operatory przypisania
+Operatory przypisania służą do przypisywania wartości do zmiennych.
+
+dodanie wartości np. do istniejącej 
+int x = 10;
+int x += 5;
+
+![c392cbd88107bb6f6c4c40cfe40261e5.png](:/f33264226a694a4286b82b721dd7a1ac)
+
+Operatory porównania
+Operatory porównania służą do porównywania dwóch wartości (lub zmiennych). Jest to ważne w programowaniu, ponieważ pomaga nam znaleźć odpowiedzi i podejmować decyzje.
+
+Wartością zwracaną przez porównanie jest albo 1albo 0, co oznacza prawdę ( 1) lub fałsz ( 0). Te wartości są znane jako wartości logiczne i dowiesz się o nich więcej w rozdziale Boolean i If..Else .
+
+W poniższym przykładzie używamy operatora większego niż ( >), aby dowiedzieć się, czy 5 jest większe niż 3:
+
+int x = 5;
+int y = 3;
+
+printf("%i", x > y); // wynik bedzie 1 (prawda) ponieważ 5 jest lepsze niż 3
+
+![fcd13c467d5d9541aa177810a9544091.png](:/1bf2707b5cb1485e91f1a55bc895e4ad)
+
+Operatory logiczne
+Za pomocą operatorów logicznych można również testować wartości prawda lub fałsz.
+
+Operatory logiczne służą do określenia logiki między zmiennymi lub wartościami:
+![daea3999f9c92ec315b67c044d2655ac.png](:/c4753c93c21d46dfb33f4c8388a157bf)
+
+Rozmiar operatora
+Rozmiar pamięci (w bajtach) typu danych lub zmiennej można znaleźć za pomocą operatora sizeof:
+
+#include <stdio.h>
+
+int main(){
+ int myint;
+ float myfloat;
+ char mychar;
+ double mydouble;
+ 
+ printf("%lu\n", sizeof(myint)); // wyniki: 4 bajty
+ printf("%lu\n", sizeof(myfloat)); // 4 bajty
+ printf("%lu\n", sizeof(mychar)); // 1 bajt
+ printf("%lu\n", sizeof(mydouble)); // 8 bajtów
+ return 0;
+}
+
+**Zauważ, że do wydrukowania wyniku używamy %luspecyfikatora formatu zamiast %d. Dzieje się tak dlatego, że kompilator oczekuje, że operator sizeof zwróci znak long unsigned int( %lu), zamiast int( %d). Na niektórych komputerach może działać %d, ale jest bezpieczniejszy w użyciu %lu.**
+
+## Logiczne
+Bardzo często w programowaniu będziesz potrzebować typu danych, który może mieć tylko jedną z dwóch wartości, na przykład:
+
+TAK NIE
+WŁ. / WYŁ
+PRAWDA FAŁSZ
+W tym celu C ma booltyp danych, który jest znany jako booleans .
+
+Logiczne reprezentują wartości, które są albo truealbo false.
+
+## Zmienne logiczne
+W C booltyp nie jest wbudowanym typem danych, takim jak intlub char.
+
+Został wprowadzony w C99 i aby go użyć, należy zaimportować następujący plik nagłówkowy:
+
+`#include <stdbool.h>`
+
+Zmienna logiczna jest deklarowana za pomocą boolsłowa kluczowego i może przyjmować tylko wartości truelub false:
+
+bool ishackingfunny = false;
+bool ishackinggood = true;
+
+Zanim spróbujesz wydrukować zmienne logiczne, powinieneś wiedzieć, że wartości logiczne są zwracane jako liczby całkowite:
+
+1(lub dowolna inna liczba, która nie jest 0) reprezentujetrue
+0reprezentujefalse
+Dlatego musisz użyć %d specyfikatora formatu, aby wydrukować wartość logiczną:
+
+```
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+bool ishackingfunny = false;
+bool ishackinggood = true;
+
+printf("%d\n", ishackingfunny); // odp 0
+printf("%d", ishackinggood);  // odp 1
+return 0;
+}
+```
+0 = Fałsz
+jaka kolwiek liczba powyzej 0 = Prawda
+
+**Jednak bardziej powszechne jest zwracanie wartości logicznej przez porównywanie wartości i zmiennych.**
+
+## Porównanie wartości i zmiennych
+Porównywanie wartości jest przydatne w programowaniu, ponieważ pomaga nam znaleźć odpowiedzi i podejmować decyzje.
+
+Na przykład możesz użyć operatora porównania , takiego jak operator większy niż ( >), aby porównać dwie wartości:
+
+printf("%d", 10 > 9); // Wynik będzie 1 (Prawda) Bo 10 jest większy niż 9.
+
+W poniższym przykładzie używamy operatora równości ( ==) do porównywania różnych wartości:
+
+```
+printf("%d", 10 == 10); // wynik będzie 1 (True) bo 10 i 10 jest equal
+printf("%d", 5 == 55); // False bo 5 jest mniejsze
+printf("%d", 10 == 15); // False
+```
+
+Nie jesteś ograniczony tylko do porównywania liczb. Możesz także porównywać zmienne boolowskie, a nawet specjalne struktury, takie jak tablice
+
+```
+bool chamburgerisgood = true;
+bool Pizzajestdobra = true
+
+printf("%d", chamburgerisgood == Pizzajestdobra);
+```
+
+Przykład z życia wzięty
+Pomyślmy o „przykładzie z życia”, w którym musimy dowiedzieć się, czy dana osoba jest wystarczająco dorosła, aby głosować.
+
+W poniższym przykładzie używamy >=operatora porównania, aby dowiedzieć się, czy wiek ( 25) jest większy niż LUB równy limitowi wiekowemu uprawniającemu do głosowania, który jest ustawiony na 18:
+
+int myAge = 20;
+int VotingAge = 18;
+
+prntf("%d", myAge >= VotingAge); // odp 1 (prawda) bo 20 jest wieksze niz 18 // czyli jest dozwolone
+
+ Jeszcze lepszym podejściem (ponieważ jesteśmy teraz na fali) byłoby zawinięcie powyższego kodu w instrukcję if...else, abyśmy mogli wykonać różne akcje w zależności od wyniku:
+ 
+ **Przykład**
+Dane wyjściowe „Wystarczająco duży, aby głosować!” jeśli myAgejest większe lub równe 18 . W przeciwnym razie wypisz „Niewystarczająco stary, aby głosować.”:
+
+```
+#include <stdio.h>
+
+int main(){
+int myAge = 14;
+int voteAge = 18;
+
+if (myAge >= voteAge){
+printf("you are Old enough to Vote!");
+} else {
+printf("you are not Old enough to Vote");
+}
+} // Wynik to będzie że nie wystarczająco dorosły bo 14, ale jak zmienie na np. 18 i pwyzej juz wystarczająco dorosły.
+```
+
+![7b26bdc3e86a78a86ca413495439a29c.png](:/055b254ef30d43d084f062515f388c43)
+
+## Instrukcja if
+Użyj ifinstrukcji, aby określić blok kodu, który ma zostać wykonany, jeśli warunek to true.
+np.
+
+```
+if (20 > 18) {
+printf("20 jest lepsze niz 18!");
+}
+```
+
+Możemy również testować zmienne:
+
+```
+int x = 20;
+int y = 18;
+
+if (x > y) {
+printf("x jest lepsze niz y");
+}
+```
+
+W powyższym przykładzie używamy dwóch zmiennych, x i y , aby sprawdzić, czy x jest większe niż y (za pomocą >operatora). Skoro x to 20, a y to 18, i wiemy, że 20 jest większe niż 18, wypisujemy na ekranie, że „x jest większe niż y”.
+
+## Oświadczenie else
+Użyj elseinstrukcji, aby określić blok kodu, który ma zostać wykonany, jeśli warunek to false. np.
+
+```
+#include <stdio.h>
+
+int main() {
+
+int time = 20;
+if (time < 18) {
+printf("Good Morning");
+} else {
+printf("Good evening");
+}
+return 0;
+}
+```
+W powyższym przykładzie czas (20) jest większy niż 18, więc warunek to false. Z tego powodu przechodzimy do elsestanu i drukujemy na ekranie „Dobry wieczór”. Jeśli czas był krótszy niż 18, program wydrukowałby „Dzień dobry”.
+
+## Instrukcja else if
+Użyj else ifinstrukcji, aby określić nowy warunek, jeśli pierwszy warunek to false.
+np.
+
+```
+#include <stdio.h>
+
+int main(){
+int time = 20;
+if (time < 10) {
+printf("Good morning");
+} else if (time < 20) {
+printf("good day");
+} else {
+printf("good evening");
+}
+return 0;
+}
+```
+W powyższym przykładzie czas (22) jest większy niż 10, więc pierwszym warunkiem jest false. Następnym warunkiem w else ifinstrukcji jest również false, więc przechodzimy do else warunku, ponieważ warunek 1 i warunek 2 są obydwoma false- i wypisujemy na ekranie „Dobry wieczór”.
+
+Jeśli jednak czas wynosiłby 14, nasz program wydrukowałby „Dzień dobry”.
+
+------------------------------------------------------------------------
+|_|_|_|_|WIKIPEDIA|_|_|_|_|
+------------------------------------------------------
+Arrays to tablice
+Tablice to specjalne zmienne, które mogą przechowywać więcej niż jedną wartość pod tą samą nazwą zmiennej, zorganizowane za pomocą indeksu. Tablice są definiowane przy użyciu bardzo prostej składni:
+
+**if ... else** – pozwala na wykonanie jednej z dwóch gałęzi kodu na podstawie wartości typu logicznego,
+**switch** – wykonuje jeden z wielu bloków kodu na podstawie porównania wartości liczbowej z wyrażeniami w poszczególnych etykietach case.
+
+Druga grupa instrukcji sterujących służy realizacji pętli. Każda z nich jest wykonywana tak długo, jak podany warunek jest prawdziwy. Składają się na nią:
+
+**while** – warunek jest sprawdzany przed każdą iteracją;
+**do ... while** – warunek jest sprawdzany po każdej iteracji;
+**for** – pozwala na określenie instrukcji, która wykona się przed pierwszą iteracją oraz instrukcji do wywołania po każdym przebiegu pętli.
+
+Ostatnią grupę stanowią instrukcje skoku (Instrukcja skoku – instrukcja w językach programowania, która powoduje przekazanie sterowania w inne miejsce, tzw. skok.) Należą do nich:
+
+**goto** – realizuje skok do etykiety o podanej nazwie, ale nie jest możliwe wyjście z aktualnie wykonywanej funkcji;
+**continue** – przerywa wykonywanie bieżącej iteracji pętli i przechodzi do kolejnej;
+**break** – przerywa wykonywanie pętli lub instrukcji switch;
+**return** – przerywa wykonywanie bieżącej funkcji i opcjonalnie przekazuje wartość do miejsca wywołania.
+
+
+Preprocesor w języku C pozwala na manipulację kodem źródłowym przed właściwą kompilacją. Wspiera mechanizmy kompilacji warunkowej (dyrektywa #if i jej warianty) oraz dołączania innych plików źródłowych (#include). Odpowiada również za rozwijanie makr (zdefiniowanych przy użyciu #define)
+
+Dzięki dyrektywie #pragma możliwe jest przekazywanie instrukcji specyficznych dla kompilatora.
+
+W trakcie kompilacji, komentarze zastępowane są znakiem spacji
+
+Typ danych określa zbiór wartości, które może przyjąć dany obiekt, jak również dozwolone operacje na nim[57]. Język udostępnia zestaw typów podstawowych oraz mechanizmów konstruowania typów pochodnych[58].
+
+Szczególnym typem danych w C jest typ pusty void, który nie przechowuje żadnej wartości. W związku z tym można wykorzystywać go jedynie w sytuacjach, gdy wartość nie jest wymagana – np. jako lewy argument operatora , lub w charakterze instrukcji. Rzutowanie tego typu na jakikolwiek inny typ, zarówno jawne, jak i niejawne jest niedozwolone[59]. Słowem void oznacza się między innymi funkcje nie zwracające nic
+
+Typy podstawowe
+W języku C istnieje kilka bazowych typów danych, które można dookreślać z użyciem odpowiednich słów kluczowych w celu uzyskania odpowiedniego zakresu wartości. Służą do przechowywania liczb całkowitych (char i int) oraz zmiennoprzecinkowych (float i double)[61].
+
+Razem z typem int można stosować kwalifikatory short oraz long. Pozwalają one programiście wykorzystywać typy danych krótsze i dłuższe niż naturalne dla danej architektury. Ponadto nazwę każdego typu, służącego do przechowywania liczb całkowitych, można również poprzedzić słowem signed lub unsigned, aby określić, czy dany obiekt ma być w stanie przechowywać liczby ujemne[62]. Reprezentacja bitowa wartości, które można zapisać zarówno w wariancie signed, jak i unsigned danego typu jest w obu wariantach taka sama[63].
+
+Standard języka C nie ustala w sposób sztywny zakresów wartości, jakie muszą się zmieścić w obiektach poszczególnych typów. Podobnie nie są określone ich rozmiary w bitach lub bajtach[61]. Od implementacji języka wymaga się, by poszczególne typy danych pozwalały na przechowywanie przynajmniej liczb z ustalonego przedziału[32], a w przypadku typu logicznego _Bool – by miał rozmiar wystarczający do zmieszczenia wartości 0 i 1
+
+![54b548cdc6e587799b3760edeb41adb5.png](:/32e1b865bb5e4379be666301671dccb5)
+W powyższej tabeli zebrano minimalne wymagania stawiane dostępnym w C typom całkowitoliczbowym. Dodatkowym ograniczeniem, stawianym przez standard jest to, aby kolejne typy miały zakres niemniejszy od poprzednich. Na przykład obiekt typu short nie może być dłuższy niż int, który z kolei musi być niedłuższy od long
+
+Użycie kwalifikatora long jest dopuszczalne również w połączeniu z typem double, choć standard C nie gwarantuje, że uzyskany w ten sposób typ będzie miał większą pojemność niż wyjściowy. Podobnie jak w przypadku liczb całkowitych, dostępne typy zmiennoprzecinkowe również nie mają sztywno określonego zakresu wartości oraz minimalnej dokładności
+
+![9fee6d20a7f5f9648f91b2334a46858c.png](:/15db8fc5ee5540dab46cb8290e489ea0)
+
+
+
+------------------------------------------------------------------------
+|_|_|_|_|w3schools.com|_|_|_|_|
+------------------------------------------------------
+
+## Ternary Operator.
+Istnieje również skrót if else, który jest znany jako operator trójskładnikowy , ponieważ składa się z trzech operandów. Można go użyć do zastąpienia wielu linii kodu pojedynczą linią. Jest często używany do zastąpienia prostych instrukcji if else:
+
+czyli zamiast pisać:
+
+```
+int time = 18;
+if (time < 18) {
+printf("Good day");
+} else {
+printf("good night");
+}
+```
+
+Mogę napisać
+```
+int time = 20;
+(time < 18) ? printf("Good day") : printf("Good evening");
+```
+
+i to się nazywa **operator trójskładnikowy**
+
+## Instrukcja przełączania
+Zamiast pisać wieleif..else stwierdzeń, możesz użyć switchstwierdzeń.
+
+Instrukcja switchwybiera jeden z wielu bloków kodu do wykonania:
+
+Tak to działa:
+
+Wyrażenie switchjest oceniane raz
+Wartość wyrażenia jest porównywana z wartościami każdego z nichcase
+Jeśli występuje dopasowanie, wykonywany jest powiązany blok kodu
+Instrukcja breakwychodzi z bloku switch i zatrzymuje wykonanie
+Instrukcja defaultjest opcjonalna i określa kod do uruchomienia, jeśli nie ma dopasowania wielkości liter
+
+przykład na podstawie dni tygodnia:
+
+```
+#include <stdio.h>
+
+int main() {
+int day = 4;
+
+switch (day) {
+case 1:
+  printf("Poniedziałek");
+  break;
+   
+   case 2:
+  printf("Wtorek");
+  break;
+   
+    case 3:
+  printf("Sroda");
+  break;
+  
+   case 4:
+  printf("Czwartek");
+  break;
+  
+   case 5:
+  printf("Piątek");
+  break;
+  
+    case 6:
+  printf("Sobota");
+  break;
+     
+	 case 7:
+  printf("NIedziela");
+  break;
+}
+return 0;
+}
+```
+
+## Przerwa Słowo kluczowe
+Kiedy C osiąga break słowo kluczowe, wyrywa się z bloku przełącznika.
+
+Spowoduje to zatrzymanie wykonywania większej liczby testów kodu i przypadków w bloku.
+
+Po znalezieniu dopasowania i zakończeniu pracy nadchodzi czas na przerwę. Więcej testów nie jest potrzebne.
+
+**Przerwa może zaoszczędzić dużo czasu wykonania, ponieważ „ignoruje” wykonanie całej reszty kodu w bloku przełącznika.**
+
+## Domyślne słowo kluczowe
+Słowo defaultkluczowe określa kod do uruchomienia, jeśli nie ma dopasowania wielkości liter np:
+
+```
+#include <stdio.h>
+
+int main(){
+int day = 3;
+
+switch (day) {
+case 4:
+printf("mondey");
+break;
+
+case 5:
+printf("thusday");
+break;
+
+case 6:
+printf("Wedneday");
+break;
+default:
+printf("Hello my name is\n  TEST!");
+}
+return 0;
+}
+```
+
+## LOOPS
+Pętle mogą wykonywać blok kodu, o ile spełniony jest określony warunek.
+
+Pętle są przydatne, ponieważ oszczędzają czas, zmniejszają liczbę błędów i zwiększają czytelność kodu.
+
+Podczas pętli
+Pętla whileprzechodzi przez blok kodu tak długo, jak określony warunek to true:
+
+W poniższym przykładzie kod w pętli będzie wykonywany w kółko, dopóki zmienna ( i) będzie mniejsza niż 5:
+
+```
+#include <stdio.h>
+
+int main(){
+
+int i = 0;
+
+ while (i < 400000) {
+ printf("%d\n", i);
+ i++;
+ }
+ return 0;
+ }
+```
+ 
+  w tym przykładzie wynik będzie taki: pojawią się liczby od 0 do 399999 po kolei.
+
+## Pętla Do/While
+Pętla do/whilejest wariantem pętli while. Ta pętla wykona blok kodu raz, przed sprawdzeniem, czy warunek jest prawdziwy, a następnie będzie powtarzać pętlę, dopóki warunek jest prawdziwy.
+
+Poniższy przykład wykorzystuje do/whilepętlę. Pętla zawsze zostanie wykonana co najmniej raz, nawet jeśli warunek jest fałszywy, ponieważ blok kodu jest wykonywany przed sprawdzeniem warunku:
+
+```
+int i = 0;
+
+do {
+printf("%d\n", i);
+i++;
+}
+ while (i < 20);
+```
+
+## for loops
+Kiedy wiesz dokładnie, ile razy chcesz przejść przez blok kodu, użyj pętli forzamiast whilepętli:
+
+
+Instrukcja 1 jest wykonywana (jeden raz) przed wykonaniem bloku kodu.
+
+Instrukcja 2 definiuje warunek wykonania bloku kodu.
+
+Instrukcja 3 jest wykonywana (za każdym razem) po wykonaniu bloku kodu.
+
+Poniższy przykład wydrukuje liczby od 0 do 4:
+
+```
+int i;
+
+for(i = 0; i < 5; i++) {
+printf("%d\n", i);
+}
+```
+
+**Przykład wyjaśniony**
+Instrukcja 1 ustawia zmienną przed rozpoczęciem pętli (int i = 0).
+
+Instrukcja 2 definiuje warunek wykonania pętli (i musi być mniejsze niż 5). Jeśli warunek jest prawdziwy, pętla rozpocznie się od nowa, jeśli jest fałszywy, pętla się zakończy.
+
+Instrukcja 3 zwiększa wartość (i++) za każdym razem, gdy wykonywany jest blok kodu w pętli
+
+inny przykład (W tym przykładzie zostaną wydrukowane tylko wartości parzyste z zakresu od 0 do 10):
+
+```
+int i;
+
+for (i = 0; i <= 10; i = i + 2) {
+printf("%d\n", i);
+}
+```
+
+## Nested Loops
+Możliwe jest również umieszczenie pętli w innej pętli. Nazywa się to pętlą zagnieżdżoną .
+
+„Wewnętrzna pętla” zostanie wykonana jeden raz dla każdej iteracji „zewnętrznej pętli”:
+
+
+```
+#include <stdio.h>
+int main() {
+
+int i, j;
+
+for (i = 1; i <= 2; ++i) {
+printf("First: %d\n", i);
+
+for (j = 1; j <= 3; ++j) {
+printf("Two: %d\n", j);
+}
+return 0;
+}
+}
+```
+
+------------------------------------------------------------------------------------
+|_|_|_|_|Bezpieczenstwo kodu_|_|_|_|
+---------------------------------------------------------------
+
+**W przypadku wywiadów dotyczących kodowania C przejrzyj następujące informacje**:
+
+Przepełnienia/niedomiar liczb całkowitych: https://www.exploit-db.com/docs/english/28477-linux-integer-overflow-and-underflow.pdf
+
+Przepełnienie bufora (stos/sterta): https://owasp.org/www-community/attacks/Buffer_overflow_attack
+
+Luki w zabezpieczeniach ciągów formatu: https://owasp.org/www-community/attacks/Format_string_attack
+
+Oprócz luk w zabezpieczeniach możesz spodziewać się, że ankieter zapyta Cię o podstawy wykorzystania. Możesz poczytać na:
+
+1. NOP Sled
+2. Return to libc
+3. ROP
+
+
+Na koniec powinieneś przejrzeć środki zaradcze/obrony, aby chronić się przed tymi lukami:
+- [ ] ASLR/DEP
+- [ ] Stack Canaries
+- [ ] Control Flow Integrity
+
+ najlepszą praktyką może być całkowite unikanie tych zakazanych funkcji, widzę wiele projektów, w których niektóre z tych funkcji są używane, ale w bezpiecznych kontekstach. Jeśli podniesiesz czerwoną flagę po prostu za każdym razem, gdy zobaczysz, że jedna z tych funkcji jest w użyciu, możesz mieć zły czas.
+
+Oto kilka przykładów użycia niesławnej strcpyi nieco bezpieczniejszej wersji strncpy:
+
+```
+void foo_1(char* bar) {
+    char buf[100];
+    strcpy(buf, bar);
+    puts(buf);
+}
+
+char* foo_2(char* bar) {
+    char* buf = NULL; 
+    buf = malloc(strlen(bar)+1);
+    strcpy(buf, bar);
+    return buf; // freed later
+}
+
+void foo_3(char* bar) {
+    char buf[100];
+    strncpy(buf, bar, sizeof(buf));
+    puts(buf);
+}
+
+void foo_4() {
+    char buf[100];
+    strcpy(buf, "This is just an example.");
+    puts(buf);
+}
+```
+
+Jeśli zrobiłem to poprawnie, te przykłady powinny wyglądać tak:
+
+1. Niebezpieczne (jeśli barjest dłuższe niż 100 bajtów, nastąpi przepełnienie)
+2. Bezpieczny (bufor jest tworzony wystarczająco duży)
+3. Niebezpieczne (wytwarza niezakończony ciąg, gdy nie ma bajtów zerowych w pierwszych n bajtach bar)
+4. Bezpieczny (ciąg jest stały i mniejszy niż rozmiar bufora)
+
+Dodatkowo, chociaż funkcje z rodziny „strn” również mogą pojawić się na liście zakazanych, wiele projektów używa ich również bezpiecznie, wymuszając na końcu bajt zerowy, często za pomocą funkcji opakowującej.
+
+statystyczna analiza kodu:
+https://www.perforce.com/products/klocwork
+
+
+
+Innym sposobem na zdefiniowanie stałej jest użycie dyrektywy preprocesora #define .
+
+Dyrektywa #define używa makr do definiowania stałych wartości.
+
+Na przykład:
+
+```
+#include <stdio.h>
+
+#define PI 3.14
+
+int main() {
+  printf("%f", PI);
+  return 0;
+}
+```
+
+Różnica między const i #define polega na tym, że pierwsza używa pamięci do przechowywania, a druga nie.
+
+https://github.com/ctfs/resources/tree/master/topics/binary-exploitation
+
+AI: Najlepsze praktyki dotyczące organizowania kodu i pisania czystych, łatwych w utrzymaniu programów w C
+
+Modularyzuj kod w funkcje oparte na dyskretnych zadaniach. Zachowaj małe funkcje.
+Używaj opisowych nazw zmiennych, funkcji i plików. Unikaj skrótów.
+Postępuj zgodnie ze spójną konwencją nazewnictwa, taką jak lower_snake_case.
+Podziel duże zadania na mniejsze funkcje pomocnicze.
+Ogranicz długości funkcji, aby poprawić czytelność.
+Używaj spacji, znaków nowej linii i komentarzy swobodnie, aby poprawić czytelność.
+Przechowuj powiązany kod zgrupowany w plikach nagłówkowych, źródłowych i testowych.
+Zrozumienie różnych bibliotek C i frameworków
+
+Poznaj standardową bibliotekę C, aby poznać podstawowe funkcje, takie jak wejście/wyjście, obsługa ciągów znaków i operacje matematyczne.
+Korzystaj z bibliotek takich jak OpenSSL do kryptografii, zlib do kompresji, cURL do transferów internetowych.
+Rozważ frameworki takie jak GTK+ do tworzenia graficznych interfejsów użytkownika.
+Przeglądaj biblioteki/interfejsy API Linuksa, takie jak wątki POSIX do wielowątkowości.
+Techniki zarządzania pamięcią
+
+Użyj malloc()/free() do ręcznego przydzielenia/zwolnienia pamięci. Pamiętaj, aby zwolnić całą przydzieloną pamięć.
+Naucz się używać valgrind do sprawdzania kodu pod kątem wycieków pamięci.
+Zapoznaj się z inteligentnymi wskaźnikami i metodami puli pamięci, aby zautomatyzować zarządzanie pamięcią.
+Zrozumienie alokacji stosu i sterty oraz statycznej i dynamicznej alokacji pamięci.
+Optymalizacja wydajności i wydajności kodu
+
+Kod profilu z narzędziami takimi jak gprof do identyfikowania wąskich gardeł.
+Unikaj zbędnych alokacji/kopii pamięci dla dużych struktur danych.
+Używaj wydajnych algorytmów i struktur danych, takich jak wyszukiwanie binarne, tablice skrótów.
+Jeśli to możliwe, przechowuj często używane dane w szybszej pamięci podręcznej.
+Skompiluj kod z włączonymi flagami optymalizacji.
+Zaawansowane tematy C
+
+Naucz się wielowątkowości z pthreads dla równoległości. Użyj muteksów do synchronizacji.
+Zaimplementuj sieć klient/serwer z gniazdami i protokołem TCP/IP.
+Używaj funkcji fork() i exec() do sterowania procesami i komunikacji między procesami.
+Pisz kod programowania systemu Linux z dostępem niskiego poziomu.
+Przejście na inne języki
+
+Nauka języka C ułatwia naukę innych języków, takich jak Python, Java, C#.
+Zrozumienie ręcznego zarządzania pamięcią w C pomaga później podczas nauki wyrzucania elementów bezużytecznych.
+Znajomość interfejsów API systemu Linux i standardowych bibliotek C pomaga w nauce frameworków w językach wyższego poziomu.
+Algorytmy i struktury danych tłumaczą się między językami.
+
+Przyjrzyj się operatorom „zwarcia”: && i ||
+
+• Jednak kompilator może nie przestrzegać ściśle tych zasad, jeśli plik
+zachowywać się
+• Na przykład, jeśli program nie może określić, czy wyrażenie zostało obliczone, czy nie (tj. 
+obliczenie wyrażenia nie wpływa na stan programu – to znaczy wynik nie jest potrzebny i nie 
+ma skutków ubocznych), to kompilator nie musi oceniać tego wyrażenia
+program nie może określić, czy reguła była przestrzegana, czy nie. Nazywa się to 
+zachowaniem „jak gdyby”, ponieważ kompilator zachowuje się tak, jakby wszystkie 
+reguły były przestrzegane.
+
+![a8c7fd0801e63f777bfcb6b228a20722.png](:/5f9621f9b3874a32ae22e1bd3b2b1211)
+![b13466c6fb449d75dcebd5bd70e4e81b.png](:/ca34a430ddb743a5bbcb6259b949cf45)
+![64c21a1278308449b886e6735a031c4a.png](:/6ed5cabdfe624d27b7d3f5a26a3cda89)
+
+1. Operacje arytmetyczne w C
+Operatory te są używane do wykonywania operacji arytmetycznych/matematycznych na operandach. Przykłady: (+, -, *, /, %,++,–). Operatory arytmetyczne są dwojakiego rodzaju:
+
+a) Operatorzy jednoargumentowi:
+Operatory, które działają lub pracują z pojedynczym operandem, są operatorami jednoargumentowymi. Na przykład: Operatory przyrostu(++) i dekrementu(–)
+
+int val = 5;
+cout<<++val;  // 6
+b) Operatory binarne:
+Operatory, które działają lub pracują z dwoma operandami, są operatorami binarnymi. Na przykład: Dodawanie(+), Odejmowanie(-), mnożenie(*), Dzielenie(/) operatory
+
+int a = 7;
+int b = 2;
+cout<<a+b; // 9
+2. Operatory relacyjne w C
+Służą one do porównywania wartości dwóch argumentów. Na przykład sprawdzenie, czy jeden operand jest równy drugiemu operandowi, czy nie, czy operand jest większy od drugiego operandu, czy nie, itp. Niektóre operatory relacyjne to (==, >= , <= (Więcej informacji można znaleźć w tym artykule).
+
+int a = 3;
+int b = 5;
+cout<<(a < b);
+// operator to check if a is smaller than b
+3. Operator logiczny w C
+Operatory logiczne służą do łączenia dwóch lub więcej warunków/ograniczeń lub do uzupełniania oceny rozważanego warunku pierwotnego. Wynikiem działania operatora logicznego jest wartość logiczna true lub false.
+
+Na przykład operator logiczny AND reprezentowany jako operator "&&" w C zwraca wartość true, gdy oba rozważane warunki są spełnione. W przeciwnym razie zwraca wartość false. Dlatego a & b zwraca wartość true, gdy zarówno a, jak i b są prawdziwe (tj. niezerowe) (zobacz ten artykuł, aby uzyskać więcej informacji).
+
+cout<<((4 != 5) && (4 < 5));     // true
+4. Operatory bitowe w C 
+Operatory bitowe są używane do wykonywania operacji na poziomie bitów na operandach. Operatory są najpierw konwertowane na poziom bitów, a następnie obliczenia są wykonywane na operandach. Operacje matematyczne, takie jak dodawanie, odejmowanie, mnożenie itp., mogą być wykonywane na poziomie bitowym w celu szybszego przetwarzania. Na przykład operator bitowy AND reprezentowany jako "&" w C przyjmuje dwie liczby jako operandy i wykonuje AND na każdym bitzie dwóch liczb. Wynik operatora AND wynosi 1 tylko wtedy, gdy oba bity mają wartość 1(prawda).
+
+int a = 5, b = 9;   // a = 5(00000101), b = 9(00001001)
+cout << (a ^ b);   //  00001100
+cout <<(~a);       // 11111010
+5. Operatory przydziału w C
+Operatory przypisania służą do przypisania wartości zmiennej. Operand po lewej stronie operatora przypisania jest zmienną, a operand po prawej stronie operatora przypisania jest wartością. Wartość po prawej stronie musi być tego samego typu danych, co zmienna po lewej stronie, w przeciwnym razie kompilator zgłosi błąd.
+
+Poniżej przedstawiono różne typy operatorów przypisania:
+
+a) "="
+Jest to najprostszy operator przypisania. Ten operator służy do przypisywania wartości po prawej stronie do zmiennej po lewej stronie.
+Przykład:
+
+a = 10;
+b = 20;
+ch = 'y';
+b) "+="
+Ten operator jest kombinacją operatorów "+" i "=". Ten operator najpierw dodaje bieżącą wartość zmiennej po lewej do wartości po prawej stronie, a następnie przypisuje wynik do zmiennej po lewej stronie.
+Przykład:
+
+(a += b) can be written as (a = a + b)
+If initially value stored in a is 5. Then (a += 6) = 11.
+c) "-=" 
+Ten operator jest kombinacją operatorów '-' i '='. Ten operator najpierw odejmuje wartość po prawej od bieżącej wartości zmiennej po lewej stronie, a następnie przypisuje wynik do zmiennej po lewej stronie.
+Przykład:
+
+(a -= b) can be written as (a = a - b)
+If initially value stored in a is 8. Then (a -= 6) = 2.
+d) "*=" 
+Ten operator jest kombinacją operatorów "*" i "=". Ten operator najpierw mnoży bieżącą wartość zmiennej po lewej do wartości po prawej, a następnie przypisuje wynik do zmiennej po lewej stronie.
+Przykład:
+
+(a *= b) can be written as (a = a * b)
+If initially, the value stored in a is 5. Then (a *= 6) = 30.
+e) "/="
+Ten operator jest kombinacją operatorów "/" i "=". Ten operator najpierw dzieli bieżącą wartość zmiennej po lewej przez wartość po prawej stronie, a następnie przypisuje wynik do zmiennej po lewej stronie.
+Przykład:
+
+(a /= b) can be written as (a = a / b)
+If initially, the value stored in a is 6. Then (a /= 2) = 3.
+6. Inni operatorzy 
+Oprócz powyższych operatorów, istnieje kilka innych operatorów dostępnych w języku C służących do wykonywania określonych zadań. Niektóre z nich omówiono tutaj:
+
+I. Wielkość operatora
+sizeof jest często używany w języku programowania C.
+Jest to operator jednoargumentowy czasu kompilacji, który może być użyty do obliczenia rozmiaru jego operandu.
+Wynik sizeof jest typu całki bez znaku, który jest zwykle oznaczany przez size_t.
+Zasadniczo rozmiar operatora służy do obliczania rozmiaru zmiennej.
+Aby dowiedzieć się więcej na ten temat, zapoznaj się z tym artykułem.
+
+ii. Operator przecinka
+Operator przecinka (reprezentowany przez token) jest operatorem binarnym, który oblicza swój pierwszy operand i odrzuca wynik, a następnie oblicza drugi operand i zwraca tę wartość (i typ).
+Operator przecinka ma najniższy priorytet spośród wszystkich operatorów języka C.
+Przecinek działa zarówno jako operator, jak i separator.
+Aby dowiedzieć się więcej na ten temat, zapoznaj się z tym artykułem.
+
+iii. Operator warunkowy
+Operator warunkowy ma postać Wyrażenie1? Wyrażenie2: Wyrażenie3
+Tutaj Wyrażenie1 jest warunkiem do oceny. Jeśli warunek (Wyrażenie1) jest True, wykonamy i zwrócimy wynik Expression2, w przeciwnym razie, jeśli warunek (Expression1) jest false, wykonamy i zwrócimy wynik Expression3.
+Możemy zastąpić użycie if.. Instrukcje else z operatorami warunkowymi.
+Aby dowiedzieć się więcej na ten temat, zapoznaj się z tym artykułem.
+
+iv. Operatory kropki (.) i strzałek (->)
+Operatory prętów są używane do odwoływania się do poszczególnych członków klas, struktur i związków.
+Operator kropki jest stosowany do rzeczywistego obiektu.
+Operator strzałki jest używany ze wskaźnikiem do obiektu.
+Aby dowiedzieć się więcej o operatorach DOT, zapoznaj się z tym artykułem, a aby dowiedzieć się więcej o operatorach arrow(->), zapoznaj się z tym artykułem.
+
+v. Operator odlewu
+Operatory rzutowania konwertują jeden typ danych na inny. Na przykład int(2.2000) zwróci wartość 2.
+Rzutowanie to specjalny operator, który wymusza konwersję jednego typu danych na inny.
+Najbardziej ogólna rzuta obsługiwana przez większość kompilatorów C jest następująca: − [ wyrażenie (type) ].
+Aby dowiedzieć się więcej na ten temat, zapoznaj się z tym artykułem.
+
+vi.  &,* Operator
+Operator wskaźnika & zwraca adres zmiennej. Na przykład &a; poda rzeczywisty adres zmiennej.
+Operator wskaźnika * jest wskaźnikiem do zmiennej. Na przykład *var; wskaże zmienną var.
+Aby dowiedzieć się więcej na ten temat, zapoznaj się z tym artykułem.
+
+Operatory C z przykładem
+
+// C Program to Demonstrate the working concept of
+// Operators
+```
+#include <stdio.h>
+ 
+int main()
+{
+ 
+    int a = 10, b = 5;
+    // Arithmetic operators
+    printf("Following are the Arithmetic operators in C\n");
+    printf("The value of a + b is %d\n", a + b);
+    printf("The value of a - b is %d\n", a - b);
+ 
+    printf("The value of a * b is %d\n", a * b);
+    printf("The value of a / b is %d\n", a / b);
+    printf("The value of a % b is %d\n", a % b);
+    // First print (a) and then increment it
+    // by 1
+    printf("The value of a++ is %d\n", a++);
+ 
+    // First print (a+1) and then decrease it
+    // by 1
+    printf("The value of a-- is %d\n", a--);
+ 
+    // Increment (a) by (a+1) and then print
+    printf("The value of ++a is %d\n", ++a);
+ 
+    // Decrement (a+1) by (a) and then print
+    printf("The value of --a is %d\n", --a);
+ 
+    // Assignment Operators --> used to assign values to
+    // variables int a =3, b=9; char d='d';
+ 
+    // Comparison operators
+    // Output of all these comparison operators will be (1)
+    // if it is true and (0) if it is false
+    printf(
+        "\nFollowing are the comparison operators in C\n");
+    printf("The value of a == b is %d\n", (a == b));
+    printf("The value of a != b is %d\n", (a != b));
+    printf("The value of a >= b is %d\n", (a >= b));
+    printf("The value of a <= b is %d\n", (a <= b));
+    printf("The value of a > b is %d\n", (a > b));
+    printf("The value of a < b is %d\n", (a < b));
+ 
+    // Logical operators
+    printf("\nFollowing are the logical operators in C\n");
+    printf("The value of this logical and operator ((a==b) "
+           "&& (a<b)) is:%d\n",
+           ((a == b) && (a < b)));
+    printf("The value of this logical or operator ((a==b) "
+           "|| (a<b)) is:%d\n",
+           ((a == b) || (a < b)));
+    printf("The value of this logical not operator "
+           "(!(a==b)) is:%d\n",
+           (!(a == b)));
+ 
+    return 0;
+}
+```
+Wyjście
+Following are the Arithmetic operators in C
+```
+The value of a + b is 15
+The value of a - b is 5
+The value of a * b is 50
+The value of a / b is 2
+The value of a % b is 0
+The value of a++ is 10
+The value of a-- is 11
+The value of ++a is 11
+The value of --a is 10
+```
+
+Following are the comparison operators in C
+```
+The value of a == b is 0
+The value of a != b is 1
+The value of a >= b is 1
+The value of a <= b is 0
+The value of a > b is 1
+The value of a < b is 0
+```
+
+Following are the logical operators in C
+The value of this logical and operator ((a==b) && (a<b)) is:0
+The value of this logical or operator ((a==b) || (a<b)) is:0
+The value of this logical not operator (!(a==b)) is:1
+Złożoność czasu i przestrzeni
+Time Complexity: O(1)
+Auxiliary Space: O(1)
+Pierwszeństwo operatorów w C
+W poniższej tabeli opisano kolejność pierwszeństwa i asocjatywność operatorów w języku C. Pierwszeństwo operatora zmniejsza się od góry do dołu.
+
+
+![5da8df0d955cb34bd6852f7d6840a2b7.png](:/1a01cdd1f3c84fd7990867b658c70134)
+![0487236d3ae215f60c48e44dfcd1a068.png](:/4fcde2ec4b9c48bfb0e3605bde975871)
+![d6653c6b169b7f518b7a09a64b47eb46.png](:/b6969520fe374f029ad89bb57dd477a3)
+![ad536e2e7fb15424576326df34b24a54.png](:/387a357cb99e40ada8214b5949ea2a44)
+
+https://pl.wikibooks.org/wiki/C
+
+• Operatory oceniające operandy dla wartości logicznych akceptują 0 jako fałsz 
+lub dowolną wartość różną od zera jako prawdę
+**• Te operatory to !, &&, || oraz pierwszy operand ? :**
+
+ Operatory dające wynik logiczny zawsze dają wynik 0 (fałsz ) lub 1 (prawda)
+ **Te operatory to !, &&, ||, <, >, <=, >=, ==, !=**
+ 
+ Żadna wartość inna niż 0 lub 1 nie będzie wynikiem działania tych operatorów
+ Zgodnie z zasadą „jak gdyby”, jeśli wynik tych operatorów nie jest używany jako a
+wartość liczbowa, ale jest używana bezpośrednio w inny sposób (powiedzmy jako warunek 
+w instrukcji if ), wówczas wynik prawda lub fałsz może skutkować rozgałęzieniem 
+warunkowym, ale nie wartością 0 lub 1
+
+kod do wydrukowania banneru:
+
+```
+#include <stdio.h>
+
+
+int PrintBanner(void)
+{
+	
+printf("\n");
+	printf("       vx-underground.org Process Injection Testing Application (PITA)\n");
+	printf("\n");
+	printf("\t8b           d8  8b        d8  88        88    ,ad8888ba,   \n");
+	printf("\t`8b         d8'   Y8,    ,8P   88        88   d8\"'    `\"8b  \n");
+	printf("\t `8b       d8'     `8b  d8'    88        88  d8'            \n");
+	printf("\t  `8b     d8'        Y88P      88        88  88             \n");
+	printf("\t   `8b   d8'         d88b      88        88  88      88888  \n");
+	printf("\t    `8b d8'        ,8P  Y8,    88        88  Y8,        88  \n");
+	printf("\t     `888'        d8'    `8b   Y8a.   . a8P   Y8a.     a88  \n");
+	printf("\t      `8'        8P        Y8   `\"Y8888Y\"'     `\"Y88888P\"\n");
+	printf("\n");
+	
+	printf("   Built for process injection testing && based on the research conducted by SafeBreach Labs\n");
+	printf("\n");
+	printf("\n");
+
+
+	return 1;
+}
+
+
+
+ int main() {
+ PrintBanner();
+ printf("Hello, Test\n");
+ return 0;
+ 
+}
+```
+funkcja main jest główną funjcją która jest wykonywana jako 1 i ostatnia. Dlatego przed Hello test musiałem wpisać "PrintBanner();" aby najpierw wydrukowało banner a potem słowo
+
+ ```
+    while (1)       // Pętla nieskończona
+        sleep(1);  // Zawiesza program na 1 sekundę
+
+    return 0; // Zwraca 0 jako kod wyjścia programu
+```
+
+Przepełnienie bufora to luka bezpieczeństwa, która może umożliwić atakującemu wykonanie nieautoryzowanego kodu na komputerze ofiary. Oto przykładowy scenariusz, w jaki sposób atakujący może wykorzystać lukę przepełnienia bufora w programie do uzyskania dostępu do urządzenia:
+
+Atakujący znajduje lukę przepełnienia bufora w programie, który jest zainstalowany na komputerze ofiary.
+Atakujący tworzy specjalnie spreparowane dane wejściowe, które wywołują przepełnienie bufora w programie i umożliwiają wykonanie nieautoryzowanego kodu.
+Atakujący przekazuje spreparowane dane wejściowe do programu na komputerze ofiary, np. poprzez oszukanie ofiary, aby wprowadziła je ręcznie lub poprzez wykorzystanie innej luki bezpieczeństwa do zdalnego przesłania danych do programu.
+Program na komputerze ofiary otrzymuje spreparowane dane wejściowe i ulega przepełnieniu bufora, co umożliwia atakującemu wykonanie nieautoryzowanego kodu na komputerze ofiary.
+Atakujący wykorzystuje wykonany kod do uzyskania dostępu do systemu i wykonania nieautoryzowanych działań, takich jak kradzież danych, instalacja złośliwego oprogramowania lub przejęcie kontroli nad urządzeniem.
+Oto przykładowy kod programu w języku C, który jest podatny na przepełnienie bufora:
+
+```
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char buffer[10];
+
+    printf("Enter data: ");
+    scanf("%s", buffer);
+
+    return 0;
+}
+```
+
+W powyższym kodzie program wczytuje dane od użytkownika za pomocą funkcji scanf() i przechowuje je w tablicy buffer o rozmiarze 10 bajtów. Jeśli użytkownik wprowadzi więcej niż 9 znaków (10 minus 1 dla znaku końca linii), dane zostaną zapisane poza granicami tablicy buffer, co może prowadzić do przepełnienia bufora i nadpisania ważnych danych w pamięci.
+
+Atakujący może wykorzystać tę lukę, wprowadzając specjalnie spreparowane dane wejściowe, które wywołują przepełnienie bufora i umożliwiają wykonanie nieautoryzowanego kodu. Na przykład, atakujący może wprowadzić długie dane wejściowe zawierające kod maszynowy, który zostanie wykonany po nadpisaniu ważnych danych w pamięci.
+
+Skutki wykorzystania luk bezpieczeństwa, takich jak przepełnienie bufora, mogą być poważne i obejmować kradzież danych, instalację złośliwego oprogramowania lub przejęcie kontroli nad urządzeniem. Dlatego ważne jest stosowanie dobrych praktyk programistycznych i regularne aktualizowanie oprogramowania w celu zapobiegania potencjalnym lukom bezpieczeństwa.
+
+przykład bezpiecznego kodu:
+
+```
+#include <stdio.h> // Biblioteka standardowego wejścia/wyjścia
+#include <string.h> // Biblioteka dla funkcji strlen() i strcmp()
+
+int main(void)
+{
+    char buffer[10]; // Tablica znaków o rozmiarze 10
+
+    printf("Enter data: "); // Wyświetla na ekranie "Enter data: "
+    fgets(buffer, sizeof(buffer), stdin); // Wczytuje dane z wejścia standardowego i zapisuje je w tablicy buffer
+
+    printf("You entered: %s\n", buffer); // Wyświetla na ekranie "You entered: " oraz zawartość tablicy buffer
+
+    return 0; // Zwraca 0 jako kod wyjścia programu
+}
+```
+W powyższym kodzie program wczytuje dane od użytkownika za pomocą funkcji fgets() i przechowuje je w tablicy buffer. Funkcja fgets() pozwala określić maksymalną liczbę znaków do wczytania, co zapobiega przepełnieniu bufora. W tym przypadku program wczyta maksymalnie 10 znaków (rozmiar tablicy buffer) i zapisze je w tablicy buffer.
+
+Użycie funkcji fgets() zamiast innych funkcji wczytywania danych, takich jak scanf(), zapewnia większe bezpieczeństwo, ponieważ pozwala określić maksymalną liczbę znaków do wczytania. Dzięki temu unikniemy przepełnienia bufora, ponieważ funkcja fgets() nie wczyta więcej danych niż rozmiar tablicy buffer. W rezultacie ten kod jest bezpieczny i nie jest podatny na przepełnienie bufora.
+
+https://www.arturpyszczuk.pl/files/c/pwc.pdf
+^
+|
+|
+
+ **2.2 Zmienne i stałe**
+Zmienne i stałe to obiekty, które zajmują pewien obszar w pamięci komputera, do którego możemy się
+odwołać podając ich nazwę lub adres (wskaźnik). Do zmiennej można wpisywać oraz zmieniać
+(w trakcie działania programu) wartości zależne od jej typu. Do stałych przypisujemy wartość raz
+(w kodzie źródłowym programu) i jej już zmienić nie możemy.
+ 
+ **2.2.1 Typy zmiennych**
+Każda zmienna lub stała ma swój typ, co oznacza tyle, że może przyjmować wartości z zakresu danego
+typu. W poniższej tabeli przedstawione zostały typy zmiennych oraz stałych wraz z opisem jakie
+wartości przyjmują. Zakresy zmiennych zostały przedstawione w punkcie 2.2.2.
+![33eab1a58f52b640fa1aa92951acf643.png](:/0656150b890e4795ac09b66bb76adcf9)
+
+**Istnieją jeszcze dodatkowe przedrostki (kwalifikatory), które można dodać przed typem zmiennej, tymi
+słowami są:**
+• signed – Przedrostek umożliwiający definicję liczb dodatnich oraz ujemnych (standardowo)
+• unsigned – Przedrostek umożliwiający definicję liczb tylko dodatnich oraz zera.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
           
