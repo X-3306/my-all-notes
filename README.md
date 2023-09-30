@@ -1974,5 +1974,45 @@ nauka:
           https://www.codecademy.com/learn/learn-c-plus-plus
           https://academichelp.net/blog/coding-tips/c-for-beginners-best-learning-resources.html
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-          
+
+# inżynieria wsteczna
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- strace nazwa pliku
+- ltrace nazwa pliku
+- objdump -d nazwa pliku
+- file nazwa pliku
+- gdb nazwa pliku
+- ghidra
+- https://youtu.be/oTD_ki86c9I
+
+
+Czasami musisz najpierw odszyfrować/zwirtualizować plik exe. Następnie użyj Ghidry lub czegokolwiek.
+
+ciekawy artykuł --> https://miltonamcs-private-organization.gitbook.io/analysing-a-malicious-github-repository/
+
+ ciekawy opis + analiza kodu C w celu nauki: https://github.com/taviso/ctftool
+ 
+ lista plików do obejścia zabezpieczeń źle skonfigurowanych systemów w unix - https://gtfobins.github.io/
+ 
+ https://sysdig.com/blog/hiding-linux-processes-for-fun-and-profit/
+ 
+ https://crackmes.one/
+ http://pwnable.kr/
+ 
+ narzędzie - gdb-pwndbg
+ 
+ pdfextractor filename
+
+strings file -d
+
+
+https://ctf101.org/binary-exploitation/overview/
+https://trailofbits.github.io/ctf/exploits/
+https://github.com/0xZ0F/Z0FCourse_ReverseEngineering
+
+https://github.com/0xZ0F/Z0FCourse_ReverseEngineering/blob/master/Chapter%206%20-%20DLL/6.03%20Exports.md
+
+rozpakowanie pliku .7z komenda: `7z x myarchive.7z`
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
           
