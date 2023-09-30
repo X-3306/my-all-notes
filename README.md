@@ -1854,3 +1854,73 @@ P. Jak zdobywasz informacje? Czy zaczyna się od podpowiedzi, czy to tylko kwest
 
 O. Czasami po prostu wpadamy na pomysł i testujemy go, ale innym razem czytamy fora hakerów, aby dowiedzieć się, czego szukają nasi koledzy i jakie nowe exploity są opracowywane i wprowadzane na rynek. Dlatego tak ważne jest odpowiedzialne ujawnianie informacji. Jeśli miałbym opublikować na forum hakerskim informację o luce, którą odkryłem w konkretnej witrynie, cała grupa hakerów zacznie przeglądać tę witrynę i znajdować inne luki. To jak polowanie na trofea. Ważne jest, aby dać odpowiedniej firmie możliwość załatania wszelkich luk w zabezpieczeniach przed ujawnieniem wyników badań.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Programowanie
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+strony do nauki:
+https://www.theodinproject.com/
+https://www.sololearn.com/
+https://www.freecodecamp.org/news/how-to-automatically-generate-code-snippets-visual-studio/
+https://exercism.org/
+https://codeacademy.com
+https://upskillcourses.com/
+https://www.w3schools.com/
+https://docs.python.org/3/tutorial/index.html /API
+https://github.com/rasbt/python-machine-learning-book-2nd-edition
+https://github.com/rasbt/python-machine-learning-book
+https://www.liaoxuefeng.com/wiki/1016959663602400/1016959735620448
+https://app.datacamp.com/
+https://docs.python.org/3.12/contents.html
+https://www.learnpython.org/en/Variables_and_Types
+https://studio.code.org/courses
+https://code.org/learn
+
+https://www.flaticon.com/
+https://coolors.co/
+
+ 
+typy danych w językach programowania można podzielić na:**
+
+statycznie typowane
+Są to języki, w których typy są nadawane podczas kompilacji. Wiele tego typu języków programowania wymaga deklarowania wszystkich zmiennych przed ich użyciem, przez podanie ich typu. Przykładami takich języków są Java, C/C++, Pascal.
+dynamicznie typowane
+Są to języki, w których typy zmiennych są nadawane podczas działania programu. VBScript i Python są językami dynamicznie typowanymi, ponieważ nadają one typ zmiennej podczas przypisania do niej wartości.
+silnie typowane
+Są to języki, w których między różnymi typami widać wyraźną granicę. Jeśli mamy pewną liczbę całkowitą, to nie możemy jej traktować jak łańcuch znaków bez wcześniejszej konwersji.
+słabo typowane
+Są to języki, w których możemy nie zwracać uwagi na typ zmiennej. Do takich języków zaliczymy VBScript. Możemy w nim, nie wykonując żadnej wyraźnej konwersji, połączyć łańcuch znaków '12' z liczbą całkowitą 3 otrzymując łańcuch '123', a następnie potraktować go jako liczbę całkowitą 123. Konwersja jest wykonywana automatycznie.
+Python jest językiem zarówno dynamicznie typowanym (ponieważ nie wymaga wyraźnej deklaracji typu), jak i silnie typowanym (ponieważ zmienne posiadają wyraźnie ustalone typy, które nie podlegają automatycznej konwersji).
+
+
+dobry kompresor --> https://gifcompressor.com/ 
+
+https://replit.com/
+
+**Programy są jak wskazówki: są to szczegółowe instrukcje krok po kroku.**
+
+Często do tego samego celu można dotrzeć na kilka sposobów.
+Podobnie, podczas pisania programów zwykle istnieje kilka sposobów wykonania tego samego zadania.
+
+Programy muszą być precyzyjne, aby wykonać zamierzone zadanie, podobnie jak wskazówki.
+
+Programy są wykonywane krok po kroku. Jeśli czegoś brakuje, program nie będzie działał tak, jak chcesz.
+
+
+ ## DLL
+Biblioteki dynamiczne
+Biblioteka dołączana dynamicznie (DLL) to biblioteka ładowana niezależnie od programu, który z niej korzysta. Zaletą bibliotek DLL jest to, że można załadować jedną bibliotekę DLL do pamięci i może z niej korzystać wiele programów. Zmniejsza to rozmiar programów.
+
+Biblioteki statyczne
+Biblioteka statyczna jest połączona bezpośrednio z/z programem, który z niej korzysta. Biblioteka, która jest połączona statycznie, nie może być używana przez wiele programów jednocześnie. Biblioteka jest częścią programu, w którym jest używana. Dzięki temu program jest większy z powodu dodatkowego kodu.
+
+Import kontra eksport
+Importuj — coś przywiezione z zewnętrznego źródła. Aby użyć funkcji z biblioteki, importujesz tę funkcję z biblioteki.
+Eksportuj — coś wystawionego na zewnątrz, aby inne źródła mogły to zaimportować. Możesz uzyskać dostęp do funkcji z biblioteki DLL, ponieważ biblioteka DLL wyeksportowała tę funkcję. Ponieważ jest wyeksportowany, Twój program może go zaimportować.
+
+
+https://betterprogramming.pub/
+
+ciekawe - https://microbit.org/code/
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
