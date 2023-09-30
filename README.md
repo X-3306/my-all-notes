@@ -3839,3 +3839,450 @@ jak można po kodzie wywnieoskować trzeba było rozkodować"0xb83cb" odszyfrowa
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+# Python
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+za pomocą funkcji type() można uzyskać tym zmiennej czyli np (przykłądowy kod i output)
+
+```
+x = "Text"
+y = "10"
+
+print(type(x))
+print(type(y))
+
+wynik to: <class 'str'>
+               <class 'int'>
+```
+
+Aby utworzyć zmienną globalną należy użyć  słowa "global" przykładowy kod:
+
+```
+def myfunc():
+    global x
+x = "Awesome"
+	
+myfunc()
+
+print("Python is " + x)
+```
+
+Aby zmienić wartość globalnąwe wnątrz funkcji:
+
+```
+x = "Fantastic"
+
+def myfunc():
+    global x
+	x = "Awesome"
+	
+myfunc()
+
+print("Python is " + x)
+```
+
+`wynik będzie "Python is Awesome"`
+
+## Wbudowane typy danych:
+**Typ tekstu = str
+typy numeryczne = int, float, complex
+typy sekwencji = list, tuple, range
+typy mapowania = dict
+typy zestawów = set, frozenset
+typy logiczne = bool
+typy binarne = bytes, bytearray, memoryview
+brak typu = NoneType**
+
+W pythonie Typ danych jest ustawiany podczas przypisywania wartości do zmiennej:
+
+np complex: 1j
+
+![3724cd5348a5b0d1ec5fc1e209b7bc48.png](:/c189bfbc07bc45f9b6b67d561f1b348a)
+![18eb6aff574086b51401b401fddb57d5.png](:/70fabb4b7ed649669542c7b0bae29e82)
+
+Liczba zmiennoprzecinkowa może być również liczbą naukową z literą „e” oznaczającą potęgę liczby 10. np kod:
+
+```
+x = 32e3
+y = 12E4
+z = -87.7e100
+
+print(x + y + z)
+
+print(type(x))
+print(type(y))
+print(type(z))
+```
+
+Można dokonać konwersji typu Konwersjai z jednego typu na inny za pomocą metod int(), float()i complex() przykłądowy kod:
+
+```
+x = 5
+y = 20.49
+z = 1j
+
+a = float(x)
+
+b = int(y)
+
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+```
+
+wynik:
+- 5.0
+- 20
+- (5+0j)
+- <class 'float'>
+- <class 'int'>
+- <class 'complex'>
+
+## Uwaga: Nie można konwertować liczb zespolonych na inny typ liczb.
+
+
+**Liczba losowa**
+Python nie ma random()funkcji tworzenia liczb losowych, ale Python ma wbudowany moduł o nazwie random, którego można użyć do tworzenia liczb losowych:
+
+```
+import random
+
+print(random.randrange(1, 10))
+```
+
+
+Może się zdarzyć, że będziesz chciał określić typ zmiennej. Można to zrobić za pomocą castingu. Python jest językiem obiektowym i jako taki używa klas do definiowania typów danych, w tym typów pierwotnych.
+
+Dlatego rzutowanie w Pythonie odbywa się za pomocą funkcji konstruktora:
+
+int() - konstruuje liczbę całkowitą z literału całkowitego, literału zmiennoprzecinkowego (usuwając wszystkie miejsca dziesiętne) lub literału łańcuchowego (pod warunkiem, że ciąg reprezentuje liczbę całkowitą)
+float() — konstruuje liczbę zmiennoprzecinkową z literału całkowitego, zmiennoprzecinkowego lub literału łańcuchowego (pod warunkiem, że ciąg reprezentuje liczbę zmiennoprzecinkową lub liczbę całkowitą)
+str() - konstruuje ciąg znaków z szerokiej gamy typów danych, w tym ciągów znaków, literałów całkowitych i literałów zmiennoprzecinkowych np.
+
+```
+x = int(3)
+y = int(2.3)
+z = int("3")
+```
+
+tak samo by to wyglądało z float i str
+
+do zmiennej można przypisać ciąg wielo liniowy za pomocą """ np:
+
+```
+x = """Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua."""
+
+print(x)
+```
+**Uwaga: w efekcie podziały wierszy wstawiane są w tym samym miejscu, co w kodzie.**
+
+CIągi są tablicami
+
+ciągi znaków w pythonie to tablice bajtów reprezentujące znaki unicode, jednak w py niema znakowanego typu danych znak to po prostu ciąg znakó o długości 1 kod:
+
+```
+x = "Hello World"
+print(x[]) # odpowiedź będzie "H" czyli ten kod po prostu drukuje litere w zależności od wartości liczby jakby było np [1] to odp by była "e"
+```
+
+ponieważ ciahgi są tablicami można przechodzić przez ciągi za pomocą for pętli np kod:
+
+```
+for x in "banana":
+    print(x)
+
+Output:
+b
+a
+n
+a
+n
+a
+```
+
+funkcja len() zwraca długość ciągu kod:
+
+```
+x = "Hello World"
+print(len(x))
+```
+
+Abt sprawdzić czy w danym ciągu występuje dana fraza bądź znak należy użyć funkcji in kod:
+
+```
+txt = "The best things in life are free!"
+print("free" in txt) # output będzie True
+```
+Należy użyć instrukcji if dla 'customowej' odpowiedzi kod:
+
+```
+txt = "The best things in life are free"
+
+if "free" in txt:
+    print("Free is in the text")
+```
+	
+instrukcja jeżeli nie jest:
+
+```
+txt = "The best things in life are free"
+
+if "Other" not in txt:
+    print("Other is not in the text")
+```
+
+
+przykładowy kod który w kółko wysyła "Test12":
+
+```
+txt = "Spam"
+
+while "test" is not txt:
+    print("Test12")
+```
+(while to pętla dlatego w ciągle wysyła ten tekst)
+
+```
+txt = "Hello World"
+print(txt[:5])     #Ten kod wydrukuje pierwsze 5 liter
+--------------------------------------------
+  
+ txt = "Hello World"
+  print(txt[2:]) #Pobierze postać z pozycji 2 aż do końca
+-------------------------------------------- 
+
+txt = "Hello World" 
+print(txt[-5:-2]) #Minusowe indeksowanie
+--------------------------------------------
+
+txt = "Hello World"
+print(txt.upper()) #output to drukowane HELLO WORLD
+
+--------------------------------------------
+txt = "Hello World"
+print(txt.lower()) # output same małe litery
+
+--------------------------------------------
+txt = "Hello World"
+print(txt.strip()) #usuwa spacje zdrukowanego tekstu
+
+--------------------------------------------
+txt = "Hello World"
+txt2 = txt.replace("H", "J")
+
+print(txt2) # ten kod zmienia literę H na J
+
+--------------------------------------------
+a = "Hello, World!"
+print(a.split(",")) #Dzieli ciąg na podciągi, jeżeli znajdzie występienie separatora, output: ['Hello', ' World!']
+
+
+```
+
+**Tego NIE robić**: age = 36
+txt = "My name is John, I am " + age
+print(txt)
+
+Zamiast tego użyć funkcji 'format()'
+Czyli np.
+
+```
+age = 30
+txt = "My name is John, and I am {}"
+txt2 = txt.format(age)
+
+print(txt2)
+
+"""
+Ponieważ funkcja format() przyjmuję nieograniczoną liczbę argumentó i jest um ieszczona w odpowiednich symbolach zastępczych
+"""
+```
+*wersja kilku liniowa funkcji format():*
+
+```
+item1 = 10
+item2 = 10.29
+item3 = 9
+
+sum = "first price is {} second price is {} and third price is {}"
+
+print(sum.format(item1, item2, item3))
+```
+
+Aby wstawić niedozwolony zan należy wstawić znak ucieczki czyli: \" znak uceczki umożliwia użycie podwójnych cudzysłowów gdy normalnie nie było by to możliwe.
+np kod:
+
+```
+text = "Hello world it is a \"Testkodu\" Inny text"
+
+print(text)
+```
+
+test jednoski kodu w pythonie (czyli kod napisany do przetestowania głównego kodu czy wszystko działa poprawnie)-  https://www.dataquest.io/blog/unit-tests-python/
+
+ten kod najpierw pyta jak sie nazywam, a po wpisaniu odpowiada "Hello nazwa":
+
+```
+name = input("Whats your name? ")
+print("hello, " + name)
+```
+
+inny rodzaj :
+
+```
+name = input("Whats your name? ")
+
+print("hello, ", end="[CHEF] ")
+print(name)
+```
+
+lepsza wersja (strip usuwa pustą powieszchnie na początku i końcu a title automattycznie wstawia dużo litere przy imieniu i nazwisko po odpowiedzi) kod:
+
+kod który włącza kamerę: 
+```
+import cv2
+
+# Otwórz strumień wideo z kamery
+cap = cv2.VideoCapture(0)
+
+while(True):
+    # Przechwytuj klatkę po klatce
+    ret, frame = cap.read()
+
+    # Nasze operacje na ramce tutaj
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    # Wyświetl wynikową klatkę
+    cv2.imshow('frame',gray)
+    
+    # Jeśli naciśniesz 'q', pętla się zakończy
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+
+# Po skończeniu zwolnij uchwyt do przechwytywania
+cap.release()
+cv2.destroyAllWindows()
+```
+
+
+**Uwaga: Wszystkie metody łańcuchowe zwracają nowe wartości. Nie zmieniają oryginalnego ciągu.**
+
+![e529a22831f8993e36f4d932fae2f37f.png](:/2f477d064cf04cc5bb77ad70d974db34)
+
+
+kiedy uruchamiasz instrukcję w if odp będzie True or False kod:
+
+```
+a = 2093
+b = 393
+
+if b > a:
+    print("b is greater then a")
+	
+else:
+    print("b is not greater")
+```
+	
+	
+x = int(input("Whats x? ")) # dzięki int liczby się dodadzą w sposób matematyczny, ponieważ bez tego wynik byłoby dodaniem liczby np. 2 + 1 wynik byłby 21
+y = int(input("Whats y? "))
+
+print(x + y) 
+
+w pythonie pętla for jest używana do określenia ile razy ma się powrurzyć np: 
+```
+for i in range(6):
+    print(i)
+```
+	
+	
+kod który wygeneruje tekst tyle razy na ile jest pomnożony:
+```
+var = "John\n" * 2 * 3
+print(var) # W tym przypadku 6
+```
+
+Funkcja bool jest wstanie ocenić dowolną wartość i dać w zamian True lub False kod:
+```
+print(bool("Hello World"))
+print(bool("15"))
+```
+
+Niemal wszystko jest True z wyjątkiem pustych, oraz 0
+
+Można tworzyć funkcje zwracające wartość logiczną kod:
+
+```
+def myfunc() :
+    return True
+	
+print(myfunc())
+```
+
+lub 
+```
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
+```
+
+python też ma wiele wbudowanych funkcji logicznych np. "isinstance" kod z użyciem tego:
+
+```
+x = 200
+print(isinstance(x, int)) #Output True ponieważ 200 to int
+```
+
+
+Python dzieli operatory na następujące grupy:
+
+Operatory arytmetyczne
+Operatory przypisania
+Operatory porównania
+Operatory logiczne
+Operatory tożsamości
+Operatorzy członkostwa
+Operatory bitowe
+
+![633958fd9dd5fa46066986aceca8c680.png](:/0f5a8266d5a14d00981ee942255ae3f4)
+
+listy służą do przechowywania, wielu elementów w 1 zmiennej
+
+mylist = ['Apple', 'Banana', 'Somthing']
+print(mylist)
+
+listy to 1 z 4 typów do przechowywania kolekcji danych innę to: Tuple, Set, Disctionary, i wszystkie mają inną jakość i zastosowanie, listy tworrzy się za pomocą nawiasów [].
+
+elementy listy mogą mieć dowolny typ danych.
+
+list = ["Charry", "Banana", "Milk"]
+print(len(list))
+
+
+
+**Python Collections (Arrays)**
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+*Set items are unchangeable, but you can remove and/or add items whenever you like.
+
+**As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+Wybierając typ kolekcji, warto poznać właściwości tego typu. Wybór odpowiedniego typu dla konkretnego zbioru danych może oznaczać zachowanie znaczenia, a także wzrost wydajności lub bezpieczeństwa.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
