@@ -1,5 +1,5 @@
 # my-all-notes
-it is my all notes about almost every hacking topics I've been learned in 3 years (almost everything written in polish)
+it is my all notes about almost every hacking topics I've been learned in 3/4 years (almost everything written in polish)
 
 ### Czym jest to respozytorium? 
 Są to prawie wszystkie moje notatki które zapisywałem sobie podczas mojej nauki przez ok. 3lata. Jest tutaj prawie każda dziedzina tej specyfikacji gdyż jak nudził mi się 1 temat, zaczynałem się uczyć 2 i tak dalej. Są tu napisane informację które w danym czasie zapisywania, uważałem za przydatne/użyteczne. Pokazują one moją całą drogę uczenia się,  (nie uwzględniając filmów i książek, aczkolwiek może z czasem dodam listę wraz z rzeczami którym się z nich nauczyłem, a nie ma ich w obecnym "zbiorze" notatek). Z czasem będę aktualizował ten projekt, dodając kolejne rzeczy których się nauczę w przyszłości. 
