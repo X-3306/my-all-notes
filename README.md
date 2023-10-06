@@ -7,6 +7,11 @@ Są to prawie wszystkie moje notatki które zapisywałem sobie podczas mojej nau
 ### Jaki jest Cel tego?
 Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez ten ogrom dostępnych informacji, dlatego udostępniam moje notatki gdzie są zgromadzone różne urywki bądź całe artykuły które dają wiedzę teoretyczną jak i praktyczną bez opowiadania całej historii nie związane z tematyką i ściśle odpowiadają na często zadawane pytania. Osobiście uważam że te notatki są przydatne dla każdego typu poziomu, od początkującego po odświeżenie wiedzy dla zawansowanych (i nauczenie sie nowych tematów).
 
+
+![# Podstawy](#Podstawy)
+
+
+
 # Podstawy
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Twój laptop zawiera kartę sieciową (NIC) , która umożliwia mu łączenie 
