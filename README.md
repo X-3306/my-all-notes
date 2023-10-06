@@ -8,7 +8,17 @@ Są to prawie wszystkie moje notatki które zapisywałem sobie podczas mojej nau
 Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez ten ogrom dostępnych informacji, dlatego udostępniam moje notatki gdzie są zgromadzone różne urywki bądź całe artykuły które dają wiedzę teoretyczną jak i praktyczną bez opowiadania całej historii nie związane z tematyką i ściśle odpowiadają na często zadawane pytania. Osobiście uważam że te notatki są przydatne dla każdego typu poziomu, od początkującego po odświeżenie wiedzy dla zawansowanych (i nauczenie sie nowych tematów).
 
 
-[# Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)
+# [Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)
+# [Hacking](https://github.com/X-3306/my-all-notes/blob/main/README.md#general-hacking)
+# [BugBounty](https://github.com/X-3306/my-all-notes#bug-bounty)
+# [Programowanie](https://github.com/X-3306/my-all-notes#programowanie)
+# [C++](https://github.com/X-3306/my-all-notes#c)
+# [Inżynieria wsteczna](https://github.com/X-3306/my-all-notes#in%C5%BCynieria-wsteczna)
+# [C](https://github.com/X-3306/my-all-notes#c-1)
+# [CTFY](https://github.com/X-3306/my-all-notes#ctfy)
+# [Python](https://github.com/X-3306/my-all-notes#python)
+# [Malware Development](https://github.com/X-3306/my-all-notes#malware-development)
+
 
 
 
@@ -4316,4 +4326,102 @@ nauka ----->              https://filesec.io/
  https://medium.com/@theCTIGuy/the-5-best-books-for-malware-development-105e3aaec2df
  
  https://blogs.vmware.com/security/2021/03/memory-forensics-for-virtualized-hosts.html
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Hakowanie IOT i rzeczy fizyczne
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+USZKODZENIE UPRZYWILEJOWANYCH POCISKÓW (GITCHING INTO PRIVILEGED SHELLS):
+
+https://www.exploitee.rs/ 
+
+https://blog.exploitee.rs/
+
+https://github.com/nebgnahz/awesome-iot-hacks#analysis-reports-and-slides
+
+zhakowanie świateł przejazdu - https://ioactive.com/hacking-us-and-uk-australia-france-etc/
+
+https://www.infiltratecon.com/info/archives.html#
+
+https://github.com/CyberSecurityUP/Awesome-Hardware-and-IoT-Hacking
+
+https://github.com/daniellowrie/IoT-Hacking-Resources
+
+https://github.com/ahmedalroky/IOT-hacking-Roadmap
+
+Physical hackers, also known as penetration testers or ethical hackers specializing in physical security, face unique challenges due to the hands-on and often unpredictable nature of their work. Here are some common challenges they might encounter and potential ways to overcome them:
+
+Legal and Ethical Boundaries:
+
+Challenge: Physical hacking activities can easily cross legal and ethical boundaries, especially if conducted without proper authorization.
+Solution: Obtain explicit permissions from the property owner or organization before attempting any physical hacks. Adhere to ethical guidelines and local laws to ensure your actions remain legal and responsible.
+Physical Access and Security Measures:
+
+Challenge: Gaining physical access to a target can be difficult due to security measures like locks, keycards, and biometric systems.
+Solution: Develop skills in lock picking, bypassing access controls, and cloning RFID cards. Invest time in learning about common physical security vulnerabilities and techniques to exploit them.
+Risk of Detection:
+
+Challenge: Physical hackers risk detection during their activities, which can lead to legal consequences or a compromised mission.
+Solution: Plan and execute hacks carefully, minimize suspicious behavior, and use disguises or pretexting techniques to blend in. Develop a solid exit strategy in case of detection.
+Unpredictable Environments:
+
+Challenge: Physical hacking often occurs in dynamic, real-world environments where conditions can change rapidly.
+Solution: Adaptability is key. Practice improvisation and quick thinking. Develop skills in on-the-fly decision-making to handle unexpected challenges.
+Physical Skills Development:
+
+Challenge: Mastering skills like lock picking or manipulating physical devices requires time, practice, and patience.
+Solution: Regular practice and training are crucial. Join lock-picking clubs, attend workshops, and seek mentorship to accelerate your skill development.
+Concealing Intentions:
+
+Challenge: Successfully social engineering your way into a secure area without raising suspicions can be difficult.
+Solution: Study human behavior, body language, and communication techniques. Build rapport and trust with personnel to increase the chances of successful social engineering.
+Documentation and Reporting:
+
+Challenge: Accurately documenting physical hacks and vulnerabilities can be challenging due to the need for clear, detailed reporting.
+Solution: Develop strong documentation skills. Take notes, photos, and videos during your activities. Provide comprehensive reports to clients or employers, detailing your findings and recommended mitigations.
+Physical Safety:
+
+Challenge: Physical hacking may involve risks to your personal safety, especially in unfamiliar or potentially dangerous environments.
+Solution: Prioritize personal safety above all else. Conduct thorough risk assessments before attempting any physical hacks. Avoid situations where safety is compromised.
+Client Expectations:
+
+Challenge: Meeting client expectations and understanding their specific needs can be challenging.
+Solution: Establish clear communication with clients before beginning any engagement. Understand their goals, objectives, and desired outcomes. Provide regular updates and maintain open lines of communication throughout the process.
+By recognizing and addressing these challenges, physical hackers can enhance their skills, conduct effective penetration tests, and contribute to improving overall security measures.
+
+Definition and Scope of Physical Hacking:
+Physical hacking refers to the deliberate and unauthorized manipulation of physical systems, devices, or infrastructure to gain unauthorized access, extract sensitive information, or compromise security. It involves exploiting vulnerabilities in physical security measures, often through a combination of technical skills, social engineering, and manipulation of hardware components. The scope of physical hacking encompasses a wide range of targets, including but not limited to, buildings, access control systems, RFID systems, locks, surveillance systems, and physical infrastructure.
+
+Common Techniques in Physical Hacking:
+Physical hacking techniques vary based on the target and objectives. Common techniques include lock picking, bypassing access controls, exploiting weaknesses in alarm systems, tampering with surveillance cameras, cloning RFID cards, and social engineering to manipulate individuals into revealing confidential information or granting unauthorized access.
+
+Examples of Real-World Physical Hacking Incidents:
+A notable example is the "DEFCON 22 Badge Challenge," where hackers infiltrated a conference badge's electronics to access hidden features, demonstrating the vulnerabilities of connected devices. Another incident involved the hacking of hotel room locks, highlighting the potential weaknesses in hotel security systems.
+
+Tools and Equipment Used by Physical Hackers:
+Physical hackers employ an array of tools, such as lock picks, tension wrenches, bump keys, RFID cloners, signal amplifiers, and surveillance camera disablers. These tools aid in circumventing physical security measures and gaining unauthorized access.
+
+Resources and References for Learning Physical Hacking:
+
+Book: "Practical Lock Picking" by Deviant Ollam
+Online Communities: Toool (The Open Organization of Lockpickers), Reddit's r/physec
+Workshops and Conferences: DEFCON's "Lockpick Village"
+Ethical Considerations and Legal Implications:
+Ethical concerns surround the potential for harm, unauthorized access, and invasion of privacy. Laws, regulations, and guidelines vary by jurisdiction and may impact physical hacking activities. Ethical hacking frameworks, like those defined by EC-Council and CompTIA, emphasize responsible and legal practices.
+
+Countermeasures and Security Measures:
+To mitigate physical hacking risks, organizations should implement layered security measures:
+
+Access controls: Strong authentication and authorization protocols.
+Surveillance: Monitoring and recording of critical areas.
+Security audits: Regular assessments of physical security measures.
+Employee training: Educating staff about social engineering and security awareness.
+Emerging Trends and Advancements:
+Emerging trends include the integration of physical and digital hacking, such as combining RFID cloning with network attacks to breach secure environments. Advancements in IoT and smart devices introduce new vectors for physical hacking.
+
+Enhancing Physical Security Measures:
+Organizations can enhance physical security by adopting multifactor authentication, implementing biometric systems, conducting regular security audits, and fostering a security-conscious culture among employees.
+
+Impact on Critical Infrastructure:
+Physical hacking can have severe repercussions on critical infrastructure, disrupting operations, compromising sensitive data, and posing risks to public safety. For instance, a successful attack on power plants or transportation systems could lead to widespread chaos.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
