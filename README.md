@@ -10,18 +10,28 @@ Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez 
 
 
 
-|----------------------------------------------------------------------------------------------------------------|
-| [Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)                                |
-| [Hacking](https://github.com/X-3306/my-all-notes/blob/main/README.md#general-hacking)                          | 
-| [BugBounty](https://github.com/X-3306/my-all-notes#bug-bounty)                                                 |
-| [Programowanie](https://github.com/X-3306/my-all-notes#programowanie)                                          |
-| [C++](https://github.com/X-3306/my-all-notes#c)                                                                |
-| [Inżynieria wsteczna](https://github.com/X-3306/my-all-notes#in%C5%BCynieria-wsteczna)                         |
-| [C](https://github.com/X-3306/my-all-notes#c-1)                                                                |
-| [CTFY](https://github.com/X-3306/my-all-notes#ctfy)                                                            |
-| [Python](https://github.com/X-3306/my-all-notes#python)                                                        |
-| [Malware Development](https://github.com/X-3306/my-all-notes#malware-development)                              |
-| [IOT i rzeczy fizyczne](https://github.com/X-3306/my-all-notes/tree/main#hakowanie-iot-i-rzeczy-fizyczne)      |
+
+ [Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)
+ |----------------------------------------------------------------------------------------------------------------|
+ [Hacking](https://github.com/X-3306/my-all-notes/blob/main/README.md#general-hacking)
+ |----------------------------------------------------------------------------------------------------------------|
+ [BugBounty](https://github.com/X-3306/my-all-notes#bug-bounty)
+ |----------------------------------------------------------------------------------------------------------------|
+ [Programowanie](https://github.com/X-3306/my-all-notes#programowanie)
+ |----------------------------------------------------------------------------------------------------------------|
+ [C++](https://github.com/X-3306/my-all-notes#c)
+ |----------------------------------------------------------------------------------------------------------------|
+ [Inżynieria wsteczna](https://github.com/X-3306/my-all-notes#in%C5%BCynieria-wsteczna)
+ |----------------------------------------------------------------------------------------------------------------|
+ [C](https://github.com/X-3306/my-all-notes#c-1)
+ |----------------------------------------------------------------------------------------------------------------|
+ [CTFY](https://github.com/X-3306/my-all-notes#ctfy)
+ |----------------------------------------------------------------------------------------------------------------|
+ [Python](https://github.com/X-3306/my-all-notes#python)
+ |----------------------------------------------------------------------------------------------------------------|
+ [Malware Development](https://github.com/X-3306/my-all-notes#malware-development)
+ |----------------------------------------------------------------------------------------------------------------|
+ [IOT i rzeczy fizyczne](https://github.com/X-3306/my-all-notes/tree/main#hakowanie-iot-i-rzeczy-fizyczne)      
 |----------------------------------------------------------------------------------------------------------------|
 
 
