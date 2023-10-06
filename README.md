@@ -8,7 +8,7 @@ Są to prawie wszystkie moje notatki które zapisywałem sobie podczas mojej nau
 Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez ten ogrom dostępnych informacji, dlatego udostępniam moje notatki gdzie są zgromadzone różne urywki bądź całe artykuły które dają wiedzę teoretyczną jak i praktyczną bez opowiadania całej historii nie związane z tematyką i ściśle odpowiadają na często zadawane pytania. Osobiście uważam że te notatki są przydatne dla każdego typu poziomu, od początkującego po odświeżenie wiedzy dla zawansowanych (i nauczenie sie nowych tematów).
 
 
-![# Podstawy](#Podstawy)
+[# Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)
 
 
 
