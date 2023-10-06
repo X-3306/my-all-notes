@@ -9,8 +9,8 @@ Często sam podczas nauki, nie wiedziałem już skąd i czego się uczyć przez 
 
 
 
-
-
+MOJE WSZYSTKIE NOTATKI
+ |----------------------------------------------------------------------------------------------------------------|
  [Podstawy](https://github.com/X-3306/my-all-notes/blob/main/README.md#podstawy)
  |----------------------------------------------------------------------------------------------------------------|
  [Hacking](https://github.com/X-3306/my-all-notes/blob/main/README.md#general-hacking)
