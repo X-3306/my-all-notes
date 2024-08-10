@@ -4448,4 +4448,170 @@ Organizations can enhance physical security by adopting multifactor authenticati
 
 Impact on Critical Infrastructure:
 Physical hacking can have severe repercussions on critical infrastructure, disrupting operations, compromising sensitive data, and posing risks to public safety. For instance, a successful attack on power plants or transportation systems could lead to widespread chaos.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+# Mechanika, Fizyka i kryptografia kwantowa:
+**Czym są czujniki kwantowe**?
+Czujniki kwantowe to pojedyncze systemy lub zespoły systemów, które wykorzystują spójność kwantową, interferencję i splątanie do określenia wielkości fizycznych będących przedmiotem zainteresowania.
+
+https://youtu.be/CpOofKV5WR0
+
+Kwark – cząstka elementarna, fermion mający ładunek kolorowy. Według obecnej wiedzy cząstki elementarne będące składnikami materii można podzielić na dwie grupy. Pierwszą grupę stanowią kwarki, drugą grupą są leptony.
+
+Mechanika kwantowa jest gałęzią fizyki . Opisuje naturalne zachowanie w skali atomowej i poniżej. Stanowi podstawę całej fizyki kwantowej , w tym chemii kwantowej , kwantowej teorii pola , technologii kwantowej i informatyki kwantowej .
+
+Termin "kwantowy" w kontekście kwantowych komputerów pochodzi bezpośrednio z dziedziny mechaniki kwantowej, która jest działem fizyki opisującym zjawiska zachodzące na poziomie cząsteczkowym i atomowym. Istnieje ścisłe powiązanie pomiędzy kwantowymi komputerami a mechaniką kwantową.
+
+W mechanice kwantowej, cząstki elementarne, takie jak elektrony, fotony i inne, wykazują zarówno cechy falowe, jak i korpuskularne. Jedną z kluczowych koncepcji jest superpozycja kwantowa, która oznacza, że cząstka może znajdować się w wielu stanach jednocześnie, dopóki nie zostanie zmierzona. Po pomiarze cząstka "zapada" się w jeden ze stanów, tracąc superpozycję.
+
+Kwantowe komputery wykorzystują ten fenomen superpozycji kwantowej oraz inne zasady mechaniki kwantowej, takie jak splątanie kwantowe, do przeprowadzania obliczeń. W przeciwieństwie do klasycznych komputerów, które operują na bitach przyjmujących wartości 0 lub 1, kwantowe komputery używają kubitów (quantum bits), które mogą być w superpozycji stanów 0 i 1 jednocześnie.
+
+Dzięki superpozycji kwantowej, kubity mogą reprezentować wiele wartości równocześnie, co pozwala kwantowym komputerom na przeprowadzanie obliczeń równoległych na ogromną skalę. To z kolei umożliwia rozwiązywanie niektórych problemów obliczeniowych znacznie szybciej niż na klasycznych komputerach.
+
+Ponadto, zjawisko splątania kwantowego, w którym stan jednej cząstki kwantowej jest powiązany z inną cząstką, nawet jeśli są one oddzielone przestrzennie, odgrywa kluczową rolę w kwantowych algorytmach i protokołach kryptograficznych.
+
+Kwantowe komputery bezpośrednio wykorzystują prawa i zjawiska mechaniki kwantowej do przeprowadzania obliczeń w sposób, który jest niemożliwy do osiągnięcia w klasycznych systemach komputerowych. Dlatego określenie "kwantowy" jest tak istotne w kontekście tych innowacyjnych maszyn obliczeniowych.
+
+-------------------------------------------------------------------------------------------------------------------------
+# Kryptografia kwantowa:
+
+Co to jest kryptografia kwantowa?
+
+Kryptografia kwantowa, znana również jako kwantowa dystrybucja klucza (QKD), to metoda bezpiecznej komunikacji wykorzystująca zasady mechaniki kwantowej do kodowania i dekodowania wiadomości. Został zaprojektowany, aby zapewnić bezwarunkowe bezpieczeństwo, co oznacza, że ??każda próba podsłuchania lub przechwycenia komunikacji zostanie wykryta.
+
+Jak to działa?
+
+Kwantowa dystrybucja klucza (QKD) : Dwie strony, tradycyjnie określane jako Alicja i Bob, chcą ustanowić bezpieczny kanał komunikacji. Każdy z nich ma układ kwantowy, taki jak foton, który jest splątany (połączony) w sposób umożliwiający ich korelację.
+Szyfrowanie kwantowe : Alicja i Bob szyfrują swoje wiadomości na fotonach, korzystając z procesu zwanego szyfrowaniem kwantowym. Tworzy to zaszyfrowany klucz, który służy do szyfrowania i deszyfrowania komunikacji.
+Pomiar : podczas pomiaru fotonów korelacja między splątanymi cząsteczkami zostaje zakłócona, co utrudnia podsłuchiwaczowi (Ewie) przechwycenie komunikacji bez wykrycia.
+Wymiana kluczy : Alicja i Bob publicznie porównują swoje pomiary, aby upewnić się, że klucze są identyczne. Jeśli klucze pasują, mogą ich użyć do szyfrowania i deszyfrowania komunikacji.
+
+Kluczowe idee:
+Splątanie : zjawisko, w którym dwie lub więcej cząstek łączy się w taki sposób, że ich właściwości są skorelowane, niezależnie od odległości między nimi.
+Superpozycja : stan kwantowy, w którym cząstka może istnieć w wielu stanach jednocześnie.
+Pomiar : proces obserwacji układu kwantowego, który może spowodować zapadnięcie się układu w jeden stan.
+Podsłuchiwanie: czynność przechwytywania i analizowania komunikacji bez wiedzy i zgody zaangażowanych stron.
+
+Korzyści i zastosowania:
+Bezwarunkowe bezpieczeństwo : kryptografia kwantowa zapewnia najwyższy poziom bezpieczeństwa, ponieważ każda próba podsłuchu zostanie wykryta.
+Bezpieczna komunikacja : QKD może być używany do bezpiecznej komunikacji za pośrednictwem kanałów publicznych, takich jak Internet.
+Szybki transfer danych : QKD może być używany do szybkiego przesyłania danych, dzięki czemu nadaje się do zastosowań takich jak transakcje finansowe i przesyłanie wrażliwych danych.
+Bezpieczne systemy głosowania : QKD można wykorzystać do tworzenia bezpiecznych systemów głosowania, zapewniających integralność wyborów.
+
+Wyzwania i ograniczenia:
+Ograniczenia odległości : Odległość, na jaką można zastosować QKD, jest ograniczona ze względu na tłumienie fotonów w kablach światłowodowych.
+Korekcja błędów : QKD wymaga złożonych mechanizmów korekcji błędów, aby zapewnić integralność zaszyfrowanych danych.
+Skalowalność : Obecnie QKD nie jest skalowalny do zastosowań na dużą skalę ze względu na złożoność i koszt technologii.
+
+Zastosowania w świecie rzeczywistym:
+Bezpieczna komunikacja : QKD jest używany do bezpiecznej komunikacji w różnych branżach, takich jak finanse, opieka zdrowotna i rząd.
+Bezpieczne systemy głosowania : QKD jest badane pod kątem bezpiecznych systemów głosowania, aby zapewnić integralność wyborów.
+Bezpieczny transfer danych : QKD jest używany do bezpiecznego przesyłania danych w aplikacjach takich jak transakcje finansowe i przesyłanie wrażliwych danych.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Antymateria – układ antycząstek. Antycząstki to cząstki elementarne podobne do występujących w „zwykłej” materii, ale o przeciwnym znaku ładunku elektrycznego oraz wszystkich addytywnych liczb kwantowych. W momencie kontaktu antymaterii z materią obie ulegają anihilacji.
+
+Antycząstką elektronu jest - pozyton
+
+Twierdzenie Bella (zwane też nierównością Bella) – twierdzenie dotyczące mechaniki kwantowej, pokazujące, w jaki sposób przewidywania mechaniki kwantowej różnią się od klasycznej intuicji. Jego autorem jest północnoirlandzki fizyk John Stewart Bell. Można je sformułować następująco:
+
+"Żadna lokalna teoria zmiennych ukrytych nie może opisać wszystkich zjawisk mechaniki kwantowej." <-- Sformułował on to twierdzenie w 1964R.
+
+Przejście między stanami: W mechanice klasycznej, obiekt może znajdować się w dowolnym stanie i jego ruch można łatwo przewidzieć, gdy tylko zostanie określony jego początkowy stan. W mechanice kwantowej, obiekt może znajdować się tylko w określonych stanach kwantowych.
+
+Akcelerator – urządzenie służące do przyspieszania cząstek elementarnych lub jonów do prędkości bliskich prędkości światła w próżni. Cząstki obdarzone ładunkiem elektrycznym są przyspieszane w polu elektrycznym.
+
+Cząstką elementarną jest foton.
+
+Dylatacja czasu to efekt relatywistyczny, w którym upływ czasu wydaje się wolniejszy dla obiektów poruszających się z dużymi prędkościami względem obserwatora.
+
+Wzór na długość fali de Broglie'a (? = h/p), który opisuje falową naturę cząstek materialnych.
+
+fale w mechanice kwantowej jako fale prawdopodobieństwa, które opisują prawdopodobieństwo znalezienia cząstki w danym miejscu i czasie.
+Louisa de Broglie'a i jego wkład
+Teoria wielu światów, zakłada brak kolapsu funkcji falowej i istnienie wieloświata, gdzie realizują się wszystkie możliwe wyniki pomiarów.
+
+Pojęcie przestrzeni Hilberta jest abstrakcyjną przestrzenią matematyczną, w której "żyją" stany kwantowe.
+(Przestrzeń Hilberta to abstrakcyjna przestrzeń matematyczna, która stanowi fundament mechaniki kwantowej. Nie jest to przestrzeń fizyczna, którą możemy sobie wyobrazić w trzech wymiarach, lecz raczej przestrzeń matematyczna, w której "żyją" stany kwantowe.)
+
+Można wyobrazić sobie to tak:
+Klasyczna przestrzeń: W fizyce klasycznej, stan obiektu opisujemy za pomocą jego położenia i pędu w przestrzeni trójwymiarowej.
+Przestrzeń Hilberta: W mechanice kwantowej, stan układu kwantowego (np. elektronu) jest opisywany przez wektor w przestrzeni Hilberta.
+Kluczowe cechy przestrzeni Hilberta:
+Abstrakcyjność: Nie jest to przestrzeń fizyczna, ale matematyczna, zdefiniowana przez aksjomaty.
+Wektory stanu: Każdy punkt w przestrzeni Hilberta reprezentuje możliwy stan układu kwantowego.
+Superpozycja: Układ kwantowy może znajdować się w superpozycji stanów, co oznacza, że jego wektor stanu jest kombinacją liniową wektorów opisujących poszczególne stany.
+Produkt skalarny: Przestrzeń Hilberta jest wyposażona w iloczyn skalarny, który pozwala obliczyć prawdopodobieństwo przejścia układu z jednego stanu do drugiego.
+Przykłady zastosowania:
+Opis stanów kwantowych: Funkcja falowa, opisująca stan cząstki w mechanice kwantowej, jest wektorem w przestrzeni Hilberta.
+Ewolucja układów kwantowych: Zmiany stanu układu kwantowego w czasie są opisywane przez operatory działające na wektory w przestrzeni Hilberta.
+Teoria wielu światów: W tej interpretacji mechaniki kwantowej, każde rozgałęzienie wszechświata odpowiada rozdzieleniu ścieżek w przestrzeni Hilberta.
+Podsumowując:
+Przestrzeń Hilberta to potężne narzędzie matematyczne, które pozwala opisać i zrozumieć dziwny i fascynujący świat mechaniki kwantowej. Choć jej abstrakcyjność może wydawać się trudna do pojęcia, to jest ona niezbędna do zrozumienia fundamentalnych zasad rządzących zachowaniem cząstek elementarnych).
+
+Aksjomaty to podstawowe, niedefiniowane pojęcia i zdania, które przyjmuje się bez dowodu w ramach danej teorii matematycznej lub logicznej. Stanowią one fundament, na którym buduje się całą resztę teorii, poprzez definiowanie nowych pojęć i wyprowadzanie twierdzeń na podstawie przyjętych aksjomatów i reguł wnioskowania.
+Można myśleć o nich jak o regułach gry, które ustala się na samym początku, aby zapewnić spójność i logiczny porządek.
+
+Kluczowe cechy aksjomatów:
+Niedowodliwość: Aksjomatów nie dowodzi się w ramach danej teorii. Przyjmuje się je jako punkt wyjścia.
+Niewyprowadzalność: Aksjomatów nie da się wyprowadzić z innych zdań w ramach danej teorii.
+Spójność: Zbiór aksjomatów powinien być spójny, tzn. nie powinien prowadzić do sprzeczności.
+Minimalność: Zbiór aksjomatów powinien być minimalny, tzn. żaden aksjomat nie powinien być zbędny i dać się wyprowadzić z pozostałych.
+Przykłady aksjomatów:
+Geometria euklidesowa: Aksjomat o prostych równoległych ("Przez punkt leżący poza prostą można poprowadzić tylko jedną prostą równoległą do danej prostej").
+Teoria mnogości: Aksjomat wyboru ("Dla każdego zbioru niepustych zbiorów istnieje funkcja, która z każdego zbioru wybiera jeden element").
+Znaczenie aksjomatów:
+Podstawa dla teorii: Aksjomaty stanowią fundament, na którym opiera się cała teoria.
+Zapewnienie spójności: Aksjomaty gwarantują, że teoria jest spójna i logicznie uporządkowana.
+Możliwość rozwoju: Przyjęcie określonych aksjomatów otwiera drogę do definiowania nowych pojęć i wyprowadzania twierdzeń.
+Ciekawostka:
+W przeszłości uważano, że aksjomaty to "oczywiste prawdy", które nie wymagają dowodu. Jednak rozwój matematyki pokazał, że aksjomaty to raczej wybory, których dokonujemy, aby stworzyć spójny system logiczny.
+
+Wyobraź sobie, że energia nie jest ciągła, jak płynąca woda, ale podzielona na dyskretne pakiety, jak oddzielne krople. Każdy z tych pakietów to właśnie kwant.
+To pojęcie oznacza, że energia, pęd, moment pędu i inne wielkości fizyczne mogą przyjmować tylko określone, dyskretne wartości, a nie dowolne wartości w ciągłym zakresie.
+Analogia:
+Wyobraź sobie schody. Nie możesz stanąć między stopniami, tylko na konkretnym stopniu. Podobnie energia w świecie kwantowym "skacze" między określonymi poziomami, a każdy skok to kwant energii.
+Przykład:
+Światło składa się z kwantów zwanych fotonami. Każdy foton niesie określoną ilość energii, która zależy od jego częstotliwości.
+Zrozumienie kwantu jest kluczem do zrozumienia wielu zjawisk kwantowych, takich jak efekt fotoelektryczny, widmo atomowe czy promieniowanie ciała doskonale czarnego.
+
+Antycząstki to jeden z najbardziej intrygujących aspektów fizyki cząstek elementarnych.
+Wyobraź sobie, że każda cząstka elementarna ma swoje "lustrzane odbicie" - antycząstkę.
+Czym się różnią?
+Antycząstka ma takie same właściwości fizyczne jak cząstka, z wyjątkiem ładunku elektrycznego, który jest przeciwny. Na przykład, elektron ma ładunek ujemny (-1), a jego antycząstka, pozyton, ma ładunek dodatni (+1).
+Co się dzieje, gdy cząstka spotka swoją antycząstkę?
+Wtedy następuje **anihilacja**, czyli proces, w którym obie cząstki znikają, a ich masa zostaje przekształcona w energię w postaci fotonów.
+Przykłady antycząstek:
+- Pozyton (e+): Antycząstka elektronu.
+- Antyproton (pŻ): Antycząstka protonu.
+- Antineutron (nŻ): Antycząstka neutronu.
+
+Gdzie możemy znaleźć antycząstki?
+Antycząstki są rzadkie w naszym codziennym życiu, ale można je wytworzyć w akceleratorach cząstek, gdzie cząstki są przyspieszane do bardzo wysokich prędkości i zderzane ze sobą.
+
+Zastosowania antycząstek:
+Antycząstki mają wiele potencjalnych zastosowań, takich jak:
+Medycyna: Pozytony są wykorzystywane w tomografii pozytonowej (PET), metodzie obrazowania medycznego.
+Energetyka: Antymateria jest potencjalnym źródłem energii o bardzo wysokiej gęstości.
+
+Akcelerator cząstek to rodzaj gigantycznej maszyny, która przyspiesza cząstki elementarne do niemalże prędkości światła. Wyobraź sobie go jak super-mikroskop, który pozwala nam "zobaczyć" świat na poziomie subatomowym.
+
+Jak działa?
+Akcelerator wykorzystuje pola elektromagnetyczne do przyspieszania cząstek wzdłuż określonej trajektorii. Cząstki poruszają się w próżni, pokonując coraz szybsze okrężne tory, aż osiągną pożądaną energię.
+
+Do czego służy?
+Akceleratory cząstek są wykorzystywane do:
+Badania struktury materii: Zderzenia cząstek o wysokiej energii pozwalają nam "rozbić" atomy na ich składniki i zbadać ich właściwości.
+Odkrywania nowych cząstek: W zderzeniach cząstek mogą powstawać nowe, nieznane dotąd cząstki elementarne.
+
+Testowania teorii fizycznych: Akceleratory pozwalają nam testować przewidywania teorii fizycznych, takich jak Model Standardowy.
+
+Zastosowań medycznych: Akceleratory są wykorzystywane w radioterapii nowotworów.
+
+Przykłady akceleratorów:
+LHC (Large Hadron Collider) w CERNie - największy akcelerator na świecie. Oraz
+"Fermilab Tevatron" w USA.
+
